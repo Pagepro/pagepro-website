@@ -1,11 +1,11 @@
 import React from "react"
 import Navigation from '../components/navigation';
-import JobList from '../components/jobOfferList';
+import JobOfferList from '../components/jobOfferList';
 
 const Career = () => (
     <>
         <Navigation></Navigation>
-        <JobList></JobList>
+        <JobOfferList />
 
     </>
 )

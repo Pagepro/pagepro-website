@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import JobOffer from './jobOffer';
 
-class JobList extends Component {
+class JobOfferList extends Component {
     state = {
         jobList: [
             {
-                "id": 8,
-                "position": "Test Name 2",
+                "id": 2,
+                "position": "Test Name Null",
                 "author": "dev",
                 "short_description": null,
                 "icon_svg": null,
@@ -44,7 +44,7 @@ class JobList extends Component {
     }
 
     render() {
-        const jobs = this.state.jobList.map((job, id) => <JobOffer key={job.id} job={job} />)
+        const jobs = this.state.jobList.map(job => <JobOffer key={job.id} job={job} />)
         return (
             <>
                 {jobs}
@@ -53,4 +53,4 @@ class JobList extends Component {
     }
 }
 
-export default JobList;
+export default JobOfferList;

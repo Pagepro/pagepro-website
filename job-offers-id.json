@@ -1,0 +1,107 @@
+[
+    {
+        "id": 6,
+        "position": "Test Name",
+        "author": "dev",
+        "description_list": [
+            "test1",
+            "test2",
+            "test3",
+            "test4"
+        ],
+        "icon_svg": "http:\/\/api-pagepro.local\/wp-content\/uploads\/2019\/05\/H15_Konferencja_2501201814-640x360-1.jpg",
+        "location": "test location",
+        "tags": [
+            "Tag 1",
+            "Tag2"
+        ],
+        "long_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "responsibilities": [
+            "RESPONSIBILITIES1",
+            "RESPONSIBILITIES2",
+            "RESPONSIBILITIES3"
+        ],
+        "requirements": [
+            "REQUIREMENTS1",
+            "REQUIREMENTS2",
+            "REQUIREMENTS3"
+        ],
+        "nice_to_have": [
+            "NICE TO HAVE1",
+            "NICE TO HAVE2",
+            "NICE TO HAVE3"
+        ],
+        "minimum_amount": "5.000",
+        "maximum_amount": "15.000"
+    },
+    {
+        "id": 7,
+        "position": "Funky Name",
+        "author": "dev",
+        "description_list": [
+            "test1",
+            "test2",
+            "test3",
+            "test4"
+        ],
+        "icon_svg": "http:\/\/api-pagepro.local\/wp-content\/uploads\/2019\/05\/H15_Konferencja_2501201814-640x360-1.jpg",
+        "location": "test location",
+        "tags": [
+            "Tag 1",
+            "Tag2"
+        ],
+        "long_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "responsibilities": [
+            "RESPONSIBILITIES1",
+            "RESPONSIBILITIES2",
+            "RESPONSIBILITIES3"
+        ],
+        "requirements": [
+            "REQUIREMENTS1",
+            "REQUIREMENTS2",
+            "REQUIREMENTS3"
+        ],
+        "nice_to_have": [
+            "NICE TO HAVE1",
+            "NICE TO HAVE2",
+            "NICE TO HAVE3"
+        ],
+        "minimum_amount": "50.000",
+        "maximum_amount": "150.000"
+    },
+    {
+        "id": 2,
+        "position": "NUll Name",
+        "author": "dev",
+        "description_list": [
+            "test1",
+            "test2",
+            "test3",
+            "test4"
+        ],
+        "icon_svg": "http:\/\/api-pagepro.local\/wp-content\/uploads\/2019\/05\/H15_Konferencja_2501201814-640x360-1.jpg",
+        "location": "test location",
+        "tags": [
+            "Tag 1",
+            "Tag2"
+        ],
+        "long_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "responsibilities": [
+            "RESPONSIBILITIES1",
+            "RESPONSIBILITIES2",
+            "RESPONSIBILITIES3"
+        ],
+        "requirements": [
+            "REQUIREMENTS1",
+            "REQUIREMENTS2",
+            "REQUIREMENTS3"
+        ],
+        "nice_to_have": [
+            "NICE TO HAVE1",
+            "NICE TO HAVE2",
+            "NICE TO HAVE3"
+        ],
+        "minimum_amount": "5.000",
+        "maximum_amount": "15.000"
+    }
+]
