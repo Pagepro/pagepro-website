@@ -112,6 +112,7 @@ class AboutJobList extends Component {
     }
 
     render() {
+        console.log(this.props.jobId);
         const aboutJob = this.state.aboutJobList.find(job => job.id === this.props.jobId);
 
         const { position, long_description, minimum_amount, maximum_amount, location, responsibilities, requirements, nice_to_have } = aboutJob;
