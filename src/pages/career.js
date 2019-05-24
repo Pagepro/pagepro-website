@@ -1,15 +1,14 @@
-import { Link } from "gatsby"
 import React from "react"
-import Navigation from '/Pagepro/pagepro-website/src/components/navigation';
+import Navigation from '../components/navigation';
+import JobList from '../components/jobOfferList';
 
 const Career = () => (
     <>
         <Navigation></Navigation>
-        <Link to='career/job-details'>
-            Job details
-    </Link>
+        <JobList></JobList>
+
     </>
 )
 
 
-export default Career
+export default Career;

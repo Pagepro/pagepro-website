@@ -1,12 +1,14 @@
 import React from "react"
-import Navigation from '/Pagepro/pagepro-website/src/components/navigation';
+import Navigation from '../../components/navigation';
+import AboutJobList from '../../components/aboutJob';
 
-const JobDetails = () => (
+const JobDetails = ({ location }) => (
+
     <>
-        <Navigation></Navigation>
-        <p>Job page</p>
+        <Navigation />
+        <AboutJobList jobId={location.state.jobId} />
     </>
 )
 
 
-export default JobDetails
+export default JobDetails;
