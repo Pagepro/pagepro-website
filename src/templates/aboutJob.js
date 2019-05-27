@@ -13,29 +13,29 @@ class AboutJob extends Component {
                 <section>
                     <h1>{position}</h1>
                     <p>{long_description}</p>
-                    <p>{`Salary: ${minimum_amount} - ${maximum_amount} pln net`}</p>
-                    <p>Location: {location}</p>
+                    {minimum_amount ? <p>{`Salary: ${minimum_amount} - ${maximum_amount} pln net`}</p> : null}
+                    {location ? <p>Location: {location}</p> : null}
                 </section>
 
                 <section>
-                    <div>
+                    {responsibilities ? <div>
                         <p>responsibilities</p>
                         <ul>
                             {responsibilities.map((item, id) => <li key={id}>{item}</li>)}
                         </ul>
-                    </div>
-                    <div>
+                    </div> : null}
+                    {requirements ? <div>
                         <p>requirements</p>
                         <ul>
                             {requirements.map((item, id) => <li key={id}>{item}</li>)}
                         </ul>
-                    </div>
-                    <div>
+                    </div> : null}
+                    {nice_to_have ? <div>
                         <p>nice to have</p>
                         <ul>
                             {nice_to_have.map((item, id) => <li key={id}>{item}</li>)}
                         </ul>
-                    </div>
+                    </div> : null}
                 </section>
             </>
         );

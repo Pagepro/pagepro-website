@@ -1,8 +1,8 @@
 exports.createPages = ({ actions: { createPage } }) => {
-    const jobsDetails = require("./job-offers-id.json")
+    const jobsDetails = require("./job-offers_slug.json")
     jobsDetails.forEach(jobDetails => {
         createPage({
-            path: `/career/job-details-${jobDetails.id}/`,
+            path: `/career/${jobDetails.slug}`,
             component: require.resolve("./src/templates/aboutJob.js"),
             context: {
                 position: jobDetails.position,

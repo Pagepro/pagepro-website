@@ -7,7 +7,8 @@
         "icon_svg": null,
         "tags": null,
         "minimum_amount": null,
-        "maximum_amount": null
+        "maximum_amount": null,
+        "slug": "test-name-2"
     },
     {
         "id": 6,
@@ -20,6 +21,7 @@
             "Tag2"
         ],
         "minimum_amount": "5.000",
-        "maximum_amount": "15.000"
+        "maximum_amount": "15.000",
+        "slug": "test-name"
     }
 ]

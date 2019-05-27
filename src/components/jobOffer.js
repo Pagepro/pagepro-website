@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from "gatsby"
 
 const JobOffer = (props) => {
-    const { position, short_description, tags, minimum_amount, maximum_amount, id } = props.job;
+    const { position, short_description, tags, minimum_amount, maximum_amount, slug } = props.job;
 
     let tagLine;
     if (tags != null) {
-        for (let i = 0; i < tags.length; i++) {
-            tags[i] = "#" + tags[i];
+        if (tags[0][0] !== '#') {
+            tags[0] = "#" + tags[0];
         }
+        tagLine = tags.join(' #');
 
-        tagLine = tags.join(' ');
     } else {
         tagLine = null;
     }
@@ -22,7 +22,7 @@ const JobOffer = (props) => {
             <p>{tagLine}</p>
             {minimum_amount ? <p>{`Salary: ${minimum_amount} - ${maximum_amount} pln net`}</p> : null}
             <Link
-                to={`career/job-details-${id}`}>
+                to={`career/${slug}`}>
                 More details
         </Link>
         </>
