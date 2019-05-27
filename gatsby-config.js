@@ -9,14 +9,17 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: "https://pagepro.us20.list-manage.com/subscribe/post?u=527ac367735caa43f2cccdf7e&amp;id=5ae6624c1d", // add your MC list endpoint here
+      },
+    },
+    {
       resolve: `gatsby-source-instagram`,
       options: {
         type: `user-profile`,
         username: `pagepro_`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

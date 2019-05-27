@@ -1,9 +1,13 @@
 import React from "react"
 import Navigation from '../components/navigation';
+import Newsletter from '../components/newsletter';
+
 const About = () => (
     <>
-        <Navigation></Navigation>
-        <p>About page</p>
+        <Navigation />
+        <h1>about page</h1>
+        <Newsletter />
+
     </>
 )
 
