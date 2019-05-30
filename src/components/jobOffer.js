@@ -22,7 +22,7 @@ const JobOffer = (props) => {
             <p>{tagLine}</p>
             {minimum_amount ? <p>{`Salary: ${minimum_amount} - ${maximum_amount} pln net`}</p> : null}
             <Link
-                to={`career/${slug}`}>
+                to={`/career/${slug}`}>
                 More details
         </Link>
         </>

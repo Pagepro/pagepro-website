@@ -5,7 +5,7 @@ import Navigation from '../components/navigation';
 const Services = () => (
     <>
         <Navigation></Navigation>
-        <Link to='services/service-name'>
+        <Link to='/services/service-name'>
             Service name
     </Link>
     </>

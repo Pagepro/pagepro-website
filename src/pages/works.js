@@ -5,7 +5,7 @@ import Navigation from '../components/navigation';
 const Works = () => (
     <>
         <Navigation></Navigation>
-        <Link to='works/project-name'>
+        <Link to='/works/project-name'>
             Project name
     </Link>
     </>

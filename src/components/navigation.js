@@ -20,37 +20,37 @@ const Navigation = () => (
             Home
                 </Link>
         <Link style={linkStyles} activeStyle={activeLink} partiallyActive={true}
-            to="works"
+            to="/works"
         >
             Works
                 </Link>
         <Link style={linkStyles} activeStyle={activeLink} partiallyActive={true}
-            to="services"
+            to="/services"
         >
             Services
                 </Link>
         <Link style={linkStyles} activeStyle={activeLink}
-            to="about"
+            to="/about"
         >
             About
                 </Link>
         <Link style={linkStyles} activeStyle={activeLink} partiallyActive={true}
-            to="career"
+            to="/career"
         >
             Career
                 </Link>
         <Link style={linkStyles} activeStyle={activeLink}
-            to="contact"
+            to="/contact"
         >
             Contact
                 </Link>
         <Link style={linkStyles} activeStyle={activeLink}
-            to="privacy-policy"
+            to="/privacy-policy"
         >
             Privacy policy
                 </Link>
         <Link style={linkStyles} activeStyle={activeLink}
-            to="cookies"
+            to="/cookies"
         >
             Cookies
                 </Link>
