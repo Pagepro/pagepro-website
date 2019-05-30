@@ -11,13 +11,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: MC_EndPoint_Link, // add your MC list endpoint here
+        endpoint: $GATSBY_MC_EndPoint_Link, // add your MC list endpoint here
       },
     },
     {
       resolve: `gatsby-source-instagram-all`,
       options: {
-        access_token: Instagram_Token
+        access_token: $GATSBY_Instagram_Token
       }
     },
   ]
