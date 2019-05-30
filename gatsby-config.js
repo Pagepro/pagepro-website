@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: config.MC_EndPoint_Link, // add your MC list endpoint here
+        endpoint: MC_EndPoint_Link, // add your MC list endpoint here
       },
     },
     {
