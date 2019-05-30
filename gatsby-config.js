@@ -1,3 +1,4 @@
+require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -11,13 +12,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: $GATSBY_MC_EndPoint_Link, // add your MC list endpoint here
+        endpoint: process.env.GATSBY_MC_ENDPOINT_LINK, // add your MC list endpoint here
       },
     },
     {
       resolve: `gatsby-source-instagram-all`,
       options: {
-        access_token: $GATSBY_Instagram_Token
+        access_token: process.env.GATSBY_INSTAGRAM_TOKEN
       }
     },
   ]
