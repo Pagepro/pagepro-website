@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -16,10 +17,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-instagram-all`,
+      resolve: `gatsby-source-instagram`,
       options: {
-        access_token: process.env.GATSBY_INSTAGRAM_TOKEN
-      }
+        username: `pagepro_`,
+        access_token: process.env.GATSBY_INSTAGRAM_TOKEN,
+        instagram_id: process.env.GATSBY_INSTAGRAM_ID,
+      },
     },
   ]
 }
