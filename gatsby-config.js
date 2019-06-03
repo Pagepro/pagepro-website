@@ -11,6 +11,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
         endpoint: process.env.GATSBY_MC_ENDPOINT_LINK, // add your MC list endpoint here

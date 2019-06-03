@@ -5,3 +5,6 @@
  */
 
 // You can delete this file if you're not using it
+
+import './static/css/custom-classes.css'
+import './static/css/main.css'

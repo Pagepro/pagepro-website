@@ -1,9 +1,14 @@
 import React from "react"
 import Navigation from '../components/navigation'
 import Newsletter from '../components/newsletter'
-import '../../public/static/css/custom-classes.css'
-import '../../public/static/css/main.css'
 
+function importAll(r) {
+  let images = {};
+  r.keys().map(item => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('../../static/img/', false, /\.(jpg|svg)$/));
 
 const IndexPage = () => (
   <>
@@ -14,7 +19,7 @@ const IndexPage = () => (
           <div className="loader-line"></div>
         </div>
         <span className="o-object-wrapper">
-          <object type="image/svg+xml" data="../../static/img/logo_pagepro_loader.svg">Pagepro</object>
+          <object type="image/svg+xml" data="../../public/img/logo_pagepro_loader.svg">Pagepro</object>
         </span>
       </div>
     </div>
@@ -33,7 +38,7 @@ const IndexPage = () => (
                   <a className="c-logo-box__inner" href="index.html" aria-label="Pagepro Logo">
                     <span className="c-logo-box__media">
                       <span className="o-object-wrapper">
-                        <object type="image/svg+xml" data="../../static/img/logo_pagepro.svg">Pagepro</object>
+                        <object type="image/svg+xml" data={images['logo_pagepro.svg']} >Pagepro</object>
                       </span>
                     </span>
                     <span className="c-logo-box__info">
@@ -140,7 +145,7 @@ const IndexPage = () => (
                     <li className="c-testimonial-list__item">
                       <blockquote className="c-testimonial-teaser u-paint-3" aria-label="Testimonial">
                         <figure className="c-testimonial-teaser__media o-img-wrapper o-img-wrapper--round">
-                          <img src="../../static/img/pic_ilona-filipi-small.jpg" alt="Ilona Filipi" />
+                          <img src={images['pic_ilona-filipi-small.jpg']} alt="Ilona Filipi" />
                         </figure>
                         <div className="c-testimonial-teaser__info">
                           <div className="c-testimonial-teaser__info__content">
@@ -157,7 +162,7 @@ const IndexPage = () => (
                     <li className="c-testimonial-list__item">
                       <blockquote className="c-testimonial-teaser u-paint-3" aria-label="Testimonial">
                         <figure className="c-testimonial-teaser__media o-img-wrapper o-img-wrapper--round">
-                          <img src="../../static/img/pic_guillaume-pousseo-small.jpg" alt="Guillaume Pousseo" />
+                          <img src={images['pic_guillaume-pousseo-small.jpg']} alt="Guillaume Pousseo" />
                         </figure>
                         <div className="c-testimonial-teaser__info">
                           <div className="c-testimonial-teaser__info__content">
@@ -174,7 +179,7 @@ const IndexPage = () => (
                     <li className="c-testimonial-list__item">
                       <blockquote className="c-testimonial-teaser u-paint-3" aria-label="Testimonial">
                         <figure className="c-testimonial-teaser__media o-img-wrapper o-img-wrapper--round">
-                          <img src="../../static/img/pic-lance-redgrave-small.jpg" alt="Lance Redgrave" />
+                          <img src={images['pic-lance-redgrave-small.jpg']} alt="Lance Redgrave" />
                         </figure>
                         <div className="c-testimonial-teaser__info">
                           <div className="c-testimonial-teaser__info__content">
@@ -191,7 +196,7 @@ const IndexPage = () => (
                     <li className="c-testimonial-list__item">
                       <blockquote className="c-testimonial-teaser u-paint-3" aria-label="Testimonial">
                         <figure className="c-testimonial-teaser__media o-img-wrapper o-img-wrapper--round">
-                          <img src="../../static/img/pic_michal-kenderski-small.jpg" alt="Michal Kenderski" />
+                          <img src={images['pic_michal-kenderski-small.jpg']} alt="Michal Kenderski" />
                         </figure>
                         <div className="c-testimonial-teaser__info">
                           <div className="c-testimonial-teaser__info__content">
@@ -208,7 +213,7 @@ const IndexPage = () => (
                     <li className="c-testimonial-list__item">
                       <blockquote className="c-testimonial-teaser u-paint-3" aria-label="Testimonial">
                         <figure className="c-testimonial-teaser__media o-img-wrapper o-img-wrapper--round">
-                          <img src="../../static/img/pic_carole-egerton-small.jpg" alt="Carole Egerton" />
+                          <img src={images['pic_carole-egerton-small.jpg']} alt="Carole Egerton" />
                         </figure>
                         <div className="c-testimonial-teaser__info">
                           <div className="c-testimonial-teaser__info__content">
@@ -225,7 +230,7 @@ const IndexPage = () => (
                     <li className="c-testimonial-list__item">
                       <blockquote className="c-testimonial-teaser u-paint-3" aria-label="Testimonial">
                         <figure className="c-testimonial-teaser__media o-img-wrapper o-img-wrapper--round">
-                          <img src="../../static/img/pic_paul-horrocks-small.jpg" alt="Paul Horrocks" />
+                          <img src={images['pic_paul-horrocks-small.jpg']} alt="Paul Horrocks" />
                         </figure>
                         <div className="c-testimonial-teaser__info">
                           <div className="c-testimonial-teaser__info__content">
@@ -274,7 +279,6 @@ const IndexPage = () => (
                       </a>
                     </li>
                   </ul>
-
                 </div>
               </div>
             </div>
@@ -295,7 +299,7 @@ const IndexPage = () => (
                           <div className="c-info-box g-gutter-right-3 g-gutter-right-0@mobile t-left">
                             <div className="c-info-box__media o-icon-wrapper--big" aria-hidden="true">
                               <figure className="o-svg-wrapper o-svg-wrapper--default">
-                                <img src="../../static/img/react.svg" alt="React logo" />
+                                <img src={images['react.svg']} alt="React logo" />
                               </figure>
                             </div>
                             <div className="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile t-left">
@@ -308,7 +312,7 @@ const IndexPage = () => (
                           <div className="c-info-box g-gutter-right-3 g-gutter-right-0@mobile t-left">
                             <div className="c-info-box__media o-icon-wrapper--big" aria-hidden="true">
                               <figure className="o-svg-wrapper o-svg-wrapper--default">
-                                <img src="../../static/img/react-native.svg" alt="React Native logo" />
+                                <img src={images['react-native.svg']} alt="React Native logo" />
                               </figure>
                             </div>
                             <div className="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile t-left">
@@ -321,7 +325,7 @@ const IndexPage = () => (
                           <div className="c-info-box g-gutter-right-3 g-gutter-right-0@mobile t-left">
                             <div className="c-info-box__media o-icon-wrapper--big" aria-hidden="true">
                               <figure className="o-svg-wrapper o-svg-wrapper--default">
-                                <img src="../../static/img/frontend-code.svg" alt="Front-End icon" />
+                                <img src={images['frontend-code.svg']} alt="Front-End icon" />
                               </figure>
                             </div>
                             <div className="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile t-left">
@@ -334,7 +338,7 @@ const IndexPage = () => (
                           <div className="c-info-box g-gutter-right-3 g-gutter-right-0@mobile t-left">
                             <div className="c-info-box__media o-icon-wrapper--big" aria-hidden="true">
                               <figure className="o-svg-wrapper o-svg-wrapper--default">
-                                <img src="../../static/img/wordpress.svg" alt="Wordpress logo" />
+                                <img src={images['wordpress.svg']} alt="Wordpress logo" />
                               </figure>
                             </div>
                             <div className="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile t-left">
@@ -414,7 +418,7 @@ const IndexPage = () => (
                           <div className="c-info-box g-gutter-right-3 g-gutter-right-0@mobile">
                             <div className="c-info-box__media o-icon-wrapper--big" aria-hidden="true">
                               <figure className="o-svg-wrapper o-svg-wrapper--default">
-                                <img src="../../static/img/react-code-review.svg" alt="Icon react code review" />
+                                <img src={images['react-code-review.svg']} alt="Icon react code review" />
                               </figure>
                             </div>
                             <div className="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile t-left">
@@ -427,7 +431,7 @@ const IndexPage = () => (
                           <div className="c-info-box g-gutter-right-3 g-gutter-right-0@mobile">
                             <div className="c-info-box__media o-icon-wrapper--big" aria-hidden="true">
                               <figure className="o-svg-wrapper o-svg-wrapper--default">
-                                <img src="../../static/img/discovery-workshop.svg" alt="Icon dicovery workshop" />
+                                <img src={images['discovery-workshop.svg']} alt="Icon dicovery workshop" />
                               </figure>
                             </div>
                             <div className="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile t-left">
@@ -440,7 +444,7 @@ const IndexPage = () => (
                           <div className="c-info-box g-gutter-right-3 g-gutter-right-0@mobile t-left">
                             <div className="c-info-box__media o-icon-wrapper--big" aria-hidden="true">
                               <figure className="o-svg-wrapper o-svg-wrapper--default">
-                                <img src="../../static/img/react-training.svg" alt="Icon react training" />
+                                <img src={images['react-training.svg']} alt="Icon react training" />
                               </figure>
                             </div>
                             <div className="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile t-left">
@@ -453,7 +457,7 @@ const IndexPage = () => (
                           <div className="c-info-box g-gutter-right-3 g-gutter-right-0@mobile t-left">
                             <div className="c-info-box__media o-icon-wrapper--big" aria-hidden="true">
                               <figure className="o-svg-wrapper o-svg-wrapper--default">
-                                <img src="../../static/img/team.svg" alt="Icon team" />
+                                <img src={images['team.svg']} alt="Icon team" />
                               </figure>
                             </div>
                             <div className="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile t-left">
@@ -509,7 +513,7 @@ const IndexPage = () => (
                             <li className="c-portfolio-teasers-list__item swiper-slide">
                               <div className="c-portfolio-teaser c-portfolio-teaser--small">
                                 <a className="c-portfolio-teaser__inner u-paint-4" href="my-name-flow.html">
-                                  <div className="c-portfolio-teaser__media" style={{ backgroundImage: "url('static/img/bg_case-mnf-rect.jpg')" }}></div>
+                                  <div className="c-portfolio-teaser__media" style={{ backgroundImage: "url('bg_case-mnf-rect.jpg')" }}></div>
                                   <div className="c-portfolio-teaser__main">
                                     <h2 className="t-style-fpn-l-b-u">
                                       MyNameFlow
@@ -549,7 +553,7 @@ const IndexPage = () => (
                             <li className="c-portfolio-teasers-list__item swiper-slide">
                               <div className="c-portfolio-teaser c-portfolio-teaser--small">
                                 <a className="c-portfolio-teaser__inner u-paint-4" href="acrf.html">
-                                  <div className="c-portfolio-teaser__media" style={{ backgroundImage: "url('static/img/bg-case-acrf-rect.jpg')" }}></div>
+                                  <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url:(../../static/img/bg-case-acrf-rect.jpg)' }}></div>
                                   <div className="c-portfolio-teaser__main">
                                     <h2 className="t-style-fpn-l-b-u">
                                       ACRF
@@ -639,7 +643,7 @@ const IndexPage = () => (
                         <div className="c-info-box g-gutter-right-0@mobile t-left">
                           <div className="c-info-box__media" aria-hidden="true">
                             <figure className="o-svg-wrapper o-svg-wrapper--default">
-                              <img src="../../static/img/react.svg" alt="React logo" />
+                              <img src={images['react.svg']} alt="React logo" />
                             </figure>
                           </div>
                           <div className="c-info-box__head g-gutter-top-2 g-gutter-top-1@mobile">
@@ -651,7 +655,7 @@ const IndexPage = () => (
                         <div className="c-info-box g-gutter-right-0@mobile t-left">
                           <div className="c-info-box__media" aria-hidden="true">
                             <figure className="o-svg-wrapper o-svg-wrapper--default">
-                              <img src="../../static/img/react-native.svg" alt="React Native logo" />
+                              <img src={images['react-native.svg']} alt="React Native logo" />
                             </figure>
                           </div>
                           <div className="c-info-box__head g-gutter-top-2 g-gutter-top-1@mobile">
@@ -663,7 +667,7 @@ const IndexPage = () => (
                         <div className="c-info-box g-gutter-right-0@mobile t-left">
                           <div className="c-info-box__media" aria-hidden="true">
                             <figure className="o-svg-wrapper o-svg-wrapper--default">
-                              <img src="../../static/img/redux.svg" alt="Redux logo" />
+                              <img src={images['redux.svg']} alt="Redux logo" />
                             </figure>
                           </div>
                           <div className="c-info-box__head g-gutter-top-2 g-gutter-top-1@mobile">
@@ -675,7 +679,7 @@ const IndexPage = () => (
                         <div className="c-info-box g-gutter-right-0@mobile t-left">
                           <div className="c-info-box__media" aria-hidden="true">
                             <figure className="o-svg-wrapper o-svg-wrapper--default">
-                              <img src="../../static/img/mobx.svg" alt="Mobx logo" />
+                              <img src={images['mobx.svg']} alt="Mobx logo" />
                             </figure>
                           </div>
                           <div className="c-info-box__head g-gutter-top-2 g-gutter-top-1@mobile">
@@ -687,7 +691,7 @@ const IndexPage = () => (
                         <div className="c-info-box g-gutter-right-0@mobile t-left">
                           <div className="c-info-box__media" aria-hidden="true">
                             <figure className="o-svg-wrapper o-svg-wrapper--default">
-                              <img src="../../static/img/webpack.svg" alt="Webpack logo" />
+                              <img src={images['webpack.svg']} alt="Webpack logo" />
                             </figure>
                           </div>
                           <div className="c-info-box__head g-gutter-top-2 g-gutter-top-1@mobile">
@@ -699,7 +703,7 @@ const IndexPage = () => (
                         <div className="c-info-box g-gutter-right-0@mobile t-left">
                           <div className="c-info-box__media" aria-hidden="true">
                             <figure className="o-svg-wrapper o-svg-wrapper--default">
-                              <img src="../../static/img/nodejs.svg" alt="NodeJS logo" />
+                              <img src={images['nodejs.svg']} alt="NodeJS logo" />
                             </figure>
                           </div>
                           <div className="c-info-box__head g-gutter-top-2 g-gutter-top-1@mobile">
