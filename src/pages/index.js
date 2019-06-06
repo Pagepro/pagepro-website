@@ -1,6 +1,9 @@
 import React from "react"
+import { Link, graphql } from "gatsby"
 import Navigation from '../components/navigation'
 import Newsletter from '../components/newsletter'
+import BgImage from '../components/bgImage'
+
 
 function importAll(r) {
   let images = {};
@@ -10,7 +13,7 @@ function importAll(r) {
 
 const images = importAll(require.context('../../static/img/', false, /\.(jpg|svg)$/));
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <>
     {/* <div className="page-loader" style={{ transform: "translateX(-100%)" }}>
       <div className="logo">
@@ -35,8 +38,9 @@ const IndexPage = () => (
             <div className="row row-align-between row-align-middle">
               <div className="l-header__box l-header__box--logo">
                 <div className="c-logo-box">
-                  <a className="c-logo-box__inner" href="index.html" aria-label="Pagepro Logo">
-                    <span className="c-logo-box__media">
+                  <Link className="c-logo-box__inner"
+                    to="/"
+                  >                    <span className="c-logo-box__media">
                       <span className="o-object-wrapper">
                         <object type="image/svg+xml" data={images['logo_pagepro.svg']} >Pagepro</object>
                       </span>
@@ -44,7 +48,8 @@ const IndexPage = () => (
                     <span className="c-logo-box__info">
                       <span className="u-info">Pagepro</span>
                     </span>
-                  </a>
+                  </Link>
+
                 </div>
               </div>
               <div className="l-header__box l-header__box--nav">
@@ -359,10 +364,14 @@ const IndexPage = () => (
               </div>
             </div>
           </section>
+
           <section
-            className="l-sec g-gutter-top-5 g-gutter-top-5@desktop-small g-gutter-bottom-5 g-gutter-bottom-5@desktop-small"
-            style={{ backgroundImage: "url('static/img/bg_section-clients.jpg'); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%" }}>
+            className="l-sec g-gutter-top-5 g-gutter-top-5@desktop-small g-gutter-bottom-5 g-gutter-bottom-5@desktop-small" style={{ backgroundPositon: '50% 50%' }}>
             <div className="l-row">
+              <BgImage
+                title="bgSectionClients"
+                fluid={props.data.bgSectionClients.childImageSharp.fluid}
+              />
               <div className="l-inner">
                 <div className="row">
                   <div className="l-sec__box gr-12 no-gutter u-paint-4">
@@ -493,7 +502,13 @@ const IndexPage = () => (
                             <li className="c-portfolio-teasers-list__item swiper-slide">
                               <div className="c-portfolio-teaser c-portfolio-teaser--small">
                                 <a className="c-portfolio-teaser__inner u-paint-4" href="gatedtalent.html">
-                                  <div className="c-portfolio-teaser__media" style={{ backgroundImage: "url('static/img/bg_case-gatedtalent.jpg')" }}></div>
+                                  <div className="c-portfolio-teaser__media">
+                                    <BgImage
+                                      title="bgCaseGatedtalent"
+                                      fluid={props.data.bgCaseGatedtalent.childImageSharp.fluid}
+                                    />
+
+                                  </div>
                                   <div className="c-portfolio-teaser__main">
                                     <h2 className="t-style-fpn-l-b-u">
                                       GatedTalent
@@ -513,7 +528,12 @@ const IndexPage = () => (
                             <li className="c-portfolio-teasers-list__item swiper-slide">
                               <div className="c-portfolio-teaser c-portfolio-teaser--small">
                                 <a className="c-portfolio-teaser__inner u-paint-4" href="my-name-flow.html">
-                                  <div className="c-portfolio-teaser__media" style={{ backgroundImage: "url('bg_case-mnf-rect.jpg')" }}></div>
+                                  <div className="c-portfolio-teaser__media">
+                                    <BgImage
+                                      title="bgCaseMnfRect"
+                                      fluid={props.data.bgCaseMnfRect.childImageSharp.fluid}
+                                    />
+                                  </div>
                                   <div className="c-portfolio-teaser__main">
                                     <h2 className="t-style-fpn-l-b-u">
                                       MyNameFlow
@@ -533,7 +553,12 @@ const IndexPage = () => (
                             <li className="c-portfolio-teasers-list__item swiper-slide">
                               <div className="c-portfolio-teaser c-portfolio-teaser--small">
                                 <a className="c-portfolio-teaser__inner u-paint-4" href="blockchain-agreements.html">
-                                  <div className="c-portfolio-teaser__media" style={{ backgroundImage: "url('static/img/bg-case-blockchain-rect.jpg')" }}></div>
+                                  <div className="c-portfolio-teaser__media">
+                                    <BgImage
+                                      title="bgCaseBlockchainRect"
+                                      fluid={props.data.bgCaseBlockchainRect.childImageSharp.fluid}
+                                    />
+                                  </div>
                                   <div className="c-portfolio-teaser__main">
                                     <h2 className="t-style-fpn-l-b-u">
                                       Ethereum Blockchain Doc Signing App
@@ -553,7 +578,12 @@ const IndexPage = () => (
                             <li className="c-portfolio-teasers-list__item swiper-slide">
                               <div className="c-portfolio-teaser c-portfolio-teaser--small">
                                 <a className="c-portfolio-teaser__inner u-paint-4" href="acrf.html">
-                                  <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url:(../../static/img/bg-case-acrf-rect.jpg)' }}></div>
+                                  <div className="c-portfolio-teaser__media" >
+                                    <BgImage
+                                      title="bgCaseAcrfRect"
+                                      fluid={props.data.bgCaseAcrfRect.childImageSharp.fluid}
+                                    />
+                                  </div>
                                   <div className="c-portfolio-teaser__main">
                                     <h2 className="t-style-fpn-l-b-u">
                                       ACRF
@@ -573,7 +603,12 @@ const IndexPage = () => (
                             <li className="c-portfolio-teasers-list__item swiper-slide">
                               <div className="c-portfolio-teaser c-portfolio-teaser--small">
                                 <a className="c-portfolio-teaser__inner u-paint-4" href="gatedtalent-website.html">
-                                  <div className="c-portfolio-teaser__media" style={{ backgroundImage: "url('static/img/bg-case-gatedtalentwebsite-rect.jpg')" }}></div>
+                                  <div className="c-portfolio-teaser__media">
+                                    <BgImage
+                                      title="bgCaseGatedtalentwebsiteRect"
+                                      fluid={props.data.bgCaseGatedtalentwebsiteRect.childImageSharp.fluid}
+                                    />
+                                  </div>
                                   <div className="c-portfolio-teaser__main">
                                     <h2 className="t-style-fpn-l-b-u">
                                       GatedTalent Website
@@ -593,7 +628,11 @@ const IndexPage = () => (
                             <li className="c-portfolio-teasers-list__item swiper-slide">
                               <div className="c-portfolio-teaser c-portfolio-teaser--small">
                                 <a className="c-portfolio-teaser__inner u-paint-4" href="outside-the-lines.html">
-                                  <div className="c-portfolio-teaser__media" style={{ backgroundImage: "url('static/img/bg_case-otl.jpg')" }}></div>
+                                  <div className="c-portfolio-teaser__media">
+                                    <BgImage
+                                  title="bgCaseOtl"
+                                  fluid={props.data.bgCaseOtl.childImageSharp.fluid}
+                                /></div>
                                   <div className="c-portfolio-teaser__main">
                                     <h2 className="t-style-fpn-l-b-u">
                                       Outside The Lines
@@ -869,8 +908,43 @@ const IndexPage = () => (
         </div>
       </footer>
     </div>
-
   </>
 )
+
+export const fluidBgImage = graphql`
+    fragment fluidBgImage on File {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+`
+export const homeQuery = graphql`
+  query {
+    bgCaseAcrfRect: file(relativePath: { eq: "bg-case-acrf-rect.jpg" }) {
+      ...fluidBgImage
+    }
+    bgSectionClients: file(relativePath: { eq: "bg_section-clients.jpg" }) {
+      ...fluidBgImage
+    }
+    bgCaseGatedtalent: file(relativePath: { eq: "bg_case-gatedtalent-rect.jpg" }) {
+      ...fluidBgImage
+    }
+    bgCaseMnfRect: file(relativePath: { eq: "bg_case-mnf-rect.jpg" }) {
+      ...fluidBgImage
+    }
+    bgCaseGatedtalentwebsiteRect: file(relativePath: { eq: "bg-case-gatedtalentwebsite-rect.jpg" }) {
+      ...fluidBgImage
+    }
+    bgCaseBlockchainRect: file(relativePath: { eq: "bg-case-blockchain-rect.jpg" }) {
+      ...fluidBgImage
+    }
+    bgCaseOtl: file(relativePath: { eq: "bg_case-otl.jpg" }) {
+      ...fluidBgImage
+    }
+   }
+`
+
 
 export default IndexPage
