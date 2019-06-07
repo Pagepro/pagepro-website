@@ -43,16 +43,16 @@ const BgImage = ({
   children,
   className
 }) => (
-  <Parent bc={overlayColor}>
-    <FakeBgImage
-      fluid={fluid}
-      title={title}
-      height={height}
-      mobileHeight={mobileHeight}
-    />
-    <Content className={className}>{children}</Content>
-  </Parent>
-);
+    <Parent bc={overlayColor}>
+      <FakeBgImage
+        fluid={fluid}
+        title={title}
+        height={height}
+        mobileHeight={mobileHeight}
+      />
+      <Content className={className}>{children}</Content>
+    </Parent>
+  );
 BgImage.propTypes = {
   fluid: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
   title: PropTypes.string.isRequired,

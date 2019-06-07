@@ -365,50 +365,53 @@ const IndexPage = (props) => (
             </div>
           </section>
 
-          <section
-            className="l-sec g-gutter-top-5 g-gutter-top-5@desktop-small g-gutter-bottom-5 g-gutter-bottom-5@desktop-small" style={{ backgroundPositon: '50% 50%' }}>
-            <div className="l-row">
-              <BgImage
-                title="bgSectionClients"
-                fluid={props.data.bgSectionClients.childImageSharp.fluid}
-              />
-              <div className="l-inner">
-                <div className="row">
-                  <div className="l-sec__box gr-12 no-gutter u-paint-4">
-                    <ul>
-                      <li className="gr-6 gr-12@tablet g-gutter-right-3 no-gutter no-gutter@tablet">
-                        <h3 lass="t-style-fpn-s-l-u">Reliable for</h3>
-                        <h3 className="g-gutter-top-1 t-style-fpn-l-r-u"><strong>Agencies</strong></h3>
-                        <p className="g-gutter-top-1">
-                          We’ve been working with agencies since the beginning. Not only do we know what agencies come to expect, we pride ourselves on our reputation for reliability.
-                            </p>
-                      </li>
-                      <li className="gr-6 gr-12@tablet prefix-6 prefix-0@tablet g-gutter-left-3 no-gutter no-gutter@tablet g-gutter-top-2@tablet">
-                        <h3 lass="t-style-fpn-s-l-u">Rapid for</h3>
-                        <h3 className="g-gutter-top-1 t-style-fpn-l-r-u"><strong>Startups</strong></h3>
-                        <p className="g-gutter-top-1">
-                          You or your company get the benefit of years of experience without the constant overhead. We provide you with advise and a crack team of top front-end developers.
-                            </p>
-                      </li>
-                      <li className="gr-6 gr-12@tablet g-gutter-right-3 no-gutter no-gutter@tablet g-gutter-top-2@tablet">
-                        <h3 lass="t-style-fpn-s-l-u">Solid for</h3>
-                        <h3 className="g-gutter-top-1 t-style-fpn-l-r-u"><strong>Established teams</strong></h3>
-                        <p className="g-gutter-top-1">
-                          We help bring to life valuable software products, no matter if the companies are small or big enterprises.
-                            </p>
-                      </li>
-                      <li className="gr-6 gr-12@tablet prefix-6 prefix-0@tablet g-gutter-left-3 no-gutter no-gutter@tablet g-gutter-top-2@tablet">
-                        <h3 lass="t-style-fpn-s-l-u">Helpful for</h3>
-                        <h3 className="g-gutter-top-1 t-style-fpn-l-r-u"><strong>Software houses</strong></h3>
-                        <p className="g-gutter-top-1">
-                          We can provide experienced developers with tech stack you're looking for.
-                            </p>
-                      </li>
-                    </ul>
+          <section>
+            <BgImage
+              title="bgSectionClients"
+              fluid={props.data.bgSectionClients.childImageSharp.fluid}
+              height='700px'
+              className="l-sec g-gutter-top-5 g-gutter-top-5@desktop-small g-gutter-bottom-5 g-gutter-bottom-5@desktop-small"
+              children={
+                <div className="l-row">
+                  <div className="l-inner">
+                    <div className="row">
+                      <div className="l-sec__box gr-12 no-gutter u-paint-4">
+                        <ul>
+                          <li className="gr-6 gr-12@tablet g-gutter-right-3 no-gutter no-gutter@tablet">
+                            <h3 lass="t-style-fpn-s-l-u">Reliable for</h3>
+                            <h3 className="g-gutter-top-1 t-style-fpn-l-r-u"><strong>Agencies</strong></h3>
+                            <p className="g-gutter-top-1">
+                              We’ve been working with agencies since the beginning. Not only do we know what agencies come to expect, we pride ourselves on our reputation for reliability.
+                              </p>
+                          </li>
+                          <li className="gr-6 gr-12@tablet prefix-6 prefix-0@tablet g-gutter-left-3 no-gutter no-gutter@tablet g-gutter-top-2@tablet">
+                            <h3 lass="t-style-fpn-s-l-u">Rapid for</h3>
+                            <h3 className="g-gutter-top-1 t-style-fpn-l-r-u"><strong>Startups</strong></h3>
+                            <p className="g-gutter-top-1">
+                              You or your company get the benefit of years of experience without the constant overhead. We provide you with advise and a crack team of top front-end developers.
+                              </p>
+                          </li>
+                          <li className="gr-6 gr-12@tablet g-gutter-right-3 no-gutter no-gutter@tablet g-gutter-top-2@tablet">
+                            <h3 lass="t-style-fpn-s-l-u">Solid for</h3>
+                            <h3 className="g-gutter-top-1 t-style-fpn-l-r-u"><strong>Established teams</strong></h3>
+                            <p className="g-gutter-top-1">
+                              We help bring to life valuable software products, no matter if the companies are small or big enterprises.
+                              </p>
+                          </li>
+                          <li className="gr-6 gr-12@tablet prefix-6 prefix-0@tablet g-gutter-left-3 no-gutter no-gutter@tablet g-gutter-top-2@tablet">
+                            <h3 lass="t-style-fpn-s-l-u">Helpful for</h3>
+                            <h3 className="g-gutter-top-1 t-style-fpn-l-r-u"><strong>Software houses</strong></h3>
+                            <p className="g-gutter-top-1">
+                              We can provide experienced developers with tech stack you're looking for.
+                              </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              }
+            />
           </section>
 
           <section className="l-sec g-gutter-top-6 g-gutter-top-5@desktop-small g-gutter-bottom-6 g-gutter-bottom-5@desktop-small">
@@ -506,6 +509,7 @@ const IndexPage = (props) => (
                                     <BgImage
                                       title="bgCaseGatedtalent"
                                       fluid={props.data.bgCaseGatedtalent.childImageSharp.fluid}
+                                      height='400px'
                                     />
 
                                   </div>
@@ -532,6 +536,7 @@ const IndexPage = (props) => (
                                     <BgImage
                                       title="bgCaseMnfRect"
                                       fluid={props.data.bgCaseMnfRect.childImageSharp.fluid}
+                                      height='400px'
                                     />
                                   </div>
                                   <div className="c-portfolio-teaser__main">
@@ -557,6 +562,7 @@ const IndexPage = (props) => (
                                     <BgImage
                                       title="bgCaseBlockchainRect"
                                       fluid={props.data.bgCaseBlockchainRect.childImageSharp.fluid}
+                                      height='400px'
                                     />
                                   </div>
                                   <div className="c-portfolio-teaser__main">
@@ -582,6 +588,7 @@ const IndexPage = (props) => (
                                     <BgImage
                                       title="bgCaseAcrfRect"
                                       fluid={props.data.bgCaseAcrfRect.childImageSharp.fluid}
+                                      height='400px'
                                     />
                                   </div>
                                   <div className="c-portfolio-teaser__main">
@@ -607,6 +614,7 @@ const IndexPage = (props) => (
                                     <BgImage
                                       title="bgCaseGatedtalentwebsiteRect"
                                       fluid={props.data.bgCaseGatedtalentwebsiteRect.childImageSharp.fluid}
+                                      height='400px'
                                     />
                                   </div>
                                   <div className="c-portfolio-teaser__main">
@@ -630,9 +638,10 @@ const IndexPage = (props) => (
                                 <a className="c-portfolio-teaser__inner u-paint-4" href="outside-the-lines.html">
                                   <div className="c-portfolio-teaser__media">
                                     <BgImage
-                                  title="bgCaseOtl"
-                                  fluid={props.data.bgCaseOtl.childImageSharp.fluid}
-                                /></div>
+                                      title="bgCaseOtl"
+                                      fluid={props.data.bgCaseOtl.childImageSharp.fluid}
+                                      height='400px'
+                                    /></div>
                                   <div className="c-portfolio-teaser__main">
                                     <h2 className="t-style-fpn-l-b-u">
                                       Outside The Lines
