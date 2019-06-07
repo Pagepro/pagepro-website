@@ -8,13 +8,6 @@ const activeLink = {
 const Navigation = () => (
     <ul className="c-main-nav ui-hover-opacity">
         <li className="c-main-nav__item ">
-            <Link className="c-link-default u-text-centered@mobile" activeStyle={activeLink}
-                to="/"
-            >
-                Home
-                </Link>
-        </li>
-        <li className="c-main-nav__item ">
             <Link className="c-link-default u-text-centered@mobile" activeStyle={activeLink} partiallyActive={true}
                 to="/works"
             >
