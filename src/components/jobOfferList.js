@@ -36,6 +36,21 @@ class JobOfferList extends Component {
         const jobs = this.state.jobList.map(job => <JobOffer key={job.id} job={job} />)
         return (
             <>
+                <section className="l-sec g-gutter-top-5 g-gutter-top-5@desktop-small g-gutter-bottom-5 g-gutter-bottom-2@desktop-small">
+                    <div className="l-row">
+                        <div className="l-inner">
+                            <div className="row">
+                                <div className="l-sec__box gr-12 no-gutter">
+                                    <div className="l-sec__box__head">
+                                        <h3 className="t-style-fpn-l-r-u">
+                                            Open <strong>positions</strong> in Białystok
+                                            </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 {jobs}
             </>
         );
