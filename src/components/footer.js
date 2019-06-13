@@ -1,5 +1,6 @@
 import React from 'react';
 import Newsletter from '../components/newsletter'
+import { Link } from 'gatsby'
 
 const Footer = () => {
     return (
@@ -45,22 +46,19 @@ const Footer = () => {
                                     <div className="c-info-box__content g-gutter-top-1">
                                         <ul>
                                             <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="index.html">Home</a>
+                                                <Link className="u-paint-4 u-default-link-anim" to="/">Home</Link>
                                             </li>
                                             <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="about.html">About</a>
+                                                <Link className="u-paint-4 u-default-link-anim" to="/about">About</Link>
                                             </li>
                                             <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="our-work.html">Our Work</a>
+                                                <Link className="u-paint-4 u-default-link-anim" to="/works">Our Work</Link>
                                             </li>
                                             <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="services.html">Services</a>
+                                                <Link className="u-paint-4 u-default-link-anim" to="/services">Services</Link>
                                             </li>
                                             <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="agencies.html">For Agencies</a>
-                                            </li>
-                                            <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="contact.html">Contact</a>
+                                                <Link className="u-paint-4 u-default-link-anim" to="contact">Contact</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -106,8 +104,8 @@ const Footer = () => {
                 </p>
                         </div>
                         <div className="g-gr gr-4 gr-12@mobile no-gutter-left no-gutter@tablet g-gutter-top-1@mobile u-text-centered@mobile">
-                            <a className="u-paint-4 u-default-link-anim" href="cookies.html">Cookies Policy</a>
-                            <a className="u-paint-4 u-default-link-anim g-spacing-left-1" href="privacy.html">Privacy Policy</a>
+                            <Link className="u-paint-4 u-default-link-anim" to="/cookies">Cookies Policy</Link>
+                            <Link className="u-paint-4 u-default-link-anim g-spacing-left-1" to="/privacy-policy">Privacy Policy</Link>
                         </div>
                         <div className="l-foot__box g-gr gr-4 gr-12@mobile gr-adapt@tablet no-gutter-right no-gutter@tablet">
                             <ul className="c-socials-list ui-hover-opacity g-gutter-top-2@mobile">

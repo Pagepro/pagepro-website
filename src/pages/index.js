@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Footer from '../components/footer'
 import BgImage from '../components/bgImage'
 import Header from '../components/header'
@@ -59,13 +59,13 @@ const IndexPage = (props) => (
                     <div className="c-cta-box__actions">
                       <p className="u-text-centered@tablet">
                         <span className="g-gr gr-adapt no-gutter gr-12@mobile-small no-gutter@mobile-small">
-                          <a className="c-cta-link s-btn-style-1 g-spacing-bottom-1@mobile-small" href="our-work.html">
+                          <Link className="c-cta-link s-btn-style-1 g-spacing-bottom-1@mobile-small" to='/works'>
                             <span className="c-label">Show featured projects</span>
-                          </a>
+                          </Link>
                         </span>
                         <span className="g-gr gr-adapt no-gutter gr-12@mobile-small no-gutter@mobile-small wrap@mobile-small">
                           <span className="t-style-fpn-m-ri g-spacing-left-1 g-spacing-left-0@mobile-small">or</span>
-                          <a className="c-link-default t-style-fpn-s-b u-line-h-m u-paint-4 u-paint-1-on-hover u-decor-bottom--alt u-decor-bottom-hover g-spacing-left-1 g-spacing-left-0@mobile-small g-spacing-top-1@mobile-small" href="services.html">View services</a>
+                          <Link className="c-link-default t-style-fpn-s-b u-line-h-m u-paint-4 u-paint-1-on-hover u-decor-bottom--alt u-decor-bottom-hover g-spacing-left-1 g-spacing-left-0@mobile-small g-spacing-top-1@mobile-small" to="/services">View services</Link>
                         </span>
                       </p>
                     </div>
@@ -283,9 +283,9 @@ const IndexPage = (props) => (
                       </ul>
                     </div>
                     <div className="l-sec__box__actions l-sec__box__actions--alt g-gutter-top-4">
-                      <a className="c-cta-link s-btn-style-3" href="services.html">
+                      <Link className="c-cta-link s-btn-style-3" to="/services">
                         <span className="c-label">View services</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -409,9 +409,9 @@ const IndexPage = (props) => (
                       </ul>
                     </div>
                     <div className="l-sec__box__actions l-sec__box__actions--alt g-gutter-top-4">
-                      <a className="c-cta-link s-btn-style-3" href="services.html">
+                      <Link className="c-cta-link s-btn-style-3" href="/services">
                         <span className="c-label">View services</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -600,9 +600,9 @@ const IndexPage = (props) => (
                       </div>
                     </div>
                     <div className="l-sec__box__actions l-sec__box__actions--alt g-gutter-top-2">
-                      <a className="c-cta-link s-btn-style-1 u-bg-2 u-bg-2-on-hover" href="our-work.html">
+                      <Link className="c-cta-link s-btn-style-1 u-bg-2 u-bg-2-on-hover" href="/our-work">
                         <span className="c-label">More projects</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

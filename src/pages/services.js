@@ -2,7 +2,7 @@ import React from "react"
 import Header from '../components/header';
 import Footer from '../components/footer';
 import BgImage from '../components/bgImage'
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import storybook from '../../static/img/storybook.svg'
 
 const Services = (props) => (
@@ -27,12 +27,12 @@ const Services = (props) => (
                 <Header />
 
                 <main className="l-main">
-                    <div className="l-hero l-hero--alt l-hero--small l-hero--with-overlay u-bg-2 u-paint-4">
-                        <BgImage
-                            title="bgServices"
-                            fluid={props.data.bgServices.childImageSharp.fluid}
-                            height='500px'
-                        />
+
+                    <BgImage
+                        title="bgServices"
+                        fluid={props.data.bgServices.childImageSharp.fluid}
+                        height='819px'
+                        className="l-hero l-hero--alt l-hero--small l-hero--with-overlay  u-paint-4" >
                         <div className="c-video-box" data-video data-poster="./media/services-poster.jpg" data-srcs="./media/services.mp4,./media/services.webm"></div>
                         <div className="l-inner g-gutter-top-10 g-gutter-top-6@tablet">
                             <div className="l-hero__head row row-align-bottom g-gutter-top-8 g-gutter-top-3@mobile">
@@ -42,14 +42,14 @@ const Services = (props) => (
                         </h1>
                                 </div>
                             </div>
-                            <div className="l-hero__content row row-align-top g-gutter-top-5">
-                                <div className="l-hero__content__box gr-12 no-gutter">
+                            <div className="l-hero__content row row-align-top g-gutter-top-5"  >
+                                <div className="l-hero__content__box gr-12 no-gutter"  >
                                     <ul className="c-service-boxes-list js-services-list g-spacing-bottom-minus-8">
-                                        <li className="c-service-boxes-list__item c-decors-parent">
+                                        <li className="c-service-boxes-list__item c-decors-parent " style={{ width: '285px', height: '285px' }} >
                                             <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
                                                 <span className="c-angle-decor c-angle-decor--right c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
                                             </span>
-                                            <div className="c-service-box">
+                                            <div className="c-service-box" >
                                                 <a className="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--front-end">
                                                     <span className="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
                                                         <span className="c-mouse-follow-hover-box__horizontal"></span>
@@ -69,7 +69,7 @@ const Services = (props) => (
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent">
+                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
                                             <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
                                                 <span className="c-angle-decor c-angle-decor--left c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
                                                 <span className="c-angle-decor c-angle-decor--right c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4 hide@mobile-medium"></span>
@@ -93,7 +93,7 @@ const Services = (props) => (
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent">
+                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
                                             <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
                                                 <span className="c-angle-decor c-angle-decor--left c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4 hide@mobile-medium"></span>
                                                 <span className="c-angle-decor c-angle-decor--right c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
@@ -120,7 +120,7 @@ const Services = (props) => (
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent">
+                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
                                             <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
                                                 <span className="c-angle-decor c-angle-decor--left c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
                                                 <span className="c-angle-decor c-angle-decor--left c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4 hide show@mobile-medium"></span>
@@ -244,7 +244,7 @@ const Services = (props) => (
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </BgImage>
                     <section className="l-sec g-gutter-top-8" id="service--front-end">
                         <div className="l-row">
                             <div className="l-inner u-decor-bottom u-paint-5">
@@ -635,9 +635,9 @@ const Services = (props) => (
                                                     </span>
                                                 </div>
                                             </div>
-                                            <a className="c-cta-link s-btn-style-3" href="contact.html">
+                                            <Link className="c-cta-link s-btn-style-3" to="/contact">
                                                 <span className="c-label">Contact Us</span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

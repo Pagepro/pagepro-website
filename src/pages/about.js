@@ -2,6 +2,8 @@ import React from "react"
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Instagram from '../components/instagram'
+import BgImage from '../components/bgImage'
+import { Link } from 'gatsby'
 
 function importAll(r) {
     let images = {};
@@ -11,29 +13,22 @@ function importAll(r) {
 
 const images = importAll(require.context('../../static/img/', false, /\.(jpg|svg)$/));
 
-const About = () => (
+const About = (props) => (
     <>
-        {/* <div className="page-loader" style="transform: translateX(-100%);">
-    <div className="logo">
-        <div className="loader-circle"></div>
-        <div className="loader-line-mask">
-        <div className="loader-line"></div>
-        </div>
-        <span className="o-object-wrapper">
-            <object type="image/svg+xml" data="static/img/logo_pagepro_loader.svg">Pagepro</object>
-        </span>
-    </div>
-</div>
-<div className="curtain"></div>
-<script>document.querySelector('body').classNameList.add('loading-state');</script> */}
         <div id="page-content">
 
             <div className="p-about">
 
                 <Header />
 
+
+
                 <main className="l-main">
-                    <div className="l-hero l-hero--alt l-hero--small l-hero--with-overlay l-hero--with-overlay--top u-bg-2 u-paint-4" style={{ backgroundImage: 'url(static/img/bg_services.jpg)' }}>
+                    <BgImage
+                        title="bgAgencies"
+                        fluid={props.data.bgServices.childImageSharp.fluid}
+                        height='369px'
+                        className="l-hero l-hero--alt l-hero--small l-hero--with-overlay l-hero--with-overlay--top u-paint-4" >
                         <div className="l-inner g-gutter-top-10 g-gutter-bottom-5 g-gutter-bottom-3@mobile">
                             <div className="l-hero__head row row-align-bottom g-gutter-top-8 g-gutter-top-2@mobile">
                                 <div className="l-hero__head__box">
@@ -47,7 +42,7 @@ const About = () => (
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </BgImage>
                     <div className="l-sec">
                         <div className="l-row u-decor-bottom u-paint-5">
                             <div className="l-inner u-paint-2">
@@ -550,9 +545,9 @@ const About = () => (
                                                     </span>
                                                 </div>
                                             </div>
-                                            <a className="c-cta-link s-btn-style-3" href="contact.html">
+                                            <Link className="c-cta-link s-btn-style-3" to="/contact">
                                                 <span className="c-label">Contact Us</span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -569,5 +564,16 @@ const About = () => (
     </>
 )
 
+export const aboutQuery = graphql`
+    query {
+        bgServices: file(relativePath: { eq: "bg_services.jpg" }) {
+            childImageSharp {
+              fluid(quality: 80, maxWidth: 4160) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+    `
 
 export default About
