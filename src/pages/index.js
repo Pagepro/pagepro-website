@@ -409,7 +409,7 @@ const IndexPage = (props) => (
                       </ul>
                     </div>
                     <div className="l-sec__box__actions l-sec__box__actions--alt g-gutter-top-4">
-                      <Link className="c-cta-link s-btn-style-3" href="/services">
+                      <Link className="c-cta-link s-btn-style-3" to="/services">
                         <span className="c-label">View services</span>
                       </Link>
                     </div>
@@ -600,7 +600,7 @@ const IndexPage = (props) => (
                       </div>
                     </div>
                     <div className="l-sec__box__actions l-sec__box__actions--alt g-gutter-top-2">
-                      <Link className="c-cta-link s-btn-style-1 u-bg-2 u-bg-2-on-hover" href="/our-work">
+                      <Link className="c-cta-link s-btn-style-1 u-bg-2 u-bg-2-on-hover" to="/works">
                         <span className="c-label">More projects</span>
                       </Link>
                     </div>

@@ -31,5 +31,8 @@ module.exports = {
         instagram_id: process.env.GATSBY_INSTAGRAM_ID,
       },
     },
+    `gatsby-plugin-meta-redirect` // make sure to put last in the array
   ]
 }
+
+

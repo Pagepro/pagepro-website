@@ -1,0 +1,1 @@
+createRedirect({ fromPath: 'http://localhost:8000/works', toPath: 'http://localhost:8000/services', isPermanent: true });

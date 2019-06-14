@@ -1,4 +1,4 @@
-exports.createPages = ({ actions: { createPage } }) => {
+exports.createPages = ({ actions: { createPage, createRedirect } }) => {
     const jobsDetails = require("./job-offers_slug.json")
     jobsDetails.forEach(jobDetails => {
         createPage({
@@ -16,6 +16,21 @@ exports.createPages = ({ actions: { createPage } }) => {
             },
         })
     })
+
+    let redirectionsTab = [
+        { f: `/career.html`, t: `/career` }
+    ]
+
+    redirectionsTab.forEach(({ f, t }) => {
+        createRedirect({
+            fromPath: f,
+            toPath: t,
+            isPernament: true,
+            redirectInBrowser: true,
+        })
+        console.log('\nRedirecting:\n' + f + '\nTo:\n' + t + '\n');
+    })
+
 }
 
 

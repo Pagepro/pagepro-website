@@ -81,7 +81,7 @@ const Works = (props) => (
                                                         <BgImage
                                                             title="bgCaseGatedtalentThumb"
                                                             fluid={props.data.bgCaseGatedtalentThumb.childImageSharp.fluid}
-                                                            height='600px'
+
                                                         />
                                                     </div>
                                                     <div class="c-portfolio-teaser__main">
@@ -112,7 +112,6 @@ const Works = (props) => (
                                                         <BgImage
                                                             title="bgCaseMnfThumb"
                                                             fluid={props.data.bgCaseMnfThumb.childImageSharp.fluid}
-                                                            height='600px'
                                                         />
                                                     </div>
                                                     <div class="c-portfolio-teaser__main">
@@ -142,7 +141,6 @@ const Works = (props) => (
                                                         <BgImage
                                                             title="bgCaseBlockchainThumb"
                                                             fluid={props.data.bgCaseBlockchainThumb.childImageSharp.fluid}
-                                                            height='600px'
                                                         />
                                                     </div>
                                                     <div className="c-portfolio-teaser__main">
@@ -172,7 +170,6 @@ const Works = (props) => (
                                                         <BgImage
                                                             title="bgCaseCryptoThumb"
                                                             fluid={props.data.bgCaseCryptoThumb.childImageSharp.fluid}
-                                                            height='600px'
                                                         />
                                                     </div>
                                                     <div className="c-portfolio-teaser__main">
@@ -202,7 +199,6 @@ const Works = (props) => (
                                                         <BgImage
                                                             title="bgCase310Thumb"
                                                             fluid={props.data.bgCase310Thumb.childImageSharp.fluid}
-                                                            height='600px'
                                                         />
                                                     </div>
                                                     <div className="c-portfolio-teaser__main">
