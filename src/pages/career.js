@@ -4,6 +4,8 @@ import Footer from '../components/footer'
 import JobOfferList from '../components/jobOfferList';
 import Instagram from '../components/instagram';
 import BgImage from '../components/bgImage';
+import { graphql } from "gatsby";
+
 
 function importAll(r) {
     let images = {};

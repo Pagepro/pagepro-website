@@ -2,8 +2,7 @@ import React from "react"
 import Header from '../components/header';
 import Footer from '../components/footer';
 import BgImage from '../components/bgImage';
-import { Link } from 'gatsby'
-
+import { graphql, Link } from "gatsby";
 
 const PrivacyPolicy = (props) => (
     <>
