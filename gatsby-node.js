@@ -18,7 +18,11 @@ exports.createPages = ({ actions: { createPage, createRedirect } }) => {
     })
 
     let redirectionsTab = [
-        { f: `/career.html`, t: `/career` }
+        { f: `/index.html`, t: `/` },
+        { f: `/our-work.html`, t: `/works` },
+        { f: `/services.html`, t: `/services` },
+        { f: `/about.html`, t: `/about` },
+        { f: `/career.html`, t: `/career` },
     ]
 
     redirectionsTab.forEach(({ f, t }) => {
