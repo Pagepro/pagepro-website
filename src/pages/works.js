@@ -652,7 +652,7 @@ const Works = (props) => (
 
 
 export const fluidWorksBgImage = graphql`
-fragment fluidBgImage on File {
+fragment fluidWorksBgImage on File {
             childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
             ...GatsbyImageSharpFluid
@@ -665,19 +665,19 @@ fragment fluidBgImage on File {
 export const worksQuery = graphql`
 query {
             bgCaseGatedtalentThumb: file(relativePath: {eq: "bg_case-gatedtalent-thumb.jpg" }) {
-            ...fluidBgImage
+            ...fluidWorksBgImage
         }
             bgCaseMnfThumb: file(relativePath: {eq: "bg_case-mnf-thumb.jpg" }) {
-            ...fluidBgImage
+            ...fluidWorksBgImage
         }
             bgCaseBlockchainThumb: file(relativePath: {eq: "bg-case-blockchain-thumb.jpg" }) {
-                ...fluidBgImage
+                ...fluidWorksBgImage
         }
             bgCaseCryptoThumb: file(relativePath: {eq: "bg-case-crypto-thumb.jpg" }) {
-                ...fluidBgImage
+                ...fluidWorksBgImage
         }
             bgCase310Thumb: file(relativePath: {eq: "bg-case-310-thumb.jpg" }) {
-                ...fluidBgImage
+                ...fluidWorksBgImage
         }
         }
         `

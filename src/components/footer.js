@@ -70,25 +70,25 @@ const Footer = () => {
                                     <div className="c-info-box__content g-gutter-top-1">
                                         <ul>
                                             <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="react-development.html">React Developers</a>
+                                                <Link className="u-paint-4 u-default-link-anim" to="/services/react-development">React Developers</Link>
                                             </li>
                                             <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="react-native-development.html">React Native Developers</a>
+                                                <Link className="u-paint-4 u-default-link-anim" to="/services/react-native-development">React Native Developers</Link>
                                             </li>
                                             <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="nodejs-development.html">Node.js Developers</a>
+                                                <Link className="u-paint-4 u-default-link-anim" to="/services/nodejs-development">Node.js Developers</Link>
                                             </li>
                                             <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="frontend-development.html">Front-end Developers</a>
+                                                <Link className="u-paint-4 u-default-link-anim" to="/services/frontend-development">Front-end Developers</Link>
                                             </li>
                                             <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="wordpress-development.html">WordPress Developers</a>
+                                                <Link className="u-paint-4 u-default-link-anim" to="/services/wordpress-development">WordPress Developers</Link>
                                             </li>
                                             <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="storybook-development.html">Storybook Developers</a>
+                                                <Link className="u-paint-4 u-default-link-anim" to="/services/storybook-development">Storybook Developers</Link>
                                             </li>
                                             <li>
-                                                <a className="u-paint-4 u-default-link-anim" href="services.html#service--dedicated-teams">Dedicated Front-end Teams</a>
+                                                <Link className="u-paint-4 u-default-link-anim" to="/services#service--dedicated-teams">Dedicated Front-end Teams</Link>
                                             </li>
                                         </ul>
                                     </div>

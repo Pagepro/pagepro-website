@@ -3,6 +3,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import Instagram from "../components/instagram"
 import BgImage from '../components/bgImage'
+import { graphql } from 'gatsby'
 
 class AboutJob extends Component {
 

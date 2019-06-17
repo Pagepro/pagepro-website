@@ -144,7 +144,7 @@ const Services = (props) => (
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent">
+                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
                                             <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
                                                 <span className="c-angle-decor c-angle-decor--right c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
                                                 <span className="c-angle-decor c-angle-decor--right c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4 hide show@mobile-medium"></span>
@@ -168,7 +168,7 @@ const Services = (props) => (
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent">
+                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
                                             <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
                                                 <span className="c-angle-decor c-angle-decor--left c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
                                                 <span className="c-angle-decor c-angle-decor--left c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4 hide show@mobile-medium"></span>
@@ -193,7 +193,7 @@ const Services = (props) => (
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent">
+                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
                                             <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
                                                 <span className="c-angle-decor c-angle-decor--left c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4 hide@mobile-medium"></span>
                                                 <span className="c-angle-decor c-angle-decor--right c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
@@ -217,7 +217,7 @@ const Services = (props) => (
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent">
+                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
                                             <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
                                                 <span className="c-angle-decor c-angle-decor--left c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
                                             </span>
@@ -275,9 +275,9 @@ const Services = (props) => (
                                     </p>
                                             </div>
                                             <div className="l-sec__box__actions l-sec__box__actions--alt g-gutter-top-3">
-                                                <a className="c-cta-link s-btn-style-3" href="frontend-development.html">
+                                                <Link className="c-cta-link s-btn-style-3" to="services/frontend-development">
                                                     <span className="c-label">Read more</span>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -318,9 +318,9 @@ const Services = (props) => (
                                                 </ul>
                                             </div>
                                             <div className="l-sec__box__actions l-sec__box__actions--alt g-gutter-top-3">
-                                                <a className="c-cta-link s-btn-style-3" href="react-development.html">
+                                                <Link className="c-cta-link s-btn-style-3" to="/services/react-development">
                                                     <span className="c-label">Read more</span>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -357,9 +357,9 @@ const Services = (props) => (
                                     </p>
                                             </div>
                                             <div className="l-sec__box__actions l-sec__box__actions--alt g-gutter-top-3">
-                                                <a className="c-cta-link s-btn-style-3" href="react-native-development.html">
+                                                <Link className="c-cta-link s-btn-style-3" to="/services/react-native-development">
                                                     <span className="c-label">Read more</span>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -393,9 +393,9 @@ const Services = (props) => (
                                     </p>
                                             </div>
                                             <div className="l-sec__box__actions l-sec__box__actions--alt g-gutter-top-3">
-                                                <a className="c-cta-link s-btn-style-3" href="nodejs-development.html">
+                                                <Link className="c-cta-link s-btn-style-3" to="/services/nodejs-development">
                                                     <span className="c-label">Read more</span>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -515,9 +515,9 @@ const Services = (props) => (
                                     </p>
                                             </div>
                                             <div className="l-sec__box__actions l-sec__box__actions--alt g-gutter-top-3">
-                                                <a className="c-cta-link s-btn-style-3" href="wordpress-development.html">
+                                                <Link className="c-cta-link s-btn-style-3" to="/services/wordpress-development">
                                                     <span className="c-label">Read more</span>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -554,9 +554,9 @@ const Services = (props) => (
                                     </p>
                                             </div>
                                             <div className="l-sec__box__actions l-sec__box__actions--alt g-gutter-top-3">
-                                                <a className="c-cta-link s-btn-style-3" href="storybook-development.html">
+                                                <Link className="c-cta-link s-btn-style-3" to="/services/storybook-development">
                                                     <span className="c-label">Read more</span>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

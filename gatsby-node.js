@@ -17,25 +17,16 @@ exports.createPages = ({ actions: { createPage, createRedirect } }) => {
         })
     })
 
-    let redirectionsTab = [
-        { f: `pagepro.co/index.html`, t: `pagepro.co/` },
-        { f: `/our-work.html`, t: `/works` },
-        { f: `/services.html`, t: `/services` },
-        { f: `/about.html`, t: `/about` },
-        { f: `/career.html`, t: `/career` },
-        { f: `/contact.html`, t: `/contact` },
-    ]
+    const redirect = require('./src/redirections.js');
 
-    redirectionsTab.forEach(({ f, t }) => {
+    redirect.redirectionsTab.forEach(({ f, t }) => {
         createRedirect({
             fromPath: f,
             toPath: t,
             isPernament: true,
             redirectInBrowser: true,
         })
-        console.log('\nRedirecting:\n' + f + '\nTo:\n' + t + '\n');
     })
-
 }
 
 

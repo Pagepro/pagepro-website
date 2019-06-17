@@ -17,7 +17,7 @@ const JobOffer = (props) => {
 
     return (
         <>
-            <section className="l-sec">
+            {position ? <section className="l-sec">
                 <div className="l-row">
                     <div className="l-inner u-decor-bottom u-paint-5">
                         <div className="row row-align-between g-gutter-top-5 g-gutter-bottom-5 u-paint-2">
@@ -59,17 +59,7 @@ const JobOffer = (props) => {
                         </div>
                     </div>
                 </div>
-            </section>
-            {/* <h1>{position}</h1>
-            <p>{short_description}</p>
-            <p>{tagLine}</p>
-            {minimum_amount ? <p className="u-paint-1">{`Salary: ${minimum_amount} - ${maximum_amount} pln net`}</p> : null}
-            <Link
-                target="_blank"
-                className="c-cta-link s-btn-style-3" 
-                to={`/career/${slug}`}>
-                <span className="c-label">More Details</span>
-        </Link> */}
+            </section> : null}
         </>
     );
 }
