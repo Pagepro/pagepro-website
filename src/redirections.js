@@ -1,3 +1,6 @@
+// f - from, old URL
+// t - to, new URL
+
 let redirectionsTab = [
     { f: `pagepro.co/index.html`, t: `pagepro.co/` },
     { f: `/our-work.html`, t: `/works` },

@@ -9,7 +9,7 @@ const Parent = styled.div`
 `;
 
 const FakeBgImage = styled(Img)`
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -18,7 +18,7 @@ const FakeBgImage = styled(Img)`
 
   & > img {
     object-fit: cover !important;
-    object-position: 0% 0% !important;
+    object-position: 50% 50% !important;
     font-family: "object-fit: cover !important; object-position: 0% 0% !important;";
   }
 

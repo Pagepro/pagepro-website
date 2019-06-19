@@ -31,7 +31,7 @@ const Services = (props) => (
                     <BgImage
                         title="bgServices"
                         fluid={props.data.bgServices.childImageSharp.fluid}
-                        height='819px'
+                        height='130vh'
                         className="l-hero l-hero--alt l-hero--small l-hero--with-overlay  u-paint-4" >
                         <div className="c-video-box" data-video data-poster="./media/services-poster.jpg" data-srcs="./media/services.mp4,./media/services.webm"></div>
                         <div className="l-inner g-gutter-top-10 g-gutter-top-6@tablet">

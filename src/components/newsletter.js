@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import addToMailchimp from "gatsby-plugin-mailchimp";
 
 
@@ -17,22 +16,17 @@ class Newsletter extends Component {
         })
     }
 
-
     handleSubmit = e => {
         e.preventDefault();
         addToMailchimp(this.state.email)
-            .then(data => {
-                if (data.msg.includes('already')) {
-                    this.setState({
-                        email: '',
-                        msg: 'You are already subscribed our site.'
-                    })
-                } else {
-                    this.setState({
-                        email: '',
-                        msg: data.msg,
-                    })
-                }
+            .then(({ result, msg }) => {
+                const message = result === 'error' ? 'You are already subscribed our site.' : msg
+
+                this.setState({
+                    email: '',
+                    msg: message,
+                })
+
 
             })
     }

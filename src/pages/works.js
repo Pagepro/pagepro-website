@@ -1,6 +1,6 @@
 import React from "react"
 import Header from '../components/header';
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import BgImage from '../components/bgImage'
 
 function importAll(r) {
@@ -76,7 +76,7 @@ const Works = (props) => (
 
                                         <li class="c-portfolio-teasers-list__item ">
                                             <div class="c-portfolio-teaser">
-                                                <a class="c-portfolio-teaser__inner u-paint-4" href="gatedtalent.html" data-animate-in="true">
+                                                <Link class="c-portfolio-teaser__inner u-paint-4" to="works/gatedtalent" data-animate-in="true">
                                                     <div class="c-portfolio-teaser__media">
                                                         <BgImage
                                                             title="bgCaseGatedtalentThumb"
@@ -101,13 +101,13 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li class="c-portfolio-teasers-list__item ">
                                             <div class="c-portfolio-teaser">
-                                                <a class="c-portfolio-teaser__inner u-paint-4" href="my-name-flow.html" data-animate-in="true">
+                                                <Link class="c-portfolio-teaser__inner u-paint-4" to="/works/my-name-flow" data-animate-in="true">
                                                     <div class="c-portfolio-teaser__media">
                                                         <BgImage
                                                             title="bgCaseMnfThumb"
@@ -130,13 +130,13 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="blockchain-agreements.html" data-animate-in="true">
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/blockchain-agreements" data-animate-in="true">
                                                     <div className="c-portfolio-teaser__media">
                                                         <BgImage
                                                             title="bgCaseBlockchainThumb"
@@ -159,7 +159,7 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
@@ -648,7 +648,8 @@ const Works = (props) => (
         </div>
 
 
-    </>)
+    </>
+)
 
 
 export const fluidWorksBgImage = graphql`
