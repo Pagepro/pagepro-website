@@ -12,28 +12,26 @@ function importAll(r) {
 
 const images = importAll(require.context('../../../static/img/', false, /\.(jpg|svg)$/));
 
-const MyNameFlow = (props) => (
+const CryptocurrencyArbitrage = (props) => (
     <>
         <div id="page-content">
 
             <div class="p-case-study">
 
-
                 <Header />
 
                 <main class="l-main">
                     <BgImage
-                        title="bgCaseMnf"
-                        fluid={props.data.bgCaseMnf.childImageSharp.fluid}
+                        title="bgCaseCrypto"
+                        fluid={props.data.bgCaseCrypto.childImageSharp.fluid}
                         className="l-hero l-hero--alt l-hero--small l-hero--with-overlay  u-paint-4"
-                        height='100vh'
-                    >
+                        height='100vh'>
                         <div class="l-inner g-gutter-top-10 g-gutter-bottom-8">
                             <div class="l-hero__head row g-gutter-top-8 g-gutter-top-0@mobile">
                                 <div class="l-hero__head__box">
                                     <h2 class="t-style-fpn-xxl-b-u">
-                                        MyNameFlow
-                                    </h2>
+                                        Cryptocurrency arbitrage monitor
+                            </h2>
                                 </div>
                             </div>
                             <div class="l-hero__foot row">
@@ -62,20 +60,15 @@ const MyNameFlow = (props) => (
                                     <div class="l-sec__box u-paint-1 t-style-fpn-l-r gr-5 gr-12@mobile no-gutter-left no-gutter@mobile">
                                         <div class="l-sec__box__content">
                                             <p class="u-line-h-s">
-                                                <strong>MyNameFlow</strong> is a <strong>React</strong> Automated Follow-Up JavaScript web application for Financial Professionals.
-                                            </p>
+                                                We delivered ReactJS JavaScript Single Page Application that is checking various cryptocurrencies’ spread between different cryptocurrency exchanges, which is called an arbitrage.
+                                </p>
                                         </div>
                                     </div>
                                     <div class="l-sec__box gr-6 gr-12@mobile no-gutter-right no-gutter@mobile g-spacing-top-3@mobile">
                                         <div class="l-sec__box__content">
                                             <p>
-                                                <strong>MyNameFlow</strong> is an application for <strong>financial insurers</strong>. The app is used to <strong>manage their clients</strong>.
-                                            </p>
-                                            <p class="g-gutter-top-1">
-                                                Using it insurer can <strong>add new clients</strong>,
-                                                <strong>send</strong> them <strong>newsletter emails</strong> and <strong>observe</strong> their <strong>life events</strong>.
-                                                It is helpful to be in constant contact with the client.
-                                            </p>
+                                                The idea of the application was to built tool for monitor (mentioned before) arbitrage in real time. Moreover, it needed to have additional feature - saving records of highest daily differences.
+                                </p>
                                         </div>
                                     </div>
                                 </div>
@@ -107,8 +100,8 @@ const MyNameFlow = (props) => (
                                     <div class="l-sec__box gr-5 gr-12@mobile no-gutter-left no-gutter@mobile">
                                         <div class="l-sec__box__head">
                                             <h3 class="t-style-fpn-l-r-u">
-                                                MyNameFlow <strong class="u-paint-1">Explainer Video</strong>
-                                            </h3>
+                                                CRYPTOCURRENCY ARBITRAGE
+                                </h3>
                                         </div>
                                     </div>
                                     <div class="l-sec__box gr-6 gr-12@mobile no-gutter-right no-gutter@mobile g-spacing-top-3@mobile">
@@ -133,9 +126,9 @@ const MyNameFlow = (props) => (
                                                 </div>
                                             </div>
                                             <figure class="o-video-wrapper o-video-wrapper--default">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Y4XcmBxOQmg" allowfullscreen></iframe>
+                                                <img src={images['bg-case-crypto-2.jpg']} alt="Cryptocurrency Arbitrage" />
                                             </figure>
-                                            <div class="c-decors-box c-decors-box--alt" aria-hidden="true">
+                                            <div class="c-decors-box c-decors-box--alt g-gutter-bottom-3@mobile" aria-hidden="true">
                                                 <div class="c-decor-wrapper c-decor-wrapper--bottom c-decor-wrapper--left g-gutter-left-2 g-gutter-bottom-2 u-vertical-middle-bottom">
                                                     <span class="o-object-wrapper o-object-wrapper--cropp">
                                                         <object type="image/svg+xml" data={images['shape_4.svg']}>Photoshop trim tool</object>
@@ -148,6 +141,7 @@ const MyNameFlow = (props) => (
                             </div>
                         </div>
                     </section>
+
                     <section class="l-sec">
                         <div class="l-row c-decors-parent">
                             <div class="c-decors-box" aria-hidden="true">
@@ -162,38 +156,48 @@ const MyNameFlow = (props) => (
                                     <div class="l-sec__box gr-12 no-gutter">
                                         <div class="l-sec__box__head">
                                             <h3 class="t-style-fpn-l-r-u">
-                                                MyNameFlow <strong>in numbers</strong>
+                                                Cryptocurrency Arbitrage Monitor <strong>in numbers</strong>
                                             </h3>
                                         </div>
                                         <div class="l-sec__box__content g-gutter-top-5 g-gutter-top-3@desktop-small">
                                             <ul class="c-info-boxes-list c-info-boxes-list--rwd-alt g-spacing-bottom-minus-4 g-spacing-bottom-minus-2@desktop-small">
-                                                <li class="c-info-boxes-list__item c-info-boxes-list__item--counter g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
+                                                <li class="c-info-boxes-list__item c-info-boxes-list__item--expanded g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
                                                     <div class="c-info-box g-gutter-right-3 g-gutter-right-1@mobile">
                                                         <div class="c-info-box__head">
-                                                            <span class="t-style-fpn-s-r-u">Users registered</span>
+                                                            <span class="t-style-fpn-s-r-u">Integrated Exchanges</span>
                                                         </div>
                                                         <div class="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile">
-                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>28746</strong>
+                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>8</strong>
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="c-info-boxes-list__item  c-info-boxes-list__item--counter g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
+                                                <li class="c-info-boxes-list__item  c-info-boxes-list__item--expanded g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
                                                     <div class="c-info-box g-gutter-right-3 g-gutter-right-1@mobile">
                                                         <div class="c-info-box__head">
-                                                            <span class="t-style-fpn-s-r-u">Logins (per day)</span>
+                                                            <span class="t-style-fpn-s-r-u">Watched cryptocurrency pairs</span>
                                                         </div>
                                                         <div class="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile">
-                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>16275</strong>
+                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>16</strong>
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="c-info-boxes-list__item  c-info-boxes-list__item--counter g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
+                                                <li class="c-info-boxes-list__item  c-info-boxes-list__item--expanded g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
                                                     <div class="c-info-box g-gutter-right-3 g-gutter-right-1@mobile">
                                                         <div class="c-info-box__head">
-                                                            <span class="t-style-fpn-s-r-u">Newsletters send (per day)</span>
+                                                            <span class="t-style-fpn-s-r-u">API Requests per second</span>
                                                         </div>
                                                         <div class="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile">
-                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>5624</strong>
+                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>22</strong>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="c-info-boxes-list__item  c-info-boxes-list__item--expanded g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
+                                                    <div class="c-info-box g-gutter-right-3 g-gutter-right-1@mobile">
+                                                        <div class="c-info-box__head">
+                                                            <span class="t-style-fpn-s-r-u">Arbitrage opportunities detected</span>
+                                                        </div>
+                                                        <div class="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile">
+                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>210416</strong>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -224,47 +228,22 @@ const MyNameFlow = (props) => (
                                     <div class="l-sec__box gr-6 gr-12@mobile no-gutter-left no-gutter@mobile">
                                         <div class="l-sec__box__head">
                                             <h3 class="t-style-fpn-l-r-u">
-                                                Requirements
-                                            </h3>
-                                        </div>
-                                        <div class="l-sec__box__content g-gutter-top-5 g-gutter-top-3@desktop-small">
-                                            <p>
-                                                The <strong>first version</strong> of the client application was created in the <strong>BackboneJS</strong> framework.
-                                            </p>
-                                            <p class="g-gutter-top-1">
-                                                In the course of time, it turned out to be inefficient and heavy in maintenance.
-                                                This is a result of the decreasing popularity and number of developers using this framework.
-                                                Problem with the further development has prompted owners to rewrite application for fresh technologies.
-                                            </p>
-                                            <p class="g-gutter-top-1">
-                                                The goal was to create <strong>Single Page Application</strong> and <strong>adapt</strong> it to <strong>mobile devices</strong>.
-                                                In addition, the <strong>application should work faster</strong> and be <strong>easier to develop</strong>, comparing to the previous version.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="l-sec__box gr-6 gr-12@mobile no-gutter-right no-gutter@mobile g-spacing-top-4@mobile">
-                                        <div class="l-sec__box__head">
-                                            <h3 class="t-style-fpn-l-r-u">
                                                 Delivery
-                                            </h3>
+                                </h3>
                                         </div>
                                         <div class="l-sec__box__content g-gutter-top-5 g-gutter-top-3@desktop-small">
                                             <p>
-                                                To create the application We used the one of the newer technologies: <strong>ReactJS library</strong> and <strong>Redux</strong>- to manage data within the application.
-                                            </p>
+                                                Our team was made up of two React Developers - <strong>Tomasz</strong> and <strong>Patryk</strong>. They developed Front-End structure of the application using <strong>React</strong>.
+                                </p>
                                             <p class="g-gutter-top-1">
-                                                Apps in that framework are created of <strong>reusable components</strong>.
-                                                The biggest advantage is the <strong>huge community</strong>.
-                                                Developers provide their own open source solutions, that others devs can use in their projects.
-                                                <strong>Creating</strong> applications is <strong>quick</strong> and <strong>easy</strong>.
-
-                                            </p>
+                                                Apps in React are created of reusable components. The biggest advantage of this framework is the huge community. Developers provide their own open source solutions, that other devs can use in their projects.
+                                </p>
                                             <p class="g-gutter-top-1">
-                                                <strong>Backend (API)</strong> of application is provided as <strong>Django RESTful</strong> service.
-                                            </p>
-                                            <p class="g-gutter-top-1">
-                                                Rewriting <strong>started on 01.02.2017</strong>. The best technologies and professionalism of the developers made the creation of a new version proceeded at a very fast pace.
-                                            </p>
+                                                For optional static type-checking along with the latest <strong>ECMAScript</strong> features, we used <strong>TypeScript</strong>. Thanks to this tool, creating applications is much quicker and easier. Another very helpful tool was Axios. It is a <strong>Promise-based HTTP</strong> client for JavaScript. It helped us with managing requests.Thanks to WebSocket API technology, we could create a table of exchange rates with real time data.
+                                </p>
+                                            <p class="g-guter-top-1">
+                                                On the server side, we used <strong>NodeJS</strong> with <strong>MongoDB</strong>. Furthermore, we used Mongoose, that is Object Data Modeling library which is designed to work in an asynchronous environment. During works on server side, we were using <strong>Buddy.Works</strong> - easy to manage CI/CD (continuous integration and continuous delivery) product, for constantly testing and deploying every change that we made.
+                                </p>
                                         </div>
                                     </div>
                                 </div>
@@ -275,85 +254,49 @@ const MyNameFlow = (props) => (
                                                 <span class="u-paint-2 g-gutter-left-1">
                                                     <a target="_blank" href="https://facebook.github.io/react/">
                                                         ReactJS
-                                                    </a>
+                                        </a>
                                                 </span>
                                             </li>
                                             <li class="c-dotted-list__item u-paint-3">
                                                 <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="http://redux.js.org/">
-                                                        Redux
-                                                    </a>
-                                                </span>
-                                            </li>
-                                            <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://github.com/webpack-contrib/css-loader">
-                                                        CSS Loader
-                                                    </a>
+                                                    <a target="_blank" href="https://www.typescriptlang.org/">
+                                                        TypeScript
+                                        </a>
                                                 </span>
                                             </li>
                                             <li class="c-dotted-list__item u-paint-3">
                                                 <span class="u-paint-2 g-gutter-left-1">
                                                     <a target="_blank" href="https://standardjs.com/">
                                                         StandardJS
-                                                    </a>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="l-sec__box gr-3 gr-6@mobile no-gutter-right@mobile">
-                                        <ul class="c-dotted-list">
-                                            <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://react-bootstrap.github.io/">
-                                                        React Bootstrap
-                                                    </a>
+                                        </a>
                                                 </span>
                                             </li>
                                             <li class="c-dotted-list__item u-paint-3">
                                                 <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://github.com/reactjs/react-redux">
-                                                        React-Redux
-                                                    </a>
+                                                    <a target="_blank" href="https://babeljs.io/">
+                                                        Babel
+                                        </a>
                                                 </span>
                                             </li>
                                             <li class="c-dotted-list__item u-paint-3">
                                                 <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="http://airbnb.io/enzyme/index.html">
-                                                        Enzyme
-                                                    </a>
+                                                    <a target="_blank" href="https://webpack.js.org/">
+                                                        Webpack
+                                        </a>
                                                 </span>
                                             </li>
                                             <li class="c-dotted-list__item u-paint-3">
                                                 <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://jquery.com/">
-                                                        jQuery
-                                                    </a>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="l-sec__box gr-3 gr-6@mobile no-gutter-left@mobile">
-                                        <ul class="c-dotted-list">
-                                            <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://github.com/gaearon/redux-thunk">
-                                                        Redux Thunk
-                                                    </a>
+                                                    <a target="_blank" href="https://github.com/axios/axios">
+                                                        Axios
+                                        </a>
                                                 </span>
                                             </li>
                                             <li class="c-dotted-list__item u-paint-3">
                                                 <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="http://redux-form.com/">
-                                                        Redux Form
-                                                    </a>
-                                                </span>
-                                            </li>
-                                            <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://facebook.github.io/jest/">
-                                                        Jest
-                                                    </a>
+                                                    <a target="_blank" href="https://www.styled-components.com/">
+                                                        Styled Components
+                                        </a>
                                                 </span>
                                             </li>
                                         </ul>
@@ -362,23 +305,44 @@ const MyNameFlow = (props) => (
                                         <ul class="c-dotted-list">
                                             <li class="c-dotted-list__item u-paint-3">
                                                 <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://babeljs.io/">
-                                                        Babel
-                                                    </a>
+                                                    <a target="_blank" href="https://www.websocket.org/">
+                                                        Websockets
+                                        </a>
                                                 </span>
                                             </li>
                                             <li class="c-dotted-list__item u-paint-3">
                                                 <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://webpack.js.org/">
-                                                        Webpack
-                                                    </a>
+                                                    <a target="_blank" href="https://expressjs.com/">
+                                                        ExpressJS
+                                        </a>
                                                 </span>
                                             </li>
                                             <li class="c-dotted-list__item u-paint-3">
                                                 <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://github.com/node-nock/nock">
-                                                        Nock
-                                                    </a>
+                                                    <a target="_blank" href="https://letsencrypt.org/">
+                                                        Let's Encrypt
+                                        </a>
+                                                </span>
+                                            </li>
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">
+                                                    <a target="_blank" href="https://buddy.works/">
+                                                        Buddy.works
+                                        </a>
+                                                </span>
+                                            </li>
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">
+                                                    <a target="_blank" href="https://www.mongodb.com/">
+                                                        MongoDB
+                                        </a>
+                                                </span>
+                                            </li>
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">
+                                                    <a target="_blank" href="https://mongoosejs.com/">
+                                                        Mongoose
+                                        </a>
                                                 </span>
                                             </li>
                                         </ul>
@@ -398,68 +362,21 @@ const MyNameFlow = (props) => (
                                         <div class="l-sec__box__head">
                                             <h3 class="t-style-fpn-l-r-u">
                                                 TimeLine
-                                            </h3>
+                                </h3>
                                         </div>
                                     </div>
                                     <div class="l-sec__box gr-6 g-gutter-top-10 g-gutter-top-5@tablet g-gutter-bottom-10 g-gutter-bottom-5@tablet u-bg-1 u-paint-4">
                                         <div class="l-sec__box__content">
                                             <p class="u-text-centered">
-                                                Rewriting took us <strong>4 months</strong>, but we are still developing new features.
-                                            </p>
+                                                The project took us <strong>6 weeks</strong>.
+                                </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <section class="l-sec l-sec--with-between-decor">
-                        <div class="l-row c-between-decors-parent c-decors-parent">
-                            <span class="c-between-decors">
-                                <span class="c-between-decor c-between-decor--top u-paint-4"></span>
-                                <span class="c-between-decor c-between-decor--bottom u-paint-6"></span>
-                            </span>
-                            <div class="c-decors-box" aria-hidden="true">
-                                <span class="c-photoshop-line c-photoshop-line--top"></span>
-                            </div>
-                            <div class="l-inner">
-                                <div class="row ">
-                                    <div class="l-sec__box gr-12 no-gutter">
-                                        <div class="c-website-teaser g-gutter-top-7 g-gutter-top-5@desktop-small g-gutter-bottom-7 g-gutter-bottom-5@desktop-small">
-                                            <div class="c-website-teaser__inner row h-row-align-stretch">
-                                                <div class="c-website-teaser__info gr-4 gr-12@mobile-medium no-gutter-left no-gutter@mobile-medium">
-                                                    <div class="c-website-teaser__info__head g-gutter-left-4 g-gutter-left-0@tablet g-gutter-top-5 g-gutter-top-0@mobile-medium g-gutter-bottom-3@mobile-medium">
-                                                        <h3 class="t-style-fpn-l-r-u">My<strong>Name</strong>Flow</h3>
-                                                    </div>
-                                                    <div class="c-website-teaser__info__actions g-gutter-left-4 g-gutter-left-0@tablet g-gutter-top-2 g-gutter-top-0@mobile-medium g-gutter-bottom-2 g-gutter-bottom-0@mobile-medium">
-                                                        <a class="c-cta-link s-btn-style-3" href="http://mynameflow.com" target="_blank" >
-                                                            <span class="c-label">Visit website</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="c-website-teaser__media gr-8 gr-12@mobile-medium no-gutter no-gutter@mobile-medium">
-                                                    <div class="c-website-teaser__media__content g-gutter-right-4 g-gutter-right-0@tablet g-gutter-bottom-6@mobile-medium">
-                                                        <div class="c-devices-wrapper">
-                                                            <div class="c-devices-wrapper__box">
-                                                                <div class="c-devices-box c-devices-box--browser">
-                                                                    <div class="c-devices-box__frame">
-                                                                        <strong class="c-address">
-                                                                            <span class="c-address__head u-paint-3">http://</span>
-                                                                            <span class="c-address__content u-paint-2">www.mynameflow.com</span>
-                                                                        </strong>
-                                                                    </div>
-                                                                    <figure class="c-devices-box__media o-img-wrapper">
-                                                                        <img src={images['pic_screenshot-mnf-01.jpg']} alt="MyNameFlow" />
-                                                                    </figure>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="c-decors-box" aria-hidden="true">
+                            <span class="c-photoshop-line c-photoshop-line--bottom"></span>
                         </div>
                     </section>
                     <section class="l-sec l-sec--with-between-decor">
@@ -468,7 +385,7 @@ const MyNameFlow = (props) => (
                                 <div class="row">
                                     <div class="l-sec__box gr-12 no-gutter">
                                         <div class="l-sec__box__head">
-                                            <h3 class="u-paint-1 t-style-fpn-l-r">Other works:</h3>
+                                            <h3 class="u-paint-1 t-style-fpn-l-r">Other <strong>React</strong> projects:</h3>
                                         </div>
                                         <div class="l-sec__box__content g-spacing-top-5 g-spacing-top-4@desktop-small c-between-decors-parent">
                                             <span class="c-between-decors">
@@ -482,7 +399,7 @@ const MyNameFlow = (props) => (
                                                         <li class="c-portfolio-teasers-list__item swiper-slide">
                                                             <div class="c-portfolio-teaser c-portfolio-teaser--small">
                                                                 <Link class="c-portfolio-teaser__inner u-paint-4" to="/works/gatedtalent">
-                                                                    <div class="c-portfolio-teaser__media" >
+                                                                    <div class="c-portfolio-teaser__media">
                                                                         <BgImage
                                                                             title="bgCaseGatedtalentRect"
                                                                             fluid={props.data.bgCaseGatedtalentRect.childImageSharp.fluid} />
@@ -490,12 +407,38 @@ const MyNameFlow = (props) => (
                                                                     <div class="c-portfolio-teaser__main">
                                                                         <h2 class="t-style-fpn-l-b-u">
                                                                             GatedTalent
-                                        </h2>
+                            </h2>
                                                                         <p class="g-gutter-top-1 u-paint-3">
                                                                             React
                                              JavaScript Single Page App
                                              Front-end Dedicated Team
-                                        </p>
+                            </p>
+                                                                    </div>
+                                                                    <div class="c-portfolio-teaser__add g-gutter-top-2">
+                                                                        <span class="c-cta-btn s-btn-style-1-no-hover">
+                                                                            <span class="c-label">Case study</span>
+                                                                        </span>
+                                                                    </div>
+                                                                </Link>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="c-portfolio-teasers-list__item swiper-slide">
+                                                            <div class="c-portfolio-teaser c-portfolio-teaser--small">
+                                                                <Link class="c-portfolio-teaser__inner u-paint-4" to="/works/my-name-flow">
+                                                                    <div class="c-portfolio-teaser__media" >
+                                                                        <BgImage
+                                                                            title="bgCaseMnfRect"
+                                                                            fluid={props.data.bgCaseMnfRect.childImageSharp.fluid} />
+                                                                    </div>
+                                                                    <div class="c-portfolio-teaser__main">
+                                                                        <h2 class="t-style-fpn-l-b-u">
+                                                                            My Name Flow
+                            </h2>
+                                                                        <p class="g-gutter-top-1 u-paint-3">
+                                                                            React
+                                             JavaScript Single Page App
+                            </p>
                                                                     </div>
                                                                     <div class="c-portfolio-teaser__add g-gutter-top-2">
                                                                         <span class="c-cta-btn s-btn-style-1-no-hover">
@@ -517,37 +460,11 @@ const MyNameFlow = (props) => (
                                                                     <div class="c-portfolio-teaser__main">
                                                                         <h2 class="t-style-fpn-l-b-u">
                                                                             Ethereum Blockchain Doc Signing App
-                                        </h2>
+                            </h2>
                                                                         <p class="g-gutter-top-1 u-paint-3">
                                                                             React
                                              JavaScript Single Page App
-                                        </p>
-                                                                    </div>
-                                                                    <div class="c-portfolio-teaser__add g-gutter-top-2">
-                                                                        <span class="c-cta-btn s-btn-style-1-no-hover">
-                                                                            <span class="c-label">Case study</span>
-                                                                        </span>
-                                                                    </div>
-                                                                </Link>
-                                                            </div>
-                                                        </li>
-
-                                                        <li class="c-portfolio-teasers-list__item swiper-slide">
-                                                            <div class="c-portfolio-teaser c-portfolio-teaser--small">
-                                                                <Link class="c-portfolio-teaser__inner u-paint-4" to="/works/cryptocurrency-arbitrage">
-                                                                    <div class="c-portfolio-teaser__media">
-                                                                        <BgImage
-                                                                            title="bgCaseCryptoRect"
-                                                                            fluid={props.data.bgCaseCryptoRect.childImageSharp.fluid} />
-                                                                    </div>
-                                                                    <div class="c-portfolio-teaser__main">
-                                                                        <h2 class="t-style-fpn-l-b-u">
-                                                                            Cryptocurrency Arbitrage
-                                        </h2>
-                                                                        <p class="g-gutter-top-1 u-paint-3">
-                                                                            React
-                                             JavaScript Single Page App
-                                        </p>
+                            </p>
                                                                     </div>
                                                                     <div class="c-portfolio-teaser__add g-gutter-top-2">
                                                                         <span class="c-cta-btn s-btn-style-1-no-hover">
@@ -579,13 +496,12 @@ const MyNameFlow = (props) => (
             </div>
 
             <Footer />
-
-        </div>
+        </div >
     </>
 )
 
-export const fluidMynameFlowBgImage = graphql`
-                                fragment fluidMynameFlowBgImage on File {
+export const fluidCryptocurrencyArbitrageBgImage = graphql`
+                                fragment fluidCryptocurrencyArbitrageBgImage on File {
                             childImageSharp {
                         fluid(quality: 90, maxWidth: 4160) {
                             ...GatsbyImageSharpFluid
@@ -595,20 +511,20 @@ export const fluidMynameFlowBgImage = graphql`
                     `
 
 
-export const GatedtalentQuery = graphql`query {
+export const CryptocurrencyArbitrageQuery = graphql`query {
                         bgCaseGatedtalentRect: file(relativePath: {eq: "bg_case-gatedtalent-rect.jpg" }) {
-                            ...fluidMynameFlowBgImage
+                            ...fluidCryptocurrencyArbitrageBgImage
                         }
-                        bgCaseMnf: file(relativePath: {eq: "bg_case-mnf.jpg" }) {
-                            ...fluidMynameFlowBgImage
+                        bgCaseMnfRect: file(relativePath: {eq: "bg_case-mnf-rect.jpg" }) {
+                            ...fluidCryptocurrencyArbitrageBgImage
                         }
                         bgCaseBlockchainRect: file(relativePath: {eq: "bg-case-blockchain-rect.jpg" }) {
-                            ...fluidMynameFlowBgImage
+                            ...fluidCryptocurrencyArbitrageBgImage
                         }
-                        bgCaseCryptoRect: file(relativePath: {eq: "bg-case-crypto-rect.jpg" }) {
-                            ...fluidMynameFlowBgImage
+                        bgCaseCrypto: file(relativePath: {eq: "bg-case-crypto.jpg" }) {
+                            ...fluidCryptocurrencyArbitrageBgImage
                         }
                         }
                         `
 
-export default MyNameFlow;
+export default CryptocurrencyArbitrage;

@@ -165,7 +165,7 @@ const Works = (props) => (
 
                                         <li className="c-portfolio-teasers-list__item ">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="cryptocurrency-arbitrage.html" data-animate-in="true">
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/cryptocurrency-arbitrage" data-animate-in="true">
                                                     <div className="c-portfolio-teaser__media" >
                                                         <BgImage
                                                             title="bgCaseCryptoThumb"
@@ -188,14 +188,14 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ">
                                             <div className="c-portfolio-teaser">
                                                 <a className="c-portfolio-teaser__inner u-paint-4" href="310.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg-case-310-thumb.jpg)' }}>
+                                                    <div className="c-portfolio-teaser__media">
                                                         <BgImage
                                                             title="bgCase310Thumb"
                                                             fluid={props.data.bgCase310Thumb.childImageSharp.fluid}

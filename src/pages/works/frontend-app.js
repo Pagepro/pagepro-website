@@ -10,9 +10,9 @@ function importAll(r) {
     return images;
 }
 
-const images = importAll(require.context('../../../static/img/', false, /\.(jpg|svg)$/));
+const images = importAll(require.context('../../../static/img/', false, /\.(jpg|svg|png)$/));
 
-const MyNameFlow = (props) => (
+const FrontendApp = (props) => (
     <>
         <div id="page-content">
 
@@ -23,8 +23,8 @@ const MyNameFlow = (props) => (
 
                 <main class="l-main">
                     <BgImage
-                        title="bgCaseMnf"
-                        fluid={props.data.bgCaseMnf.childImageSharp.fluid}
+                        title="bgCaseFap"
+                        fluid={props.data.bgCaseFap.childImageSharp.fluid}
                         className="l-hero l-hero--alt l-hero--small l-hero--with-overlay  u-paint-4"
                         height='100vh'
                     >
@@ -32,7 +32,7 @@ const MyNameFlow = (props) => (
                             <div class="l-hero__head row g-gutter-top-8 g-gutter-top-0@mobile">
                                 <div class="l-hero__head__box">
                                     <h2 class="t-style-fpn-xxl-b-u">
-                                        MyNameFlow
+                                        FrontendApp
                                     </h2>
                                 </div>
                             </div>
@@ -62,19 +62,17 @@ const MyNameFlow = (props) => (
                                     <div class="l-sec__box u-paint-1 t-style-fpn-l-r gr-5 gr-12@mobile no-gutter-left no-gutter@mobile">
                                         <div class="l-sec__box__content">
                                             <p class="u-line-h-s">
-                                                <strong>MyNameFlow</strong> is a <strong>React</strong> Automated Follow-Up JavaScript web application for Financial Professionals.
+                                                <strong>FrontendApp</strong> is our internal <strong>AngularJS</strong> single page web application created for speeding up front-end development projects workflow.
                                             </p>
                                         </div>
                                     </div>
                                     <div class="l-sec__box gr-6 gr-12@mobile no-gutter-right no-gutter@mobile g-spacing-top-3@mobile">
                                         <div class="l-sec__box__content">
                                             <p>
-                                                <strong>MyNameFlow</strong> is an application for <strong>financial insurers</strong>. The app is used to <strong>manage their clients</strong>.
+                                                PSD to HTML projects have lots in common, that's why we've created FrontendApp to <strong>set the standard and create effective processes</strong>.
                                             </p>
                                             <p class="g-gutter-top-1">
-                                                Using it insurer can <strong>add new clients</strong>,
-                                                <strong>send</strong> them <strong>newsletter emails</strong> and <strong>observe</strong> their <strong>life events</strong>.
-                                                It is helpful to be in constant contact with the client.
+                                                <strong>FrontendApp contains the materials for all our projects since 2014</strong>: we have every PSD that client send us, estimation, access to repository, preview server and even history of our communication.
                                             </p>
                                         </div>
                                     </div>
@@ -107,12 +105,16 @@ const MyNameFlow = (props) => (
                                     <div class="l-sec__box gr-5 gr-12@mobile no-gutter-left no-gutter@mobile">
                                         <div class="l-sec__box__head">
                                             <h3 class="t-style-fpn-l-r-u">
-                                                MyNameFlow <strong class="u-paint-1">Explainer Video</strong>
+                                                #1 Video <strong class="u-paint-1">walkthrough</strong>
                                             </h3>
                                         </div>
                                     </div>
                                     <div class="l-sec__box gr-6 gr-12@mobile no-gutter-right no-gutter@mobile g-spacing-top-3@mobile">
                                         <div class="l-sec__box__content">
+                                            <p>
+                                                <strong>Creating new project</strong>. <br />
+                                                This video shows how client can log into FrontendApp, create and organize new project by setting order of delivery. You also can check download functionality allowing client or developer to get all project's materials very quickly.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -133,7 +135,7 @@ const MyNameFlow = (props) => (
                                                 </div>
                                             </div>
                                             <figure class="o-video-wrapper o-video-wrapper--default">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Y4XcmBxOQmg" allowfullscreen></iframe>
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/yP115gsRDeU" allowfullscreen></iframe>
                                             </figure>
                                             <div class="c-decors-box c-decors-box--alt" aria-hidden="true">
                                                 <div class="c-decor-wrapper c-decor-wrapper--bottom c-decor-wrapper--left g-gutter-left-2 g-gutter-bottom-2 u-vertical-middle-bottom">
@@ -162,38 +164,68 @@ const MyNameFlow = (props) => (
                                     <div class="l-sec__box gr-12 no-gutter">
                                         <div class="l-sec__box__head">
                                             <h3 class="t-style-fpn-l-r-u">
-                                                MyNameFlow <strong>in numbers</strong>
+                                                FrontendApp <strong>in numbers</strong>
                                             </h3>
                                         </div>
                                         <div class="l-sec__box__content g-gutter-top-5 g-gutter-top-3@desktop-small">
                                             <ul class="c-info-boxes-list c-info-boxes-list--rwd-alt g-spacing-bottom-minus-4 g-spacing-bottom-minus-2@desktop-small">
-                                                <li class="c-info-boxes-list__item c-info-boxes-list__item--counter g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
+                                                <li class="c-info-boxes-list__item g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
+                                                    <div class="c-info-box g-gutter-right-3 g-gutter-right-1@mobile">
+                                                        <div class="c-info-box__head">
+                                                            <span class="t-style-fpn-s-r-u">Projects hosted</span>
+                                                        </div>
+                                                        <div class="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile">
+                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>505</strong>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="c-info-boxes-list__item g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
+                                                    <div class="c-info-box g-gutter-right-3 g-gutter-right-1@mobile">
+                                                        <div class="c-info-box__head">
+                                                            <span class="t-style-fpn-s-r-u">Webdesigns uploaded</span>
+                                                        </div>
+                                                        <div class="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile">
+                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>4169</strong>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="c-info-boxes-list__item g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
+                                                    <div class="c-info-box g-gutter-right-3 g-gutter-right-1@mobile">
+                                                        <div class="c-info-box__head">
+                                                            <span class="t-style-fpn-s-r-u">Project files uploaded</span>
+                                                        </div>
+                                                        <div class="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile">
+                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>3656</strong>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="c-info-boxes-list__item g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
                                                     <div class="c-info-box g-gutter-right-3 g-gutter-right-1@mobile">
                                                         <div class="c-info-box__head">
                                                             <span class="t-style-fpn-s-r-u">Users registered</span>
                                                         </div>
                                                         <div class="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile">
-                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>28746</strong>
+                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>44</strong>
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="c-info-boxes-list__item  c-info-boxes-list__item--counter g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
+                                                <li class="c-info-boxes-list__item g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
                                                     <div class="c-info-box g-gutter-right-3 g-gutter-right-1@mobile">
                                                         <div class="c-info-box__head">
-                                                            <span class="t-style-fpn-s-r-u">Logins (per day)</span>
+                                                            <span class="t-style-fpn-s-r-u">Tickets submitted</span>
                                                         </div>
                                                         <div class="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile">
-                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>16275</strong>
+                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>5975</strong>
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="c-info-boxes-list__item  c-info-boxes-list__item--counter g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
+                                                <li class="c-info-boxes-list__item g-spacing-bottom-5 g-spacing-bottom-3@desktop-small">
                                                     <div class="c-info-box g-gutter-right-3 g-gutter-right-1@mobile">
                                                         <div class="c-info-box__head">
-                                                            <span class="t-style-fpn-s-r-u">Newsletters send (per day)</span>
+                                                            <span class="t-style-fpn-s-r-u">Comments added</span>
                                                         </div>
                                                         <div class="c-info-box__content g-gutter-top-2 g-gutter-top-1@mobile">
-                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>5624</strong>
+                                                            <strong class="t-style-fpn-xxxl-l u-paint-1" data-counter>1624</strong>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -229,16 +261,14 @@ const MyNameFlow = (props) => (
                                         </div>
                                         <div class="l-sec__box__content g-gutter-top-5 g-gutter-top-3@desktop-small">
                                             <p>
-                                                The <strong>first version</strong> of the client application was created in the <strong>BackboneJS</strong> framework.
+                                                We wanted to create easy to use, fast and good looking interface for our clients.
+                                                These requirements were critical, because without that clients, will reather want to choose sending us projects and materials via e-mail.
                                             </p>
                                             <p class="g-gutter-top-1">
-                                                In the course of time, it turned out to be inefficient and heavy in maintenance.
-                                                This is a result of the decreasing popularity and number of developers using this framework.
-                                                Problem with the further development has prompted owners to rewrite application for fresh technologies.
+                                                We also wanted to create one platform where client can: submit new projects, check status of current projects and do the whole communication.
                                             </p>
                                             <p class="g-gutter-top-1">
-                                                The goal was to create <strong>Single Page Application</strong> and <strong>adapt</strong> it to <strong>mobile devices</strong>.
-                                                In addition, the <strong>application should work faster</strong> and be <strong>easier to develop</strong>, comparing to the previous version.
+                                                In the end we created a big repository that not only makes runing projects easier but also is a way of organizing webdesigns and other project files.
                                             </p>
                                         </div>
                                     </div>
@@ -250,20 +280,16 @@ const MyNameFlow = (props) => (
                                         </div>
                                         <div class="l-sec__box__content g-gutter-top-5 g-gutter-top-3@desktop-small">
                                             <p>
-                                                To create the application We used the one of the newer technologies: <strong>ReactJS library</strong> and <strong>Redux</strong>- to manage data within the application.
+                                                We've decided to use AngularJS and build the project as a single page application.
                                             </p>
                                             <p class="g-gutter-top-1">
-                                                Apps in that framework are created of <strong>reusable components</strong>.
-                                                The biggest advantage is the <strong>huge community</strong>.
-                                                Developers provide their own open source solutions, that others devs can use in their projects.
-                                                <strong>Creating</strong> applications is <strong>quick</strong> and <strong>easy</strong>.
-
+                                                Project was split into short sprints. Every sprint we were delivering new features and bugfixes. Clients were able to use our app in first month of developing it.
                                             </p>
                                             <p class="g-gutter-top-1">
-                                                <strong>Backend (API)</strong> of application is provided as <strong>Django RESTful</strong> service.
+                                                Backend (API) of application is provided as Django RESTful service. For faster development we have been using fake server to pretend working API.
                                             </p>
                                             <p class="g-gutter-top-1">
-                                                Rewriting <strong>started on 01.02.2017</strong>. The best technologies and professionalism of the developers made the creation of a new version proceeded at a very fast pace.
+                                                FrontendApp is an open source project so you can check and fork the code on our <a href="https://github.com/Pagepro/frontendapp" target="_blank">GitHub Page</a>.
                                             </p>
                                         </div>
                                     </div>
@@ -272,117 +298,122 @@ const MyNameFlow = (props) => (
                                     <div class="l-sec__box gr-3 gr-6@mobile no-gutter-left no-gutter-left@mobile">
                                         <ul class="c-dotted-list">
                                             <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://facebook.github.io/react/">
-                                                        ReactJS
-                                                    </a>
-                                                </span>
+                                                <span class="u-paint-2 g-gutter-left-1">AngularJS</span>
                                             </li>
                                             <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="http://redux.js.org/">
-                                                        Redux
-                                                    </a>
-                                                </span>
-                                            </li>
-                                            <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://github.com/webpack-contrib/css-loader">
-                                                        CSS Loader
-                                                    </a>
-                                                </span>
-                                            </li>
-                                            <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://standardjs.com/">
-                                                        StandardJS
-                                                    </a>
-                                                </span>
+                                                <span class="u-paint-2 g-gutter-left-1">Node.js</span>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="l-sec__box gr-3 gr-6@mobile no-gutter-right@mobile">
                                         <ul class="c-dotted-list">
                                             <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://react-bootstrap.github.io/">
-                                                        React Bootstrap
-                                                    </a>
-                                                </span>
+                                                <span class="u-paint-2 g-gutter-left-1">BrowserSync</span>
                                             </li>
                                             <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://github.com/reactjs/react-redux">
-                                                        React-Redux
-                                                    </a>
-                                                </span>
-                                            </li>
-                                            <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="http://airbnb.io/enzyme/index.html">
-                                                        Enzyme
-                                                    </a>
-                                                </span>
-                                            </li>
-                                            <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://jquery.com/">
-                                                        jQuery
-                                                    </a>
-                                                </span>
+                                                <span class="u-paint-2 g-gutter-left-1">SASS</span>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="l-sec__box gr-3 gr-6@mobile no-gutter-left@mobile">
                                         <ul class="c-dotted-list">
                                             <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://github.com/gaearon/redux-thunk">
-                                                        Redux Thunk
-                                                    </a>
-                                                </span>
+                                                <span class="u-paint-2 g-gutter-left-1">Jasmine</span>
                                             </li>
                                             <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="http://redux-form.com/">
-                                                        Redux Form
-                                                    </a>
-                                                </span>
-                                            </li>
-                                            <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://facebook.github.io/jest/">
-                                                        Jest
-                                                    </a>
-                                                </span>
+                                                <span class="u-paint-2 g-gutter-left-1">Lodash</span>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="l-sec__box gr-3 gr-6@mobile no-gutter-right no-gutter-right@mobile">
                                         <ul class="c-dotted-list">
                                             <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://babeljs.io/">
-                                                        Babel
-                                                    </a>
-                                                </span>
+                                                <span class="u-paint-2 g-gutter-left-1">Express</span>
                                             </li>
                                             <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://webpack.js.org/">
-                                                        Webpack
-                                                    </a>
-                                                </span>
-                                            </li>
-                                            <li class="c-dotted-list__item u-paint-3">
-                                                <span class="u-paint-2 g-gutter-left-1">
-                                                    <a target="_blank" href="https://github.com/node-nock/nock">
-                                                        Nock
-                                                    </a>
-                                                </span>
+                                                <span class="u-paint-2 g-gutter-left-1">GitHub</span>
                                             </li>
                                         </ul>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="l-sec g-gutter-top-4 g-spacing-top-minus-4">
+                        <div class="l-row c-decors-parent">
+                            <div class="c-decors-box" aria-hidden="true">
+                                <span class="c-photoshop-line c-photoshop-line--bottom"></span>
+                                <div class="l-inner--small">
+                                    <span class="c-photoshop-line c-photoshop-line--right"></span>
+                                    <span class="c-photoshop-line c-photoshop-line--left"></span>
+                                    <div class="c-decor-wrapper c-decor-wrapper--top c-decor-wrapper--right g-gutter-right-2 u-vertical-middle-top">
+                                        <span class="o-object-wrapper o-object-wrapper--rectangular-marquee">
+                                            <object type="image/svg+xml" data={images['shape_1.svg']}>Photoshop select tool</object>
+                                        </span>
+                                    </div>
+                                    <div class="c-decor-wrapper c-decor-wrapper--bottom c-decor-wrapper--left g-gutter-bottom-2 u-horizontal-middle-left">
+                                        <span class="o-object-wrapper o-object-wrapper--move-lines">
+                                            <object type="image/svg+xml" data={images['shape_2.svg']}>Photoshop move tool</object>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-inner">
+                                <div class="row row-align-between g-gutter-top-10 g-gutter-top-0@desktop-small g-gutter-bottom-10 g-gutter-bottom-5@desktop-small g-gutter-bottom-3@mobile">
+                                    <div class="l-sec__box gr-5 gr-12@mobile no-gutter-left no-gutter@mobile">
+                                        <div class="l-sec__box__head">
+                                            <h3 class="t-style-fpn-l-r-u">
+                                                #2 Video <strong class="u-paint-1">walkthrough</strong>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="l-sec__box gr-6 gr-12@mobile no-gutter-right no-gutter@mobile g-spacing-top-3@mobile">
+                                        <div class="l-sec__box__content">
+                                            <p>
+                                                <strong>Project Details</strong>. <br />
+                                                This video shows how client can check current status of the project, review materials, add new designs and submit bugs.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-row">
+                            <div class="l-inner">
+                                <div class="row row-align-center">
+                                    <div class="l-sec__box gr-adapt gr-12@tablet no-gutter no-gutter@tablet">
+                                        <div class="l-sec__box__content l-inner--small row row-align-center c-decors-parent">
+                                            <div class="c-decors-box" aria-hidden="true">
+                                                <span class="c-photoshop-line c-photoshop-line--left"></span>
+                                                <span class="c-photoshop-line c-photoshop-line--right"></span>
+                                                <div class="c-decor-wrapper c-decor-wrapper--bottom c-decor-wrapper--right g-gutter-bottom-8 g-gutter-left-4 u-horizontal-total-right">
+                                                    <span class="o-object-wrapper o-object-wrapper--move">
+                                                        <object type="image/svg+xml" data={images['shape_3.svg']}>Photoshop drag-move tool</object>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <figure class="o-video-wrapper o-video-wrapper--default">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/5jDPt3M_LdU" allowfullscreen></iframe>
+                                            </figure>
+                                            <div class="c-decors-box c-decors-box--alt" aria-hidden="true">
+                                                <div class="c-decor-wrapper c-decor-wrapper--bottom c-decor-wrapper--left g-gutter-left-2 g-gutter-bottom-2 u-vertical-middle-bottom">
+                                                    <span class="o-object-wrapper o-object-wrapper--cropp">
+                                                        <object type="image/svg+xml" data={images['shape_4.svg']}>Photoshop trim tool</object>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-row c-decors-parent g-gutter-top-5 g-gutter-top-0@desktop-small" aria-hidden="true">
+                            <div class="c-decors-box" aria-hidden="true">
+                                <span class="c-photoshop-line c-photoshop-line--top"></span>
+                                <span class="c-photoshop-line c-photoshop-line--bottom"></span>
+                                <div class="l-inner--small">
+                                    <span class="c-photoshop-line c-photoshop-line--right"></span>
+                                    <span class="c-photoshop-line c-photoshop-line--left"></span>
                                 </div>
                             </div>
                         </div>
@@ -404,7 +435,7 @@ const MyNameFlow = (props) => (
                                     <div class="l-sec__box gr-6 g-gutter-top-10 g-gutter-top-5@tablet g-gutter-bottom-10 g-gutter-bottom-5@tablet u-bg-1 u-paint-4">
                                         <div class="l-sec__box__content">
                                             <p class="u-text-centered">
-                                                Rewriting took us <strong>4 months</strong>, but we are still developing new features.
+                                                First version took us <strong>3 months</strong>, but we are still developing new features.
                                             </p>
                                         </div>
                                     </div>
@@ -428,10 +459,10 @@ const MyNameFlow = (props) => (
                                             <div class="c-website-teaser__inner row h-row-align-stretch">
                                                 <div class="c-website-teaser__info gr-4 gr-12@mobile-medium no-gutter-left no-gutter@mobile-medium">
                                                     <div class="c-website-teaser__info__head g-gutter-left-4 g-gutter-left-0@tablet g-gutter-top-5 g-gutter-top-0@mobile-medium g-gutter-bottom-3@mobile-medium">
-                                                        <h3 class="t-style-fpn-l-r-u">My<strong>Name</strong>Flow</h3>
+                                                        <h3 class="t-style-fpn-l-r-u">Frontend<strong>App</strong></h3>
                                                     </div>
                                                     <div class="c-website-teaser__info__actions g-gutter-left-4 g-gutter-left-0@tablet g-gutter-top-2 g-gutter-top-0@mobile-medium g-gutter-bottom-2 g-gutter-bottom-0@mobile-medium">
-                                                        <a class="c-cta-link s-btn-style-3" href="http://mynameflow.com" target="_blank" >
+                                                        <a class="c-cta-link s-btn-style-3" href="#" target="_blank" >
                                                             <span class="c-label">Visit website</span>
                                                         </a>
                                                     </div>
@@ -444,11 +475,11 @@ const MyNameFlow = (props) => (
                                                                     <div class="c-devices-box__frame">
                                                                         <strong class="c-address">
                                                                             <span class="c-address__head u-paint-3">http://</span>
-                                                                            <span class="c-address__content u-paint-2">www.mynameflow.com</span>
+                                                                            <span class="c-address__content u-paint-2">www.frontendapp.com</span>
                                                                         </strong>
                                                                     </div>
                                                                     <figure class="c-devices-box__media o-img-wrapper">
-                                                                        <img src={images['pic_screenshot-mnf-01.jpg']} alt="MyNameFlow" />
+                                                                        <img src={images['pic_screenshot-fap-02.jpg']} alt="FrontendApp" />
                                                                     </figure>
                                                                 </div>
                                                             </div>
@@ -481,42 +512,15 @@ const MyNameFlow = (props) => (
 
                                                         <li class="c-portfolio-teasers-list__item swiper-slide">
                                                             <div class="c-portfolio-teaser c-portfolio-teaser--small">
-                                                                <Link class="c-portfolio-teaser__inner u-paint-4" to="/works/gatedtalent">
+                                                                <Link class="c-portfolio-teaser__inner u-paint-4" to="/works/my-name-flow">
                                                                     <div class="c-portfolio-teaser__media" >
                                                                         <BgImage
-                                                                            title="bgCaseGatedtalentRect"
-                                                                            fluid={props.data.bgCaseGatedtalentRect.childImageSharp.fluid} />
+                                                                            title="bgCaseMnfRect"
+                                                                            fluid={props.data.bgCaseMnfRect.childImageSharp.fluid} />
                                                                     </div>
                                                                     <div class="c-portfolio-teaser__main">
                                                                         <h2 class="t-style-fpn-l-b-u">
-                                                                            GatedTalent
-                                        </h2>
-                                                                        <p class="g-gutter-top-1 u-paint-3">
-                                                                            React
-                                             JavaScript Single Page App
-                                             Front-end Dedicated Team
-                                        </p>
-                                                                    </div>
-                                                                    <div class="c-portfolio-teaser__add g-gutter-top-2">
-                                                                        <span class="c-cta-btn s-btn-style-1-no-hover">
-                                                                            <span class="c-label">Case study</span>
-                                                                        </span>
-                                                                    </div>
-                                                                </Link>
-                                                            </div>
-                                                        </li>
-
-                                                        <li class="c-portfolio-teasers-list__item swiper-slide">
-                                                            <div class="c-portfolio-teaser c-portfolio-teaser--small">
-                                                                <Link class="c-portfolio-teaser__inner u-paint-4" to="/works/blockchain-agreements">
-                                                                    <div class="c-portfolio-teaser__media">
-                                                                        <BgImage
-                                                                            title="bgCaseBlockchainRect"
-                                                                            fluid={props.data.bgCaseBlockchainRect.childImageSharp.fluid} />
-                                                                    </div>
-                                                                    <div class="c-portfolio-teaser__main">
-                                                                        <h2 class="t-style-fpn-l-b-u">
-                                                                            Ethereum Blockchain Doc Signing App
+                                                                            My Name Flow
                                         </h2>
                                                                         <p class="g-gutter-top-1 u-paint-3">
                                                                             React
@@ -534,19 +538,44 @@ const MyNameFlow = (props) => (
 
                                                         <li class="c-portfolio-teasers-list__item swiper-slide">
                                                             <div class="c-portfolio-teaser c-portfolio-teaser--small">
-                                                                <Link class="c-portfolio-teaser__inner u-paint-4" to="/works/cryptocurrency-arbitrage">
+                                                                <Link class="c-portfolio-teaser__inner u-paint-4" to="/works/krd">
                                                                     <div class="c-portfolio-teaser__media">
                                                                         <BgImage
-                                                                            title="bgCaseCryptoRect"
-                                                                            fluid={props.data.bgCaseCryptoRect.childImageSharp.fluid} />
+                                                                            title="bgCaseKrdRect"
+                                                                            fluid={props.data.bgCaseKrdRect.childImageSharp.fluid} />
                                                                     </div>
                                                                     <div class="c-portfolio-teaser__main">
                                                                         <h2 class="t-style-fpn-l-b-u">
-                                                                            Cryptocurrency Arbitrage
+                                                                            KRD Economic Information Bureau
                                         </h2>
                                                                         <p class="g-gutter-top-1 u-paint-3">
-                                                                            React
-                                             JavaScript Single Page App
+                                                                            Front-end Dedicated Team
+                                        </p>
+                                                                    </div>
+                                                                    <div class="c-portfolio-teaser__add g-gutter-top-2">
+                                                                        <span class="c-cta-btn s-btn-style-1-no-hover">
+                                                                            <span class="c-label">Case study</span>
+                                                                        </span>
+                                                                    </div>
+                                                                </Link>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="c-portfolio-teasers-list__item swiper-slide">
+                                                            <div class="c-portfolio-teaser c-portfolio-teaser--small">
+                                                                <Link class="c-portfolio-teaser__inner u-paint-4" to="/works/karina-papadopoulos">
+                                                                    <div class="c-portfolio-teaser__media" >
+                                                                        <BgImage
+                                                                            title="bgCaseKarinaPersonalRect"
+                                                                            fluid={props.data.bgCaseKarinaPersonalRect.childImageSharp.fluid} />
+                                                                    </div>
+                                                                    <div class="c-portfolio-teaser__main">
+                                                                        <h2 class="t-style-fpn-l-b-u">
+                                                                            Karina Papadopoulos
+                                        </h2>
+                                                                        <p class="g-gutter-top-1 u-paint-3">
+                                                                            PSD to HTML conversion
+                                             WordPress Development
                                         </p>
                                                                     </div>
                                                                     <div class="c-portfolio-teaser__add g-gutter-top-2">
@@ -578,37 +607,42 @@ const MyNameFlow = (props) => (
                 </main>
             </div>
 
+
             <Footer />
+
+
 
         </div>
     </>
 )
 
-export const fluidMynameFlowBgImage = graphql`
-                                fragment fluidMynameFlowBgImage on File {
-                            childImageSharp {
-                        fluid(quality: 90, maxWidth: 4160) {
-                            ...GatsbyImageSharpFluid
-                        }
-                        }
-                    }
-                    `
+export const fluidFrontendAppBgImage = graphql`
+                                fragment fluidFrontendAppBgImage on File {
+                    childImageSharp {
+                fluid(quality: 90, maxWidth: 4160) {
+                    ...GatsbyImageSharpFluid
+                }
+                }
+            }
+            `
 
 
-export const GatedtalentQuery = graphql`query {
-                        bgCaseGatedtalentRect: file(relativePath: {eq: "bg_case-gatedtalent-rect.jpg" }) {
-                            ...fluidMynameFlowBgImage
-                        }
-                        bgCaseMnf: file(relativePath: {eq: "bg_case-mnf.jpg" }) {
-                            ...fluidMynameFlowBgImage
-                        }
-                        bgCaseBlockchainRect: file(relativePath: {eq: "bg-case-blockchain-rect.jpg" }) {
-                            ...fluidMynameFlowBgImage
-                        }
-                        bgCaseCryptoRect: file(relativePath: {eq: "bg-case-crypto-rect.jpg" }) {
-                            ...fluidMynameFlowBgImage
-                        }
-                        }
-                        `
+export const FrontendAppQuery = graphql`query {
 
-export default MyNameFlow;
+                
+                bgCaseKarinaPersonalRect: file(relativePath: {eq: "bg_case-karina-personal-rect.jpg" }) {
+                    ...fluidFrontendAppBgImage
+                }
+                bgCaseFap: file(relativePath: {eq: "bg_case-fap.jpg" }) {
+                    ...fluidFrontendAppBgImage
+                }
+                bgCaseKrdRect: file(relativePath: {eq: "bg_case-krd-rect.jpg" }) {
+                    ...fluidFrontendAppBgImage
+                }
+                bgCaseMnfRect: file(relativePath: { eq: "bg_case-mnf-rect.jpg" }) {
+                    ...fluidFrontendAppBgImage
+                }
+                }
+                `
+
+export default FrontendApp;

@@ -563,7 +563,7 @@ const IndexPage = (props) => (
                             </li>
                             <li className="c-portfolio-teasers-list__item swiper-slide">
                               <div className="c-portfolio-teaser c-portfolio-teaser--small">
-                                <a className="c-portfolio-teaser__inner u-paint-4" href="outside-the-lines.html">
+                                <Link className="c-portfolio-teaser__inner u-paint-4" to="works/outside-the-lines">
                                   <div className="c-portfolio-teaser__media">
                                     <BgImage
                                       title="bgCaseOtl"
@@ -583,7 +583,7 @@ const IndexPage = (props) => (
                                       <span className="c-label">Case study</span>
                                     </span>
                                   </div>
-                                </a>
+                                </Link>
                               </div>
                             </li>
                           </ol>
