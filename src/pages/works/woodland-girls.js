@@ -10,31 +10,22 @@ function importAll(r) {
     return images;
 }
 
-const images = importAll(require.context('../../../static/img/', false, /\.(jpg|svg)$/));
+const images = importAll(require.context('../../../static/img/', false, /\.(jpg|svg|png)$/));
 
-const IsvOnline = (props) => (
+const Woodland = (props) => (
     <>
         <div id="page-content">
 
             <div class="p-case-study">
-
-
                 <Header />
-
                 <main class="l-main">
-
-                    <BgImage
-                        title="bgCaseIsvWebsite"
-                        fluid={props.data.bgCaseIsvWebsite.childImageSharp.fluid}
-                        className="l-hero l-hero--alt l-hero--small l-hero--with-overlay  u-paint-4"
-                        height='100vh'
-                    >
+                    <div class="l-hero l-hero--alt l-hero--with-overlay u-bg-2 u-paint-4" style={{ backgroundImage: `url(${images['bg_case-woodland.jpg']})` }}>
                         <div class="l-inner g-gutter-top-10 g-gutter-bottom-8">
                             <div class="l-hero__head row g-gutter-top-8 g-gutter-top-0@mobile">
                                 <div class="l-hero__head__box">
                                     <h2 class="t-style-fpn-xxl-b-u">
-                                        ISV Online
-                                    </h2>
+                                        Woodland Girls
+                        </h2>
                                 </div>
                             </div>
                             <div class="l-hero__foot row">
@@ -47,16 +38,117 @@ const IsvOnline = (props) => (
                                             </a>
                                         </div>
                                         <div class="l-hero__foot__box gr-adapt no-gutter-right">
-                                            <Link class="c-cta-link s-btn-style-2" to="/works" data-animate-out="true">
+                                            <a class="c-cta-link s-btn-style-2" href="our-work.html" data-animate-out="true">
                                                 <span class="c-label">Back to works</span>
-                                            </Link>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </BgImage>
-
+                    </div>
+                    <div class="l-sec" id="sec-1">
+                        <div class="l-row">
+                            <div class="l-inner">
+                                <div class="row row-align-between g-gutter-top-10 g-gutter-top-5@desktop-small g-gutter-bottom-10 g-gutter-bottom-4@desktop-small">
+                                    <div class="l-sec__box u-paint-1 t-style-fpn-l-r gr-5 gr-12@mobile no-gutter-left no-gutter@mobile">
+                                        <div class="l-sec__box__content">
+                                            <p>
+                                                <strong>Real girls with real lives.</strong>
+                                            </p>
+                                            <p class="u-line-h-s g-gutter-top-1">
+                                                Woodland Girls is a lovely duet of Mom (photographer) and Daughter (model). Inspired by nature, calmness and majesty of the landscape.
+                                </p>
+                                        </div>
+                                    </div>
+                                    <div class="l-sec__box gr-6 gr-12@mobile no-gutter-right no-gutter@mobile g-spacing-top-3@mobile">
+                                        <div class="l-sec__box__content">
+                                            <p>
+                                                <strong>Mom - Karina</strong>
+                                                A Polish native, had an amazing time in China, currently based in Germany. She is a Fine Art Master since 2005 related to the fashion, unique image maker, stylist, obsessive lover of artisan moments, timeless storyteller in love with the universe of vintage.
+                                </p>
+                                            <p class="g-gutter-top-1">
+                                                <strong>Daughter - Konstantina</strong>
+                                                A Polish and Greek native, child of the forest and sea, adventurer, curator of all happy things, milk lover, fast – moving fairy, eternal dreamer, a rare gem who believes in magic.
+                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="l-sec g-gutter-top-4 g-spacing-top-minus-4 g-gutter-bottom-4 g-spacing-bottom-minus-4">
+                        <div class="l-row c-decors-parent">
+                            <div class="c-decors-box" aria-hidden="true">
+                                <span class="c-photoshop-line c-photoshop-line--top"></span>
+                                <span class="c-photoshop-line c-photoshop-line--bottom"></span>
+                                <div class="l-inner--small">
+                                    <span class="c-photoshop-line c-photoshop-line--right"></span>
+                                    <span class="c-photoshop-line c-photoshop-line--left"></span>
+                                    <div class="c-decor-wrapper c-decor-wrapper--top c-decor-wrapper--right g-gutter-right-2 u-vertical-middle-top">
+                                        <span class="o-object-wrapper o-object-wrapper--rectangular-marquee">
+                                            <object type="image/svg+xml" data={images['shape_1.svg']}>Photoshop select tool</object>
+                                        </span>
+                                    </div>
+                                    <div class="c-decor-wrapper c-decor-wrapper--bottom c-decor-wrapper--left g-gutter-bottom-2 u-horizontal-middle-left">
+                                        <span class="o-object-wrapper o-object-wrapper--move-lines">
+                                            <object type="image/svg+xml" data={images['shape_2.svg']}>Photoshop move tool</object>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-inner">
+                                <div class="row row-align-between g-gutter-top-10 g-gutter-top-0@desktop-small g-gutter-bottom-10 g-gutter-bottom-5@desktop-small">
+                                    <div class="l-sec__box gr-5 gr-12@mobile no-gutter-left no-gutter@mobile">
+                                        <div class="l-sec__box__head">
+                                            <h3 class="t-style-fpn-l-r-u">
+                                                The <strong class="u-paint-1">Challenge</strong>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="l-sec__box gr-6 gr-12@mobile no-gutter-right no-gutter@mobile g-spacing-top-3@mobile">
+                                        <div class="l-sec__box__content">
+                                            <p>
+                                                Woodland Girls needed fast, responsive, <strong>image focused</strong> website with easy to manage CMS.
+                                </p>
+                                            <p class="g-gutter-top-1">
+                                                We built a beautiful, <strong>responsive HTML5</strong> site from scratch to showcase Woodland photographs. Rather than simply displaying the photos, our team created an immersive storytelling site.
+                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-row">
+                            <div class="l-inner">
+                                <div class="row row-align-center">
+                                    <div class="l-sec__box gr-adapt gr-12@tablet no-gutter no-gutter@tablet">
+                                        <div class="l-sec__box__content l-inner--small row row-align-center c-decors-parent">
+                                            <div class="c-decors-box" aria-hidden="true">
+                                                <span class="c-photoshop-line c-photoshop-line--left"></span>
+                                                <span class="c-photoshop-line c-photoshop-line--right"></span>
+                                                <div class="c-decor-wrapper c-decor-wrapper--bottom c-decor-wrapper--right g-gutter-bottom-8 g-gutter-left-4 u-horizontal-total-right">
+                                                    <span class="o-object-wrapper o-object-wrapper--move">
+                                                        <object type="image/svg+xml" data={images['shape_3.svg']}>Photoshop drag-move tool</object>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <figure class="o-video-wrapper o-video-wrapper--default">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2Hpe6gz2L4" allowfullscreen></iframe>
+                                            </figure>
+                                            <div class="c-decors-box c-decors-box--alt" aria-hidden="true">
+                                                <div class="c-decor-wrapper c-decor-wrapper--bottom c-decor-wrapper--left g-gutter-left-2 g-gutter-bottom-2 u-vertical-middle-bottom">
+                                                    <span class="o-object-wrapper o-object-wrapper--cropp">
+                                                        <object type="image/svg+xml" data={images['shape_4.svg']}>Photoshop trim tool</object>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <section class="l-sec">
                         <div class="l-row c-decors-parent">
                             <div class="c-decors-box" aria-hidden="true">
@@ -64,6 +156,7 @@ const IsvOnline = (props) => (
                                 <span class="c-photoshop-line c-photoshop-line--bottom"></span>
                                 <div class="l-inner--small">
                                     <span class="c-photoshop-line c-photoshop-line--right"></span>
+                                    <span class="c-photoshop-line c-photoshop-line--left"></span>
                                     <div class="c-decor-wrapper c-decor-wrapper--top c-decor-wrapper--right g-gutter-top-3 g-gutter-right-4 u-horizontal-middle-right">
                                         <span class="o-object-wrapper o-object-wrapper--path">
                                             <object type="image/svg+xml" data={images['shape_5.svg']}>Photoshop curve tool</object>
@@ -73,129 +166,97 @@ const IsvOnline = (props) => (
                             </div>
                             <div class="l-inner">
                                 <div class="row row-align-between g-gutter-top-10 g-gutter-top-5@desktop-small">
-                                    <div class="l-sec__box gr-11 gr-12@mobile no-gutter-left no-gutter@mobile">
+                                    <div class="l-sec__box gr-6 gr-12@mobile no-gutter-left no-gutter@mobile">
                                         <div class="l-sec__box__head">
                                             <h3 class="t-style-fpn-l-r-u">
                                                 Requirements
-                                            </h3>
+                                </h3>
                                         </div>
                                         <div class="l-sec__box__content t-wysiwyg g-gutter-top-5 g-gutter-top-3@desktop-small">
                                             <p>
-                                                The purpose of this project was to redesign the website, in order to achieve a modern look and a more intuitive navigation. We also had to keep in mind that basically, most of the previous content had to be migrated. That had a great impact.
-                                            </p>
-                                            <h3>Our services included:</h3>
-                                            <ul class="c-dotted-list">
-                                                <li class="c-dotted-list__item u-paint-3">
-                                                    <span class="u-paint-2 g-gutter-left-1">Adobe XD project preparation</span>
-                                                </li>
-                                                <li class="c-dotted-list__item u-paint-3">
-                                                    <span class="u-paint-2 g-gutter-left-1">PSD to HTML conversion</span>
-                                                </li>
-                                                <li class="c-dotted-list__item u-paint-3">
-                                                    <span class="u-paint-2 g-gutter-left-1">WordPress Custom Theme development</span>
-                                                </li>
-                                                <li class="c-dotted-list__item u-paint-3">
-                                                    <span class="u-paint-2 g-gutter-left-1">Cross browser &amp; device testing</span>
-                                                </li>
+                                                After discovery stage we decided to prepare WordPress driven HTML5 responsive website with CSS and JavaScript animations.
+                                </p>
+                                            <p>
+                                                Our services contain:
+                                </p>
+                                            <ul>
+                                                <li>PSD to HTML conversion</li>
+                                                <li>WordPress Custom Theme development</li>
+                                                <li>Cross browser &amp; device testing</li>
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row row-align-between g-gutter-top-10 g-gutter-bottom-5 g-gutter-top-5@desktop-small">
-                                    <div class="l-sec__box gr-11 gr-12@mobile no-gutter-left no-gutter@mobile">
+                                    <div class="l-sec__box gr-6 gr-12@mobile no-gutter-right no-gutter@mobile g-spacing-top-4@mobile">
                                         <div class="l-sec__box__head">
                                             <h3 class="t-style-fpn-l-r-u">
-                                                Delivery
-                                            </h3>
+                                                The Cooperation
+                                </h3>
                                         </div>
-                                        <div class="l-sec__box__content t-wysiwyg g-gutter-top-5 g-gutter-top-3@desktop-small">
+                                        <div class="l-sec__box__content g-gutter-top-5 g-gutter-top-3@desktop-small">
                                             <p>
-                                                Pagepro provided four very talented specialists: <strong>Joanna (Front-End Developer), <strong>Maciej (WordPress/Back-End Developer)</strong>, <strong>Bartosz (Designer)</strong> and </strong><strong>Marek (Project Manager)</strong>.
-                                            </p>
-                                            <p class="g-gutter-top-1">
-                                                The whole project was managed by two great employees from ISV Software Ltd - <strong>Amanda (Managing Director)</strong> and <strong>Steve (IT Director)</strong>. The cooperation with them was smooth, especially thanks to clear communication and quick decision making.
-                                            </p>
-                                            <div class="row row-align-between g-gutter-top-2@desktop-small">
-                                                <div class="l-sec__box gr-6 gr-12@mobile no-gutter-left no-gutter@mobile">
-                                                    <ul class="c-dotted-list">
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                HTML5
-                                                            </span>
-                                                        </li>
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                CSS3
-                                                            </span>
-                                                        </li>
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                SASS
-                                                            </span>
-                                                        </li>
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                WordPress
-                                                            </span>
-                                                        </li>
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                ACF Pro
-                                                            </span>
-                                                        </li>
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                Underscores
-                                                            </span>
-                                                        </li>
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                jQuery
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="l-sec__box gr-6 gr-12@mobile no-gutter-left g-gutter-top-1@mobile no-gutter@mobile u-m-top-0">
-                                                    <ul class="c-dotted-list">
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                GULP
-                                                            </span>
-                                                        </li>
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                BrowserStack
-                                                            </span>
-                                                        </li>
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                JavaScript
-                                                            </span>
-                                                        </li>
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                Swiper
-                                                            </span>
-                                                        </li>
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                Adobe XD
-                                                            </span>
-                                                        </li>
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                ScrollReveal
-                                                            </span>
-                                                        </li>
-                                                        <li class="c-dotted-list__item u-paint-3">
-                                                            <span class="u-paint-2 g-gutter-left-1">
-                                                                Featherlight
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                                <strong>Marta Staroń</strong> (<a href="http://leshaya.eu/" target="_blank">Leshaya</a>) partnered with <strong>Pagepro</strong> to create modern website for Woodland Girls. Leshaya picked up Pagepro for the fourth time and she is planning to hire us for her futher web development projects.
+                                </p>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row g-gutter-top-5 g-gutter-top-3@desktop-small g-gutter-bottom-10 g-gutter-bottom-5@desktop-small">
+                                    <div class="l-sec__box gr-3 gr-6@mobile no-gutter-left no-gutter-left@mobile">
+                                        <ul class="c-dotted-list">
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">HTML5</span>
+                                            </li>
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">CSS3</span>
+                                            </li>
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">SASS</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="l-sec__box gr-3 gr-6@mobile no-gutter-right@mobile">
+                                        <ul class="c-dotted-list">
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">JavaScript</span>
+                                            </li>
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">jQuery</span>
+                                            </li>
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">GULP</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="l-sec__box gr-3 gr-6@mobile no-gutter-left@mobile">
+                                        <ul class="c-dotted-list">
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">
+                                                    Scroll Animations
+                                    </span>
+                                            </li>
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">
+                                                    Paralax Effect
+                                    </span>
+                                            </li>
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">BrowserStack</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="l-sec__box gr-3 gr-6@mobile no-gutter-right no-gutter-right@mobile">
+                                        <ul class="c-dotted-list">
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">Litmus</span>
+                                            </li>
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">FrontendApp</span>
+                                            </li>
+                                            <li class="c-dotted-list__item u-paint-3">
+                                                <span class="u-paint-2 g-gutter-left-1">
+                                                    <a target="_blank" href="http://wordpress.org/">WordPress</a>
+                                                </span>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -212,14 +273,14 @@ const IsvOnline = (props) => (
                                         <div class="l-sec__box__head">
                                             <h3 class="t-style-fpn-l-r-u">
                                                 Time frame
-                                            </h3>
+                                </h3>
                                         </div>
                                     </div>
                                     <div class="l-sec__box gr-6 g-gutter-top-10 g-gutter-top-5@tablet g-gutter-bottom-10 g-gutter-bottom-5@tablet u-bg-1 u-paint-4">
                                         <div class="l-sec__box__content">
                                             <p class="u-text-centered">
-                                                Whole project took us <strong>8 weeks</strong>.
-                                            </p>
+                                                Whole project took us <strong>6 weeks</strong>.
+                                </p>
                                         </div>
                                     </div>
                                     <div class="l-sec__box gr-3 no-gutter u-bg-2 hide@mobile-medium">
@@ -256,19 +317,20 @@ const IsvOnline = (props) => (
                                     <div class="l-sec__box gr-5 gr-12@mobile no-gutter-left no-gutter@mobile g-gutter-top-5 g-gutter-bottom-5">
                                         <div class="l-sec__box__head">
                                             <h3 class="t-style-fpn-l-r-u">
-                                                Step 1 <strong class="u-paint-1">MATERIALS GATHERING AND DESIGN PREPARATION</strong>
+                                                Step 1 <strong class="u-paint-1">Kicking off</strong>
                                             </h3>
                                         </div>
                                         <div class="l-sec__box__content t-wysiwyg g-gutter-top-5 g-gutter-top-3@desktop-small">
                                             <p>
-                                                The first step, we needed to gather proper images and information about key objectives for our client, like to make the "Request demo" button more prominent as it was supposed to open dedicated request form.
-                                            </p>
-                                            <p class="g-gutter-top-1">
-                                                Secondly, we needed to prepare a fresh design based on the previous version of the website. Hence, we made sure that everything on new templates maintains brand colours.
-                                            </p>
-                                            <p class="g-gutter-top-1">
-                                                Once we got precisely described <strong>UX/UI functionalities</strong>, we prepared well-designed project in <strong>Adobe XD</strong>. Moving forward, we started with setting up development environments and installing essential tools for the project.
-                                            </p>
+                                                First thing was to <strong>check if we have all materials</strong>.
+                                                Marta provided us with: PSD &amp; JPG design files, SVG icons, basic requirements and animation examples on different websites.
+                                </p>
+                                            <p>
+                                                We've made sure if we <strong>have the latest version</strong> of the files by presenting her materials summary on FrontendApp (our internal tool), also we've checked if SVG icons are prepared for web-use.
+                                </p>
+                                            <p>
+                                                After reviewing the materials, we've prepared list of questions and suggestions, we asked Marta to do <strong>the kick off call</strong> for making sure if we understand all her specific requirements.
+                                </p>
                                         </div>
                                     </div>
                                     <div class="l-sec__box c-decors-parent gr-5 gr-12@mobile pull-1 pull-0@mobile no-gutter-left@mobile no-gutter-right@mobile g-gutter-top-5 g-gutter-top-4@mobile g-gutter-bottom-5">
@@ -282,19 +344,16 @@ const IsvOnline = (props) => (
                                         </div>
                                         <div class="l-sec__box__content t-wysiwyg g-gutter-top-5 g-gutter-top-3@desktop-small">
                                             <p>
-                                                After managing the initial design and the description of particular functionalities like Forms, Sliders, Documents uploading, we started with defining scope of work in <strong>TeamWork</strong> (Project Management Tool). In other words, we divided actions that needed to be taken, into well-described tasks. Depending on the type, each of the created tasks was assigned to proper member of our team.
-                                            </p>
-                                            <p>
-                                                During the management process, we work in <strong>Agile methodology</strong>. That helps us with adjusting solutions to every newly encountered obstacle. Moreover, we have divided the project into two stages:
-                                            </p>
+                                                The project was actually split in 2 stages - HTML/CSS building and WordPress development.
+                                </p>
                                             <h3>Front-end Development Stage</h3>
                                             <p>
-                                                We always prefer to split <strong>front-end development</strong> from other phases because it is much faster and has less potential risks of bugs appearing. Especially, when we could use <strong>our dedicated tool</strong> for HTML&amp;CSS - SASS starter (<a href="https://github.com/Pagepro/libsasserplate" target="_blank">LibSASSerPlate</a>).
-                                            </p>
+                                                We always like to split front-end development from other phases because it is much faster to prepare CSS &amp; HTML using front-end tooling, like our own <strong>SASS starter</strong> (<a href="https://github.com/Pagepro/libsasserplate" target="_blank">LibSASSerPlate</a>).
+                                </p>
                                             <h3>WordPress Development Stage</h3>
                                             <p>
-                                                Once we prepared HTML&amp;CSS + main JavaScript code, we have planned to implement static files into <strong>WordPress</strong> custom theme.
-                                            </p>
+                                                After preparing HTML&amp;CSS we've planed to implement static files into WordPress custom theme.
+                                </p>
                                         </div>
                                     </div>
                                 </div>
@@ -366,12 +425,12 @@ const IsvOnline = (props) => (
                                                 Step 3 <strong class="u-paint-1">HTML coding</strong>
                                             </h3>
                                             <p class="g-gutter-top-5 g-gutter-top-3@desktop-small">
-                                                Front-End phase always starts with building <strong>Website structure</strong> in HTML. We emphasise creating HTML components to be as much reusable as possible. In order to make clean and clear code, we use BEM Methodology to maintain order in project.
-                                            </p>
+                                                After planning project architecutre we always start with building HTML. We are making sure if code is split into tiny, easy to re-use HTML components.
+                                </p>
                                             <h3 class="g-gutter-top-1">BEM Methodology</h3>
                                             <p class="g-gutter-top-1">
-                                                BEM (Block, Element, Modifier) is an open source technology for developing websites that need to be created quickly and maintained over many years. <strong>BEM</strong> is used in the front-end development of all Pagepro services.
-                                            </p>
+                                                BEM (Block, Element, Modifier) is an open source technology for developing websites that need to be created quickly and maintained over many years. BEM is used in the front-end development of all Pagepro services.
+                                </p>
                                         </div>
                                     </div>
                                     <div class="l-sec__box gr-5 gr-12@mobile pull-1 pull-0@mobile c-decors-parent no-gutter@mobile g-gutter-top-4@mobile" role="columnheader">
@@ -386,11 +445,8 @@ const IsvOnline = (props) => (
                                                 Step 4 <strong class="u-paint-1">(S)CSS coding</strong>
                                             </h3>
                                             <p class="g-gutter-top-5 g-gutter-top-3@desktop-small">
-                                                In Pagepro we use SCCS to write styles code, as it allows us to achieve great efficiency and reduces the risk of future issues on different browsers.
-                                            </p>
-                                            <p class="g-gutter-top-1">
-                                                Nowadays, features like <strong>mixins</strong> or <strong>variables</strong> for <strong>colors</strong>, <strong>sizes</strong> and <strong>breakpoints</strong> are a “must have” standard in Front-End Development. It makes the code reusable and easier to understand for other developers.
-                                            </p>
+                                                SCSS structure needs to be well designed and should be refactorized during project life time. Using easy to understand variables for colors and sizes is a must have. It makes code reusable and easier to understand for other developers.
+                                </p>
                                         </div>
                                     </div>
                                 </div>
@@ -422,8 +478,8 @@ const IsvOnline = (props) => (
                                         </div>
                                         <div class="l-sec__box__content g-gutter-top-5 g-gutter-top-3@desktop-small">
                                             <p class="g-gutter-right-8@desktop-small g-gutter-right-0@tablet">
-                                                We always declare Breakpoints values as <strong>SCSS variables</strong> for different devices that allows us to make them reusable and keep standardization of our templates.
-                                            </p>
+                                                We used Gridle Breakpoints to create <br class="hide show@mobile" />the tablet and mobile layouts.
+                                </p>
                                         </div>
                                     </div>
                                 </div>
@@ -434,7 +490,7 @@ const IsvOnline = (props) => (
                                                 <div class="c-devices-wrapper__box c-devices-wrapper__box--main h-z-1">
                                                     <div class="c-devices-box c-devices-box--imac">
                                                         <figure class="c-devices-box__media o-img-wrapper">
-                                                            <img src={images['isv-rwd-desktop.jpg']} alt="ISV Desktop Screenshot" />
+                                                            <img src={images['pic_screenshot-woodland-03.jpg']} alt="desktop version of the page" />
                                                         </figure>
                                                         <div class="c-devices-box__frame" aria-hidden="true"></div>
                                                     </div>
@@ -442,7 +498,7 @@ const IsvOnline = (props) => (
                                                 <div class="c-devices-wrapper__box c-devices-wrapper__box--left u-horizontal-total-left g-spacing-left-5 g-spacing-left-10@tablet g-spacing-left-0@mobile g-gutter-right-half@tablet g-gutter-right-0@mobile g-spacing-top-1@mobile h-z-2">
                                                     <div class="c-devices-box c-devices-box--ipad">
                                                         <figure class="c-devices-box__media o-img-wrapper">
-                                                            <img src={images['isv-rwd-tablet.jpg']} alt="ISV Tablet Screenshot" />
+                                                            <img src={images['pic_screenshot-woodland-04.jpg']} alt="tablet version of the page" />
                                                         </figure>
                                                         <div class="c-devices-box__frame" aria-hidden="true"></div>
                                                     </div>
@@ -450,7 +506,7 @@ const IsvOnline = (props) => (
                                                 <div class="c-devices-wrapper__box c-devices-wrapper__box--right g-spacing-right-5 g-spacing-right-0@mobile g-spacing-top-1@mobile h-z-3">
                                                     <div class="c-devices-box c-devices-box--iphone">
                                                         <figure class="c-devices-box__media o-img-wrapper">
-                                                            <img src={images['isv-rwd-mobile.jpg']} alt="ISV Smartphone Screenshot" />
+                                                            <img src={images['pic_screenshot-woodland-05.jpg']} alt="smartphone version of the page" />
                                                         </figure>
                                                         <div class="c-devices-box__frame" aria-hidden="true"></div>
                                                     </div>
@@ -499,11 +555,15 @@ const IsvOnline = (props) => (
                                                 Step 6 <strong class="u-paint-1">First Q&amp;A Stage</strong>
                                             </h3>
                                             <p class="g-gutter-top-5 g-gutter-top-3@desktop-small">
-                                                We always conduct comprehensive <strong>Q&amp;A</strong> phase after delivering complete Front-End code. Most of all, we are making sure that particular website is working properly on different devices and on all modern browsers, including Chrome, FireFox, Safari and Internet Explorer.
-                                            </p>
+                                                Before starting WordPress development we always do first Q&amp;A stage.
+                                                At this stage we're testing the website on all modern browsers.
+                                </p>
                                             <p class="g-gutter-top-1">
-                                                As a tool, we use <a href="https://www.browserstack.com/" title="BrowserStack" target="_blank">BrowserStack</a> for checking compatibility on multiple desktop and mobile browsers. Moreover, we are using real devices to check website functionalities. At least two devices with iOS, two with Android system and two with Windows Operating System.
-                                            </p>
+                                                Our Q&amp;A assistant is making sure that everything looks the way designer wanted and works smoothly on all devices. We're doing testing on real devices and on emulated versions using BrowserStack.
+                                </p>
+                                            <p class="g-gutter-top-1">
+                                                This stage is always conducted before WP integration, because it is much easier and faster to do bugfixes on static HTML &amp; CSS templates.
+                                </p>
                                         </div>
                                     </div>
                                     <div class="l-sec__box gr-5 gr-12@mobile pull-1 pull-0@mobile no-gutter@mobile c-decors-parent g-spacing-top-4@mobile" role="columnheader">
@@ -515,14 +575,17 @@ const IsvOnline = (props) => (
                                         </div>
                                         <div class="l-sec__box__head">
                                             <h3 class="t-style-fpn-l-r-u">
-                                                Step 7 <strong class="u-paint-1">JavaScript Coding</strong>
+                                                Step 7 <strong class="u-paint-1">WordPress Development</strong>
                                             </h3>
                                             <p class="g-gutter-top-5 g-gutter-top-3@desktop-small">
-                                                On <strong>isv.online</strong> project we kept everything simple. For that reason, regarding to JavaScript programming, we didn’t have to write a lot of fancy code. Instead, we used mainly tools like <a href="http://idangero.us/swiper/" target="_blank">Swiper</a>, <a href="https://scrollrevealjs.org/" target="_blank">ScrollReveal</a>, <a href="https://noelboss.github.io/featherlight/" target="_blank">Featherlight</a> and jQuery JavaScript library.
-                                            </p>
-                                            <p class="g-gutter-top-5 g-gutter-top-3@desktop-small">
-                                                Swiper helped us with carousels and sliders, Featherlight with putting youtube video in iframe pop-up on the homepage. Finally, we used jQuery JavaScript library and ScrollReveal for different animations.
-                                            </p>
+                                                During the WordPress integration we took the static HTML files and created the backbone of the WordPress site. We're using <a href="http://underscores.me/" target="_blank">Underscores</a> as a starter for developing custom theme.
+                                </p>
+                                            <p class="g-gutter-top-1">
+                                                We've lunched the website on test server with some prepopulated content just to verify if everything is editable and displayed as it should.
+                                </p>
+                                            <p class="g-gutter-top-1">
+                                                After successful implementation we've prepared short instruction describing steps needed to update content on the website.
+                                </p>
                                         </div>
                                     </div>
                                 </div>
@@ -544,69 +607,103 @@ const IsvOnline = (props) => (
                         </div>
                     </section>
                     <section class="l-sec">
-                        <div class="l-row c-decors-parent g-gutter-top-5" aria-hidden="true">
+                        <div class="l-row c-decors-parent g-gutter-top-5 g-gutter-top-4@desktop-small g-gutter-bottom-5 g-gutter-bottom-0@desktop-small">
                             <div class="c-decors-box" aria-hidden="true">
-                                <div class="l-inner">
-                                    <div class="row row-align-between">
-                                        <div class="gr-5 no-gutter-left g-gutter-top-5"></div>
-                                        <div class="c-decors-parent gr-5 pull-1 g-gutter-top-5">
-                                            <span class="c-photoshop-line c-photoshop-line--left"></span>
-                                            <span class="c-photoshop-line c-photoshop-line--right"></span>
-                                        </div>
-                                    </div>
+                                <div class="l-inner--small">
+                                    <span class="c-photoshop-line c-photoshop-line--right"></span>
+                                    <span class="c-photoshop-line c-photoshop-line--left"></span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="l-row" role="grid">
                             <div class="l-inner">
-                                <div class="row row-align-between" role="row">
-                                    <div class="l-sec__box gr-5 gr-12@mobile no-gutter-left no-gutter@mobile" role="columnheader">
+                                <div class="row row-align-between">
+                                    <div class="l-sec__box gr-12 no-gutter">
                                         <div class="l-sec__box__head">
-                                            <h3 class="t-style-fpn-l-r-u">
-                                                Step 8 <strong class="u-paint-1">WORDPRESS DEVELOPMENT</strong>
+                                            <h3 class="t-style-fpn-l-r-u row row-align-between">
+                                                <span class="gr-adapt no-gutter">
+                                                    <span>Step 8 <strong class="u-paint-1">Final Q&amp;A and Optimalisation</strong></span>
+                                                </span>
                                             </h3>
-                                            <p class="g-gutter-top-5 g-gutter-top-3@desktop-small">
-                                                Our WP Developer's first task, was to prepare <a href="https://underscores.me/" target="_blank">Underscores</a> WordPress Starter for theme development. He had also used <a href="https://www.advancedcustomfields.com/pro/" target="_blank">ACF Pro</a> plugin in order to make Custom Fields and make almost everything on the website customizable.
-                                                </p>
-                                            <p class="g-gutter-top-1 g-gutter-top-2@desktop-small">
-                                                We put emphasis on preparing settings for content management to be intuitive and clear, especially for non-technical user.
-                                                </p>
-                                        </div>
-                                    </div>
-                                    <div class="l-sec__box gr-5 gr-12@mobile pull-1 pull-0@mobile no-gutter@mobile c-decors-parent g-spacing-top-4@mobile" role="columnheader">
-                                        <div class="c-decors-box" aria-hidden="true">
-                                            <div class="l-inner--small">
-                                                <span class="c-photoshop-line c-photoshop-line--right"></span>
-                                                <span class="c-photoshop-line c-photoshop-line--left"></span>
-                                            </div>
-                                        </div>
-                                        <div class="l-sec__box__head">
-                                            <h3 class="t-style-fpn-l-r-u">
-                                                Step 9 <strong class="u-paint-1">FINAL Q&amp;A AND UAT</strong>
-                                            </h3>
-                                            <p class="g-gutter-top-5 g-gutter-top-3@desktop-small">
-                                                When everything was successfully implemented, we went through the settings with the client and explained how to manage the content. We made sure that everything is clear and meets the client’s needs.
-                                                </p>
-                                            <p class="g-gutter-top-1 g-gutter-top-2@desktop-small">
-                                                Before live deployment we give client at least one week for checking if the whole content is applied properly.
-                                                </p>
-                                            <p class="g-gutter-top-1 g-gutter-top-2@desktop-small">
-                                                The whole process of creating the website described above was being made on development environment. Once client is happy with the results and we get his approval, we migrate everything from development environment to production.
-                                                </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="l-row c-decors-parent">
+                            <div class="c-decors-box" aria-hidden="true">
+                                <span class="c-photoshop-line c-photoshop-line--top"></span>
+                                <span class="c-photoshop-line c-photoshop-line--bottom"></span>
+                                <div class="l-inner--small">
+                                    <span class="c-photoshop-line c-photoshop-line--right"></span>
+                                    <span class="c-photoshop-line c-photoshop-line--left"></span>
+                                </div>
+                            </div>
+                            <div class="l-inner">
+                                <div class="row row-align-between">
+                                    <div class="l-sec__box gr-5 gr-12@mobile no-gutter-left no-gutter-left@mobile no-gutter-right@mobile g-gutter-top-5 g-gutter-top-3@desktop-small g-gutter-bottom-5 g-gutter-bottom-0@mobile">
+                                        <div class="l-sec__box__content">
+                                            <p>
+                                                Once the development was completed, we've done Speed optimalisation.
+                                                We've tested the project on a majority of devices and browsers. There were a few small issues which had to be fixed.
+                                </p>
+                                        </div>
+                                    </div>
+                                    <div class="l-sec__box gr-5 gr-12@mobile pull-1 pull-0@mobile no-gutter-left@mobile no-gutter-right@mobile g-gutter-top-5 g-gutter-top-3@desktop-small g-gutter-top-1@mobile g-gutter-bottom-5 g-gutter-bottom-4@mobile">
+                                        <div class="l-sec__box__content">
+                                            <p>
+                                                We paid special attention to the way each section of the site could be managed. We tested the functionality and installed the project on our staging server for a client review.
+                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-row">
+                            <div class="l-inner">
+                                <div class="row row-align-center">
+                                    <div class="l-sec__box gr-adapt gr-12@tablet no-gutter no-gutter@tablet">
+                                        <div class="l-sec__box__content c-decors-parent">
+                                            <div class="c-decors-box" aria-hidden="true">
+                                                <span class="c-photoshop-line c-photoshop-line--left"></span>
+                                                <span class="c-photoshop-line c-photoshop-line--right"></span>
+                                            </div>
+                                            <figure class="o-img-wrapper">
+                                                <img src={images['pic_screenshot-woodland-01.jpg']} alt="Google Page Speed Insights" />
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="l-sec">
                         <div class="l-row c-decors-parent g-gutter-top-5 g-gutter-top-0@desktop-small" aria-hidden="true">
                             <div class="c-decors-box" aria-hidden="true">
-                                <span class="c-photoshop-line c-photoshop-line--bottom"></span>
-                                <div class="l-inner">
-                                    <div class="row row-align-between">
-                                        <div class="gr-5 no-gutter-left g-gutter-top-10"></div>
-                                        <div class="c-decors-parent gr-5 pull-1 g-gutter-top-10">
-                                            <span class="c-photoshop-line c-photoshop-line--left"></span>
-                                            <span class="c-photoshop-line c-photoshop-line--right"></span>
+                                <span class="c-photoshop-line c-photoshop-line--top"></span>
+                            </div>
+                        </div>
+                        <div class="l-row">
+                            <div class="l-inner">
+                                <div class="row">
+                                    <div class="l-sec__box gr-12 no-gutter">
+                                        <div class="l-sec__box__content">
+                                            <blockquote class="c-testimonial g-gutter-top-5 g-gutter-bottom-5 g-gutter-left-4 g-gutter-left-0@tablet g-gutter-right-4 g-gutter-right-0@tablet" aria-label="Testimonial">
+                                                <div class="c-testimonial__head u-paint-1">
+                                                    <h3 class="t-style-fpn-l-r">Testimonial:</h3>
+                                                </div>
+                                                <div class="c-testimonial__content t-style-fpn-m-ri g-gutter-top-4 g-gutter-top-3@desktop-small">
+                                                    <p class="u-line-h-m">
+                                                        <strong>Pagepro was my first and the best choice</strong>. Their knowledge, skills and experience are very impressive. <strong>They pay attention to details</strong> and do their best to deliver expected product on expert standard. As a visual designer I can confirm that Pagepro can bring my design to live in the way as it was designed or even better. <strong>I truly recommend Pagepro</strong> as open-minded specialists with great abilities.
+                                        </p>
+                                                </div>
+                                                <footer class="c-testimonial__foot g-gutter-top-4  g-gutter-top-3@desktop-small">
+                                                    <figure class="c-testimonial__foot__media o-img-wrapper o-img-wrapper--round">
+                                                        <img src={images['pic_marta-staron.jpg']} alt="Marta Staroń" />
+                                                    </figure>
+                                                    <div class="c-testimonial__foot__info u-text-upper">
+                                                        <strong class="u-decor-bottom--alt t-style-fpn-s-r">Marta Staroń</strong>. Freelance Designer
+                                        </div>
+                                                </footer>
+                                            </blockquote>
                                         </div>
                                     </div>
                                 </div>
@@ -626,10 +723,10 @@ const IsvOnline = (props) => (
                                             <div class="c-website-teaser__inner row h-row-align-stretch">
                                                 <div class="c-website-teaser__info gr-4 gr-12@mobile-medium no-gutter-left no-gutter@mobile-medium">
                                                     <div class="c-website-teaser__info__head g-gutter-left-4 g-gutter-left-0@tablet g-gutter-top-5 g-gutter-top-0@mobile-medium g-gutter-bottom-3@mobile-medium">
-                                                        <h3 class="t-style-fpn-l-r-u">ISV Online</h3>
+                                                        <h3 class="t-style-fpn-l-r-u">WoodlandGirls</h3>
                                                     </div>
                                                     <div class="c-website-teaser__info__actions g-gutter-left-4 g-gutter-left-0@tablet g-gutter-top-2 g-gutter-top-0@mobile-medium g-gutter-bottom-2 g-gutter-bottom-0@mobile-medium">
-                                                        <a class="c-cta-link s-btn-style-3" href="https://isv.online/" target="_blank" >
+                                                        <a class="c-cta-link s-btn-style-3" href="http://woodlandgirls.com" target="_blank" >
                                                             <span class="c-label">Visit website</span>
                                                         </a>
                                                     </div>
@@ -642,11 +739,11 @@ const IsvOnline = (props) => (
                                                                     <div class="c-devices-box__frame">
                                                                         <strong class="c-address">
                                                                             <span class="c-address__head u-paint-3">http://</span>
-                                                                            <span class="c-address__content u-paint-2">isv.online/</span>
+                                                                            <span class="c-address__content u-paint-2">woodlandgirls.com</span>
                                                                         </strong>
                                                                     </div>
                                                                     <figure class="c-devices-box__media o-img-wrapper">
-                                                                        <img src={images['isv-rwd-desktop.jpg']} alt="isv Website Home Page Screenshot" />
+                                                                        <img src={images['pic_screenshot-woodland-06.jpg']} alt="WoodlandGrils Screenshot" />
                                                                     </figure>
                                                                 </div>
                                                             </div>
@@ -666,7 +763,7 @@ const IsvOnline = (props) => (
                                 <div class="row">
                                     <div class="l-sec__box gr-12 no-gutter">
                                         <div class="l-sec__box__head">
-                                            <h3 class="u-paint-1 t-style-fpn-l-r">Other <strong>WordPress</strong> Projects:</h3>
+                                            <h3 class="u-paint-1 t-style-fpn-l-r">Other works:</h3>
                                         </div>
                                         <div class="l-sec__box__content g-spacing-top-5 g-spacing-top-4@desktop-small c-between-decors-parent">
                                             <span class="c-between-decors">
@@ -775,7 +872,6 @@ const IsvOnline = (props) => (
                 </main>
             </div>
 
-
             <Footer />
 
 
@@ -783,34 +879,34 @@ const IsvOnline = (props) => (
     </>
 )
 
-export const fluidIsvOnlineBgImage = graphql`
-                                fragment fluidIsvOnlineBgImage on File {
-                                    childImageSharp {
-                                fluid(quality: 90, maxWidth: 4160) {
-                                    ...GatsbyImageSharpFluid
-                                }
-                                }
-                            }
-                            `
+export const fluidWoodlandBgImage = graphql`
+                                fragment fluidWoodlandBgImage on File {
+                childImageSharp {
+            fluid(quality: 90, maxWidth: 4160) {
+                ...GatsbyImageSharpFluid
+            }
+            }
+        }
+        `
 
 
-export const IsvOnlineQuery = graphql`query {
-                                bgCaseHawksmanThumb: file(relativePath: {eq: "bg_case-hawksman-thumb.jpg" }) {
-                                    ...fluidIsvOnlineBgImage
-                                }
-                                bgCaseWrocRect: file(relativePath: {eq: "bg_case-wroc-rect.jpg" }) {
-                                    ...fluidIsvOnlineBgImage
-                                }
-                                bgCaseKarinaPersonalRect: file(relativePath: {eq: "bg_case-karina-personal-rect.jpg" }) {
-                                    ...fluidIsvOnlineBgImage
-                                }
-                                bgCaseIsvWebsite: file(relativePath: {eq: "bg-case-isv-website.jpg" }) {
-                                    ...fluidIsvOnlineBgImage
-                                }
-                                bgMiniHero: file(relativePath: {eq: "bg_mini-hero.jpg" }) {
-                                    ...fluidPage310BgImage
-                                }
-                                }
-                                `
+export const WoodlandQuery = graphql`query {
+                bgCaseKarinaPersonalRect: file(relativePath: {eq: "bg_case-karina-personal-rect.jpg" }) {
+                ...fluidWoodlandBgImage
+            }
+            bgCaseWoodland: file(relativePath: {eq: "bg_case-woodland.jpg" }) {
+                ...fluidWoodlandBgImage
+            }
+            bgCaseHawksmanThumb: file(relativePath: {eq: "bg_case-hawksman-thumb.jpg" }) {
+                ...fluidWoodlandBgImage
+            }
+            bgCaseWrocRect: file(relativePath: {eq: "bg_case-wroc-rect.jpg" }) {
+                ...fluidWoodlandBgImage
+            }
+            bgMiniHero: file(relativePath: {eq: "bg_mini-hero.jpg" }) {
+                ...fluidWoodlandBgImage
+            }
+            }
+            `
 
-export default IsvOnline;
+export default Woodland;
