@@ -6,13 +6,13 @@ import { graphql, Link } from "gatsby";
 
 const PrivacyPolicy = (props) => (
     <>
-        <div class="p-privacy">
+        <div className="p-privacy">
 
             <Header />
 
 
 
-            <main class="l-main">
+            <main className="l-main">
 
                 <BgImage
                     title="bgAgencies"
@@ -20,10 +20,10 @@ const PrivacyPolicy = (props) => (
                     height='399px'
                     className="l-hero l-hero--alt l-hero--small l-hero--with-overlay  u-paint-4" >
 
-                    <div class="l-inner g-gutter-top-10 g-gutter-bottom-5">
-                        <div class="l-hero__head row row-align-bottom g-gutter-top-8">
-                            <div class="l-hero__head__box">
-                                <h2 class="t-style-fpn-xxl-b g-spacing-top-2">
+                    <div className="l-inner g-gutter-top-10 g-gutter-bottom-5">
+                        <div className="l-hero__head row row-align-bottom g-gutter-top-8">
+                            <div className="l-hero__head__box">
+                                <h2 className="t-style-fpn-xxl-b g-spacing-top-2">
                                     Privacy Policy
                             </h2>
                             </div>
@@ -32,30 +32,30 @@ const PrivacyPolicy = (props) => (
 
                 </BgImage>
 
-                <section class="l-sec g-gutter-top-10 g-gutter-top-5@desktop-small g-gutter-bottom-10 g-gutter-bottom-5@desktop-small">
-                    <div class="l-row">
-                        <div class="l-inner">
-                            <div class="row">
-                                <div class="l-sec__box">
-                                    <div class="l-sec__box__head">
-                                        <h3 class="t-style-fpn-l-r-u">
+                <section className="l-sec g-gutter-top-10 g-gutter-top-5@desktop-small g-gutter-bottom-10 g-gutter-bottom-5@desktop-small">
+                    <div className="l-row">
+                        <div className="l-inner">
+                            <div className="row">
+                                <div className="l-sec__box">
+                                    <div className="l-sec__box__head">
+                                        <h3 className="t-style-fpn-l-r-u">
                                             General
                                     </h3>
                                     </div>
-                                    <div class="l-sec__box__content g-gutter-top-2 g-gutter-top-2@desktop-small">
-                                        <ol class="c-ordered-list">
+                                    <div className="l-sec__box__content g-gutter-top-2 g-gutter-top-2@desktop-small">
+                                        <ol className="c-ordered-list">
                                             <li>This Privacy Policy (called “Policy” from now on) is for information purposes only and is entitled to help users understand their obligations and rights in the frame of the European General Data Protection Regulation. (called “GDPR” from now on).</li>
-                                            <li>This Policy is valid from <strong class="u-paint-1">May 25, 2018</strong>.</li>
-                                            <li>The personal data administrator is Pagepro sp. z o.o. (from now on called “Administrator”) with headquarters in Poland (ul. Dąbrowskiego 28, 15-872 Białystok) registered in the XII Division of the National Entrepreneurs Court in Białystok (KRS 0000667902; NIP 542-327-00-57; Regon 366771509) represented by: Krzysztof Łojniewski. Email address: <a href="mailto:gdpr@pagepro.co">gdpr@pagepro.co</a>, Phone number:<span class="u-paint-1"> +48 888 641 098</span></li>
+                                            <li>This Policy is valid from <strong className="u-paint-1">May 25, 2018</strong>.</li>
+                                            <li>The personal data administrator is Pagepro sp. z o.o. (from now on called “Administrator”) with headquarters in Poland (ul. Dąbrowskiego 28, 15-872 Białystok) registered in the XII Division of the National Entrepreneurs Court in Białystok (KRS 0000667902; NIP 542-327-00-57; Regon 366771509) represented by: Krzysztof Łojniewski. Email address: <a href="mailto:gdpr@pagepro.co">gdpr@pagepro.co</a>, Phone number:<span className="u-paint-1"> +48 888 641 098</span></li>
                                             <li>Customers’ and Users’ personal data is stored and processed in accordance with the GDPR requirements. The term “Personal Data” is used according to GDPR’s personal data definition.</li>
                                             <li>The administrator makes all the necessary efforts to protect the interests of individuals and organizations sharing their personal and corporate information. As well, ensures that the data is gathered and stored in agreement with GDPR, and will serve only the specific purposes for which a specific consent has been provided.</li>
-                                            <li class="t-wysiwyg">
+                                            <li className="t-wysiwyg">
                                                 <p>The administrator understands the importance of the privacy levels demanded from the site visitors and users in current and potential cooperation agreements, as well as customers, sharing personal data making use of the following:</p>
                                                 <ul>
                                                     <li>The official website <a href="https://pagepro.co">pagepro.co</a>&nbsp;and all its subpages</li>
                                                     <li>
                                                         <p>Social platforms:</p>
-                                                        <ul class="nested-list">
+                                                        <ul className="nested-list">
                                                             <li><a href="https://facebook.com">facebook.com</a>, including all subdomains under the “Facebook” brand, regulated by its own policies: <a href="https://facebook.com/legal/terms">facebook.com/legal/terms</a></li>
                                                             <li><a href="https://linkedin.com">linkedin.com</a>, including all subdomains under the “LinkedIn” brand, regulated by its own policies:&nbsp;<a href="https://linkedin.com/legal/user-agreement">linkedin.com/legal/user-agreement</a></li>
                                                             <li><a href="https://instagram.com">instagram.com</a>, including all subdomains under the “Instagram” brand, regulated by its own policies: <a href="https://help.instagram.com/478745558852511">help.instagram.com/478745558852511</a></li>
@@ -67,16 +67,16 @@ const PrivacyPolicy = (props) => (
                                         </ol>
                                     </div>
                                 </div>
-                                <div class="l-sec__box g-gutter-top-5">
-                                    <div class="l-sec__box__head">
-                                        <h3 class="t-style-fpn-l-r-u">
+                                <div className="l-sec__box g-gutter-top-5">
+                                    <div className="l-sec__box__head">
+                                        <h3 className="t-style-fpn-l-r-u">
                                             Scope and goal of personal data gathering, processing and storing
                                     </h3>
                                     </div>
-                                    <div class="l-sec__box__content g-gutter-top-1">
-                                        <ol class="c-ordered-list">
+                                    <div className="l-sec__box__content g-gutter-top-1">
+                                        <ol className="c-ordered-list">
                                             <li>Everytime personal information is gathered, stored and/or processed by the Administrator, it is done strictly according to the GDPR regulations.</li>
-                                            <li class="t-wysiwyg">
+                                            <li className="t-wysiwyg">
                                                 <p>The most common cases for which the Administrator gathers, stores and process personal data are:</p>
                                                 <ul>
                                                     <li>Recruitment</li>
@@ -87,9 +87,9 @@ const PrivacyPolicy = (props) => (
                                                     <li>Accounting</li>
                                                 </ul>
                                             </li>
-                                            <li class="g-gutter-top-1">In case personal data is planned to be collected for other purposes, a special consent from customers and/or users for each specific purpose will be requested.</li>
+                                            <li className="g-gutter-top-1">In case personal data is planned to be collected for other purposes, a special consent from customers and/or users for each specific purpose will be requested.</li>
                                             <li>All personal data collected is strictly for internal use only, and won’t be shared with any other external parties.</li>
-                                            <li class="t-wysiwyg">
+                                            <li className="t-wysiwyg">
                                                 <p>After the proper consent has been granted, the Administrator can collect, process and store the following data:</p>
                                                 <ul>
                                                     <li>Name and Surname</li>
@@ -107,14 +107,14 @@ const PrivacyPolicy = (props) => (
                                         </ol>
                                     </div>
                                 </div>
-                                <div class="l-sec__box g-gutter-top-5">
-                                    <div class="l-sec__box__head">
-                                        <h3 class="t-style-fpn-l-r-u">
+                                <div className="l-sec__box g-gutter-top-5">
+                                    <div className="l-sec__box__head">
+                                        <h3 className="t-style-fpn-l-r-u">
                                             Data Control and Edit Rights
                                     </h3>
                                     </div>
-                                    <div class="l-sec__box__content g-gutter-top-1">
-                                        <ol class="c-ordered-list">
+                                    <div className="l-sec__box__content g-gutter-top-1">
+                                        <ol className="c-ordered-list">
                                             <li>Customers and users have the right to request access their personal data and request it’s edition at anytime.</li>
                                             <li>Customers and users have the right to re-define the scope in which their personal data can be processed and stored.</li>
                                             <li>Customers and users have the right to request the deletion of their personal data from the Administrator’s database at anytime.</li>
@@ -126,29 +126,29 @@ const PrivacyPolicy = (props) => (
                                     </div>
                                 </div>
 
-                                <div class="l-sec__box g-gutter-top-5">
-                                    <div class="l-sec__box__head">
-                                        <h3 class="t-style-fpn-l-r-u">
+                                <div className="l-sec__box g-gutter-top-5">
+                                    <div className="l-sec__box__head">
+                                        <h3 className="t-style-fpn-l-r-u">
                                             Contact with the Administrator
                                     </h3>
                                     </div>
-                                    <div class="l-sec__box__content g-gutter-top-1">
-                                        <ol class="c-ordered-list">
+                                    <div className="l-sec__box__content g-gutter-top-1">
+                                        <ol className="c-ordered-list">
                                             <li>Customers and users have the right to contact the administrator at anytime, making use of any of the communication means stated in the point number one of the Policy. However all official requests should be done in written form making use of the e-mail address <a href="mailto:gdpr@pagepro.co">gdpr@pagepro.co</a>.</li>
                                             <li>The Administrator will store all correspondence with customers and users for statistical purposes and also in the frame of potential allegations regarding edition or deletion requests.</li>
                                         </ol>
                                     </div>
                                 </div>
 
-                                <div class="l-sec__box g-gutter-top-5">
-                                    <div class="l-sec__box__head">
-                                        <h3 class="t-style-fpn-l-r-u">
+                                <div className="l-sec__box g-gutter-top-5">
+                                    <div className="l-sec__box__head">
+                                        <h3 className="t-style-fpn-l-r-u">
                                             Security
                                     </h3>
                                     </div>
-                                    <div class="l-sec__box__content">
-                                        <ol class="c-ordered-list g-gutter-top-1">
-                                            <li class="t-wysiwyg">
+                                    <div className="l-sec__box__content">
+                                        <ol className="c-ordered-list g-gutter-top-1">
+                                            <li className="t-wysiwyg">
                                                 <p>The Administrator makes sure all necessary technical means are implemented in order to keep all stored Customers and Users data safe from external agents. Specially to avoid:</p>
                                                 <ul>
                                                     <li>Data disclosure to non-authorized persons</li>
@@ -156,8 +156,8 @@ const PrivacyPolicy = (props) => (
                                                     <li>Data theft</li>
                                                 </ul>
                                             </li>
-                                            <li class="g-gutter-top-1">The Administrator makes sure all necessary technical means are implemented to avoid data edition or deletion by non-authorized persons</li>
-                                            <li class="t-wysiwyg">
+                                            <li className="g-gutter-top-1">The Administrator makes sure all necessary technical means are implemented to avoid data edition or deletion by non-authorized persons</li>
+                                            <li className="t-wysiwyg">
                                                 <p>The security measures to comply with 5.1 and 5.2 are:</p>
                                                 <ul>
                                                     <li>HTTPS Protocols</li>
@@ -169,14 +169,14 @@ const PrivacyPolicy = (props) => (
                                     </div>
                                 </div>
 
-                                <div class="l-sec__box g-gutter-top-5">
-                                    <div class="l-sec__box__head">
-                                        <h3 class="t-style-fpn-l-r-u">
+                                <div className="l-sec__box g-gutter-top-5">
+                                    <div className="l-sec__box__head">
+                                        <h3 className="t-style-fpn-l-r-u">
                                             Miscellaneous
                                     </h3>
                                     </div>
-                                    <div class="l-sec__box__content g-gutter-top-1">
-                                        <ol class="c-ordered-list">
+                                    <div className="l-sec__box__content g-gutter-top-1">
+                                        <ol className="c-ordered-list">
                                             <li>The website makes reference to external websites or third party services. The Administrator strongly recommends to get familiar with the privacy policy and terms of use of each one of those external sites and/or third party services since they are in no way under the administrator’s scope of liability.</li>
                                             <li>The Administrator reserves the right to perform any changes in the Policy, which can be necessary (but not limited) due to legal changes, especially in the frame of the GDPR requirements, having impact in our obligations and/or customers and users rights.</li>
                                             <li>If any change in the Policy is performed, a clear announcement informing about the changes implemented will be published.</li>
@@ -192,42 +192,42 @@ const PrivacyPolicy = (props) => (
                 </section>
 
 
-                <section class="l-sec g-gutter-top-10 g-gutter-top-5@desktop-small g-gutter-bottom-10 g-gutter-bottom-5@desktop-small u-bg-5">
-                    <div class="l-row">
-                        <div class="l-inner">
-                            <div class="row">
-                                <div class="l-sec__box gr-12 no-gutter">
-                                    <div class="l-sec__box__head">
-                                        <h3 class="t-style-fpn-xl-r-u u-paint-1 u-text-centered">
+                <section className="l-sec g-gutter-top-10 g-gutter-top-5@desktop-small g-gutter-bottom-10 g-gutter-bottom-5@desktop-small u-bg-5">
+                    <div className="l-row">
+                        <div className="l-inner">
+                            <div className="row">
+                                <div className="l-sec__box gr-12 no-gutter">
+                                    <div className="l-sec__box__head">
+                                        <h3 className="t-style-fpn-xl-r-u u-paint-1 u-text-centered">
                                             Achieve success with us!
                                                 </h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row row-align-center g-gutter-top-4 g-gutter-top-3@desktop-small">
-                                <div class="l-sec__box gr-6 gr-12@mobile-big no-gutter@mobile-big">
-                                    <div class="l-sec__box__content t-style-fpn-s-r u-line-h-m">
-                                        <p class="u-text-centered">
+                            <div className="row row-align-center g-gutter-top-4 g-gutter-top-3@desktop-small">
+                                <div className="l-sec__box gr-6 gr-12@mobile-big no-gutter@mobile-big">
+                                    <div className="l-sec__box__content t-style-fpn-s-r u-line-h-m">
+                                        <p className="u-text-centered">
                                             Need a qualified software development team to take your project from where it is now, to where you want it to be?
                                                 </p>
-                                        <p class="g-gutter-top-3 g-gutter-top-2@desktop-small u-text-centered">
-                                            <strong class="t-style-fpn-s-s">Talk to us and get the ball rolling.</strong>
+                                        <p className="g-gutter-top-3 g-gutter-top-2@desktop-small u-text-centered">
+                                            <strong className="t-style-fpn-s-s">Talk to us and get the ball rolling.</strong>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row row-align-center g-gutter-top-4 g-gutter-top-3@desktop-small">
-                                <div class="l-sec__box gr-6">
-                                    <div class="l-sec__box__actions c-decors-parent">
-                                        <div class="c-decors-box" aria-hidden="true">
-                                            <div class="c-decor-wrapper c-decor-wrapper--center-vertical c-decor-wrapper--right">
-                                                <span class="c-plane-decor u-paint-4">
-                                                    <span class="o-icon o-icon--plane"></span>
+                            <div className="row row-align-center g-gutter-top-4 g-gutter-top-3@desktop-small">
+                                <div className="l-sec__box gr-6">
+                                    <div className="l-sec__box__actions c-decors-parent">
+                                        <div className="c-decors-box" aria-hidden="true">
+                                            <div className="c-decor-wrapper c-decor-wrapper--center-vertical c-decor-wrapper--right">
+                                                <span className="c-plane-decor u-paint-4">
+                                                    <span className="o-icon o-icon--plane"></span>
                                                 </span>
                                             </div>
                                         </div>
-                                        <Link class="c-cta-link s-btn-style-3" to="/contact">
-                                            <span class="c-label">Contact Us</span>
+                                        <Link className="c-cta-link s-btn-style-3" to="/contact">
+                                            <span className="c-label">Contact Us</span>
                                         </Link>
                                     </div>
                                 </div>

@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 import BgImage from '../components/bgImage'
 import { graphql, Link } from "gatsby"
 import storybook from '../../static/img/storybook.svg'
+import bgServices from '../../static/img/bg_services.jpg'
 
 const Services = (props) => (
     <>
@@ -27,92 +28,87 @@ const Services = (props) => (
                 <Header />
 
                 <main className="l-main">
-
-                    <BgImage
-                        title="bgServices"
-                        fluid={props.data.bgServices.childImageSharp.fluid}
-                        height='130vh'
-                        className="l-hero l-hero--alt l-hero--small l-hero--with-overlay  u-paint-4" >
-                        <div className="c-video-box" data-video data-poster="./media/services-poster.jpg" data-srcs="./media/services.mp4,./media/services.webm"></div>
-                        <div className="l-inner g-gutter-top-10 g-gutter-top-6@tablet">
-                            <div className="l-hero__head row row-align-bottom g-gutter-top-8 g-gutter-top-3@mobile">
-                                <div className="l-hero__head__box">
-                                    <h1 className="t-style-fpn-xxl-b-u">
+                    <div class="l-hero l-hero--alt l-hero--small l-hero--with-overlay u-bg-2 u-paint-4" style={{ backgroundImage: `url(${bgServices})` }}>
+                        <div class="c-video-box" data-video data-poster="./media/services-poster.jpg" data-srcs="./media/services.mp4,./media/services.webm"></div>
+                        <div class="l-inner g-gutter-top-10 g-gutter-top-6@tablet">
+                            <div class="l-hero__head row row-align-bottom g-gutter-top-8 g-gutter-top-3@mobile">
+                                <div class="l-hero__head__box">
+                                    <h1 class="t-style-fpn-xxl-b-u">
                                         Front-end Development Services
                         </h1>
                                 </div>
                             </div>
-                            <div className="l-hero__content row row-align-top g-gutter-top-5"  >
-                                <div className="l-hero__content__box gr-12 no-gutter"  >
-                                    <ul className="c-service-boxes-list js-services-list g-spacing-bottom-minus-8">
-                                        <li className="c-service-boxes-list__item c-decors-parent " style={{ width: '285px', height: '285px' }} >
-                                            <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
-                                                <span className="c-angle-decor c-angle-decor--right c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
+                            <div class="l-hero__content row row-align-top g-gutter-top-5">
+                                <div class="l-hero__content__box gr-12 no-gutter">
+                                    <ul class="c-service-boxes-list js-services-list g-spacing-bottom-minus-8" style={{ width: '100%', maxWidth: '1140px', maxHeight: '570px' }}>
+                                        <li class="c-service-boxes-list__item c-decors-parent" style={{ width: '25%' }}>
+                                            <span class="c-decors-box c-decors-box--sup" aria-hidden="true">
+                                                <span class="c-angle-decor c-angle-decor--right c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
                                             </span>
-                                            <div className="c-service-box" >
-                                                <a className="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--front-end">
-                                                    <span className="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
-                                                        <span className="c-mouse-follow-hover-box__horizontal"></span>
-                                                        <span className="c-mouse-follow-hover-box__vertical"></span>
+                                            <div class="c-service-box">
+                                                <a class="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--front-end">
+                                                    <span class="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
+                                                        <span class="c-mouse-follow-hover-box__horizontal"></span>
+                                                        <span class="c-mouse-follow-hover-box__vertical"></span>
                                                     </span>
-                                                    <span className="c-ico-label c-ico-label--alt">
-                                                        <span className="c-ico-label__media" aria-hidden="true">
-                                                            <span className="o-icon-wrapper o-icon-wrapper--round u-bg-4 u-paint-1 u-rev-on-hover">
-                                                                <span className="o-icon o-icon--right"></span>
-                                                                <span className="c-dash-ico"></span>
+                                                    <span class="c-ico-label c-ico-label--alt">
+                                                        <span class="c-ico-label__media" aria-hidden="true">
+                                                            <span class="o-icon-wrapper o-icon-wrapper--round u-bg-4 u-paint-1 u-rev-on-hover">
+                                                                <span class="o-icon o-icon--right"></span>
+                                                                <span class="c-dash-ico"></span>
                                                             </span>
                                                         </span>
-                                                        <span className="c-ico-label__info t-style-fpn-s-r-u">
+                                                        <span class="c-ico-label__info t-style-fpn-s-r-u">
                                                             Front-end development
                                             </span>
                                                     </span>
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
-                                            <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
-                                                <span className="c-angle-decor c-angle-decor--left c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
-                                                <span className="c-angle-decor c-angle-decor--right c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4 hide@mobile-medium"></span>
+                                        <li class="c-service-boxes-list__item c-decors-parent" >
+                                            <span class="c-decors-box c-decors-box--sup" aria-hidden="true">
+                                                <span class="c-angle-decor c-angle-decor--left c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
+                                                <span class="c-angle-decor c-angle-decor--right c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4 hide@mobile-medium"></span>
                                             </span>
-                                            <div className="c-service-box">
-                                                <a className="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--react">
-                                                    <span className="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
-                                                        <span className="c-mouse-follow-hover-box__horizontal"></span>
-                                                        <span className="c-mouse-follow-hover-box__vertical"></span>
+                                            <div class="c-service-box">
+                                                <a class="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--react">
+                                                    <span class="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
+                                                        <span class="c-mouse-follow-hover-box__horizontal"></span>
+                                                        <span class="c-mouse-follow-hover-box__vertical"></span>
                                                     </span>
-                                                    <span className="c-ico-label c-ico-label--alt">
-                                                        <span className="c-ico-label__media" aria-hidden="true">
-                                                            <span className="o-icon-wrapper o-icon-wrapper--alt">
-                                                                <span className="o-icon o-icon--react"></span>
+                                                    <span class="c-ico-label c-ico-label--alt">
+                                                        <span class="c-ico-label__media" aria-hidden="true">
+                                                            <span class="o-icon-wrapper o-icon-wrapper--alt">
+                                                                <span class="o-icon o-icon--react"></span>
                                                             </span>
                                                         </span>
-                                                        <span className="c-ico-label__info t-style-fpn-s-r-u">
+                                                        <span class="c-ico-label__info t-style-fpn-s-r-u">
                                                             ReactJS development
                                             </span>
                                                     </span>
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
-                                            <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
-                                                <span className="c-angle-decor c-angle-decor--left c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4 hide@mobile-medium"></span>
-                                                <span className="c-angle-decor c-angle-decor--right c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
-                                                <span className="c-angle-decor c-angle-decor--right c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4 hide show@mobile-medium"></span>
+                                        <li class="c-service-boxes-list__item c-decors-parent">
+                                            <span class="c-decors-box c-decors-box--sup" aria-hidden="true">
+                                                <span class="c-angle-decor c-angle-decor--left c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4 hide@mobile-medium"></span>
+                                                <span class="c-angle-decor c-angle-decor--right c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
+                                                <span class="c-angle-decor c-angle-decor--right c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4 hide show@mobile-medium"></span>
                                             </span>
-                                            <div className="c-service-box">
-                                                <a className="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--react-native">
-                                                    <span className="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
-                                                        <span className="c-mouse-follow-hover-box__horizontal"></span>
-                                                        <span className="c-mouse-follow-hover-box__vertical"></span>
+                                            <div class="c-service-box">
+                                                <a class="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--react-native">
+                                                    <span class="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
+                                                        <span class="c-mouse-follow-hover-box__horizontal"></span>
+                                                        <span class="c-mouse-follow-hover-box__vertical"></span>
                                                     </span>
-                                                    <span className="c-ico-label c-ico-label--alt">
-                                                        <span className="c-ico-label c-ico-label--alt">
-                                                            <span className="c-ico-label__media" aria-hidden="true">
-                                                                <span className="o-icon-wrapper o-icon-wrapper--alt">
-                                                                    <span className="o-icon o-icon--react-native"></span>
+                                                    <span class="c-ico-label c-ico-label--alt">
+                                                        <span class="c-ico-label c-ico-label--alt">
+                                                            <span class="c-ico-label__media" aria-hidden="true">
+                                                                <span class="o-icon-wrapper o-icon-wrapper--alt">
+                                                                    <span class="o-icon o-icon--react-native"></span>
                                                                 </span>
                                                             </span>
-                                                            <span className="c-ico-label__info t-style-fpn-s-r-u">
+                                                            <span class="c-ico-label__info t-style-fpn-s-r-u">
                                                                 React Native development
                                             </span>
                                                         </span>
@@ -120,120 +116,120 @@ const Services = (props) => (
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
-                                            <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
-                                                <span className="c-angle-decor c-angle-decor--left c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
-                                                <span className="c-angle-decor c-angle-decor--left c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4 hide show@mobile-medium"></span>
+                                        <li class="c-service-boxes-list__item c-decors-parent">
+                                            <span class="c-decors-box c-decors-box--sup" aria-hidden="true">
+                                                <span class="c-angle-decor c-angle-decor--left c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
+                                                <span class="c-angle-decor c-angle-decor--left c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4 hide show@mobile-medium"></span>
                                             </span>
-                                            <div className="c-service-box">
-                                                <a className="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--nodejs">
-                                                    <span className="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
-                                                        <span className="c-mouse-follow-hover-box__horizontal"></span>
-                                                        <span className="c-mouse-follow-hover-box__vertical"></span>
+                                            <div class="c-service-box">
+                                                <a class="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--nodejs">
+                                                    <span class="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
+                                                        <span class="c-mouse-follow-hover-box__horizontal"></span>
+                                                        <span class="c-mouse-follow-hover-box__vertical"></span>
                                                     </span>
-                                                    <span className="c-ico-label c-ico-label--alt">
-                                                        <span className="c-ico-label__media" aria-hidden="true">
-                                                            <span className="o-icon-wrapper o-icon-wrapper--alt">
-                                                                <span className="o-icon o-icon--nodejs"></span>
+                                                    <span class="c-ico-label c-ico-label--alt">
+                                                        <span class="c-ico-label__media" aria-hidden="true">
+                                                            <span class="o-icon-wrapper o-icon-wrapper--alt">
+                                                                <span class="o-icon o-icon--nodejs"></span>
                                                             </span>
                                                         </span>
-                                                        <span className="c-ico-label__info t-style-fpn-s-r-u">
+                                                        <span class="c-ico-label__info t-style-fpn-s-r-u">
                                                             Node.js Development
                                             </span>
                                                     </span>
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
-                                            <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
-                                                <span className="c-angle-decor c-angle-decor--right c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
-                                                <span className="c-angle-decor c-angle-decor--right c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4 hide show@mobile-medium"></span>
+                                        <li class="c-service-boxes-list__item c-decors-parent">
+                                            <span class="c-decors-box c-decors-box--sup" aria-hidden="true">
+                                                <span class="c-angle-decor c-angle-decor--right c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
+                                                <span class="c-angle-decor c-angle-decor--right c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4 hide show@mobile-medium"></span>
                                             </span>
-                                            <div className="c-service-box">
-                                                <a className="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--psd-to-html">
-                                                    <span className="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
-                                                        <span className="c-mouse-follow-hover-box__horizontal"></span>
-                                                        <span className="c-mouse-follow-hover-box__vertical"></span>
+                                            <div class="c-service-box">
+                                                <a class="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--psd-to-html">
+                                                    <span class="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
+                                                        <span class="c-mouse-follow-hover-box__horizontal"></span>
+                                                        <span class="c-mouse-follow-hover-box__vertical"></span>
                                                     </span>
-                                                    <span className="c-ico-label c-ico-label--alt">
-                                                        <span className="c-ico-label__media" aria-hidden="true">
-                                                            <span className="o-icon-wrapper o-icon-wrapper--alt">
-                                                                <span className="o-icon o-icon--psd"></span>
+                                                    <span class="c-ico-label c-ico-label--alt">
+                                                        <span class="c-ico-label__media" aria-hidden="true">
+                                                            <span class="o-icon-wrapper o-icon-wrapper--alt">
+                                                                <span class="o-icon o-icon--psd"></span>
                                                             </span>
                                                         </span>
-                                                        <span className="c-ico-label__info t-style-fpn-s-r-u">
+                                                        <span class="c-ico-label__info t-style-fpn-s-r-u">
                                                             PSD to HTML
                                             </span>
                                                     </span>
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
-                                            <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
-                                                <span className="c-angle-decor c-angle-decor--left c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
-                                                <span className="c-angle-decor c-angle-decor--left c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4 hide show@mobile-medium"></span>
-                                                <span className="c-angle-decor c-angle-decor--right c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4 hide@mobile-medium"></span>
+                                        <li class="c-service-boxes-list__item c-decors-parent">
+                                            <span class="c-decors-box c-decors-box--sup" aria-hidden="true">
+                                                <span class="c-angle-decor c-angle-decor--left c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
+                                                <span class="c-angle-decor c-angle-decor--left c-angle-decor--bottom g-gutter-right-1 g-gutter-top-1 u-paint-4 hide show@mobile-medium"></span>
+                                                <span class="c-angle-decor c-angle-decor--right c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4 hide@mobile-medium"></span>
                                             </span>
-                                            <div className="c-service-box">
-                                                <a className="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--psd-to-email">
-                                                    <span className="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
-                                                        <span className="c-mouse-follow-hover-box__horizontal"></span>
-                                                        <span className="c-mouse-follow-hover-box__vertical"></span>
+                                            <div class="c-service-box">
+                                                <a class="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--psd-to-email">
+                                                    <span class="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
+                                                        <span class="c-mouse-follow-hover-box__horizontal"></span>
+                                                        <span class="c-mouse-follow-hover-box__vertical"></span>
                                                     </span>
-                                                    <span className="c-ico-label c-ico-label--alt">
-                                                        <span className="c-ico-label__media" aria-hidden="true">
-                                                            <span className="o-icon-wrapper o-icon-wrapper--alt">
-                                                                <span className="o-icon o-icon--mailing"></span>
+                                                    <span class="c-ico-label c-ico-label--alt">
+                                                        <span class="c-ico-label__media" aria-hidden="true">
+                                                            <span class="o-icon-wrapper o-icon-wrapper--alt">
+                                                                <span class="o-icon o-icon--mailing"></span>
                                                             </span>
                                                         </span>
-                                                        <span className="c-ico-label__info t-style-fpn-s-r-u">
+                                                        <span class="c-ico-label__info t-style-fpn-s-r-u">
                                                             PSD to email
                                             </span>
                                                     </span>
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
-                                            <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
-                                                <span className="c-angle-decor c-angle-decor--left c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4 hide@mobile-medium"></span>
-                                                <span className="c-angle-decor c-angle-decor--right c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
+                                        <li class="c-service-boxes-list__item c-decors-parent">
+                                            <span class="c-decors-box c-decors-box--sup" aria-hidden="true">
+                                                <span class="c-angle-decor c-angle-decor--left c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4 hide@mobile-medium"></span>
+                                                <span class="c-angle-decor c-angle-decor--right c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
                                             </span>
-                                            <div className="c-service-box">
-                                                <a className="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--wordpress">
-                                                    <span className="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
-                                                        <span className="c-mouse-follow-hover-box__horizontal"></span>
-                                                        <span className="c-mouse-follow-hover-box__vertical"></span>
+                                            <div class="c-service-box">
+                                                <a class="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--wordpress">
+                                                    <span class="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
+                                                        <span class="c-mouse-follow-hover-box__horizontal"></span>
+                                                        <span class="c-mouse-follow-hover-box__vertical"></span>
                                                     </span>
-                                                    <span className="c-ico-label c-ico-label--alt">
-                                                        <span className="c-ico-label__media" aria-hidden="true">
-                                                            <span className="o-icon-wrapper o-icon-wrapper--alt">
-                                                                <span className="o-icon o-icon--wordpress"></span>
+                                                    <span class="c-ico-label c-ico-label--alt">
+                                                        <span class="c-ico-label__media" aria-hidden="true">
+                                                            <span class="o-icon-wrapper o-icon-wrapper--alt">
+                                                                <span class="o-icon o-icon--wordpress"></span>
                                                             </span>
                                                         </span>
-                                                        <span className="c-ico-label__info t-style-fpn-s-r-u">
+                                                        <span class="c-ico-label__info t-style-fpn-s-r-u">
                                                             WordPress development
                                             </span>
                                                     </span>
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="c-service-boxes-list__item c-decors-parent" style={{ width: '285px', height: '285px' }}>
-                                            <span className="c-decors-box c-decors-box--sup" aria-hidden="true">
-                                                <span className="c-angle-decor c-angle-decor--left c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
+                                        <li class="c-service-boxes-list__item c-decors-parent">
+                                            <span class="c-decors-box c-decors-box--sup" aria-hidden="true">
+                                                <span class="c-angle-decor c-angle-decor--left c-angle-decor--top g-gutter-right-1 g-gutter-top-1 u-paint-4"></span>
                                             </span>
-                                            <div className="c-service-box">
-                                                <a className="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--dedicated-teams">
-                                                    <span className="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
-                                                        <span className="c-mouse-follow-hover-box__horizontal"></span>
-                                                        <span className="c-mouse-follow-hover-box__vertical"></span>
+                                            <div class="c-service-box">
+                                                <a class="c-service-box__inner u-rev-on-hover-parent u-paint-4 u-paint-1-on-hover u-bg-1 c-mouse-follow-hover-parent js-mouse-follow-hover is-hovered-from-top" href="#service--dedicated-teams">
+                                                    <span class="c-mouse-follow-hover-box u-paint-4" aria-hidden="true">
+                                                        <span class="c-mouse-follow-hover-box__horizontal"></span>
+                                                        <span class="c-mouse-follow-hover-box__vertical"></span>
                                                     </span>
-                                                    <span className="c-ico-label c-ico-label--alt">
-                                                        <span className="c-ico-label__media" aria-hidden="true">
-                                                            <span className="o-icon-wrapper o-icon-wrapper--alt">
-                                                                <span className="o-icon o-icon--team"></span>
+                                                    <span class="c-ico-label c-ico-label--alt">
+                                                        <span class="c-ico-label__media" aria-hidden="true">
+                                                            <span class="o-icon-wrapper o-icon-wrapper--alt">
+                                                                <span class="o-icon o-icon--team"></span>
                                                             </span>
                                                         </span>
-                                                        <span className="c-ico-label__info t-style-fpn-s-r-u">
+                                                        <span class="c-ico-label__info t-style-fpn-s-r-u">
                                                             Dedicated teams
                                             </span>
                                                     </span>
@@ -244,7 +240,7 @@ const Services = (props) => (
                                 </div>
                             </div>
                         </div>
-                    </BgImage>
+                    </div>
                     <section className="l-sec g-gutter-top-8" id="service--front-end">
                         <div className="l-row">
                             <div className="l-inner u-decor-bottom u-paint-5">

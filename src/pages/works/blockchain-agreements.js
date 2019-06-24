@@ -4,6 +4,7 @@ import Header from '../../components/header';
 import Footer from '../../components/footer';
 import { graphql, Link } from 'gatsby';
 import BgImage from '../../components/bgImage'
+import WorksMainBg from '../../components/worksMainBg'
 
 function importAll(r) {
     let images = {};
@@ -23,39 +24,9 @@ const BlockchainAgreements = (props) => (
                 <Header />
 
                 <main className="l-main">
-                    <BgImage
-                        title="bgCaseBlockchain"
-                        fluid={props.data.bgCaseBlockchain.childImageSharp.fluid}
-                        className="l-hero l-hero--alt l-hero--small l-hero--with-overlay  u-paint-4"
-                        height='100vh'
-                    >
-                        <div className="l-inner g-gutter-top-10 g-gutter-bottom-8">
-                            <div className="l-hero__head row g-gutter-top-8 g-gutter-top-0@mobile">
-                                <div className="l-hero__head__box">
-                                    <h2 className="t-style-fpn-xxl-b-u">
-                                        etherium blockchain doc signing app
-                                    </h2>
-                                </div>
-                            </div>
-                            <div className="l-hero__foot row">
-                                <div className="l-inner">
-                                    <div className="l-row row row-align-between row-align-middle">
-                                        <div className="l-hero__foot__box gr-adapt no-gutter-left">
-                                            <a className="c-ico-link c-ico-link--anim u-paint-4 u-paint-1-on-hover" href="#sec-1">
-                                                <span className="o-icon o-icon--down"></span>
-                                                <span className="c-label t-style-fpn-s-b u-line-h-m">Scroll for more</span>
-                                            </a>
-                                        </div>
-                                        <div className="l-hero__foot__box gr-adapt no-gutter-right">
-                                            <Link className="c-cta-link s-btn-style-2" to="/works" data-animate-out="true">
-                                                <span className="c-label">Back to works</span>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </BgImage>
+
+                    <WorksMainBg image={images['bg-case-blockchain.jpg']} />
+
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">
                             <div className="l-inner">
@@ -457,9 +428,6 @@ export const BlockchainAgreementsQuery = graphql`query {
                         bgCaseMnfRect: file(relativePath: {eq: "bg_case-mnf-rect.jpg" }) {
                             ...fluidBlockchainAgreementsBgImage
                         }
-                        bgCaseBlockchain: file(relativePath: {eq: "bg-case-blockchain.jpg" }) {
-                            ...fluidBlockchainAgreementsBgImage
-                        }
                         bgCaseCryptoRect: file(relativePath: {eq: "bg-case-crypto-rect.jpg" }) {
                             ...fluidBlockchainAgreementsBgImage
                         }
@@ -467,3 +435,4 @@ export const BlockchainAgreementsQuery = graphql`query {
                         `
 
 export default BlockchainAgreements;
+

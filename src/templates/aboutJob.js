@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Instagram from "../components/instagram"
-import BgImage from '../components/bgImage'
-import { graphql } from 'gatsby'
-
+import image from '../../static/img/bg_agencies.jpg'
 class AboutJob extends Component {
 
     render() {
@@ -21,22 +19,18 @@ class AboutJob extends Component {
                         <Header />
 
                         <main className="l-main">
-                            <BgImage
-                                title="bgAgencies"
-                                fluid={this.props.data.bgAgencies.childImageSharp.fluid}
-                                height='454px'
-                                className="l-hero l-hero--alt l-hero--small l-hero--with-overlay  u-paint-4" >
-                                <div className="l-inner g-gutter-top-8 g-gutter-bottom-10">
-                                    <div className="l-hero__head row row-align-bottom g-gutter-top-8">
-                                        <div className="l-hero__head__box">
-                                            <strong className="t-style-fpn-xl-r-u">CAREER</strong>
-                                            <h2 className="t-style-fpn-xxl-b g-spacing-top-1">
+                            <div class="l-hero l-hero--alt l-hero--small l-hero--with-overlay u-bg-2 u-paint-4" style={{ backgroundImage: `url(${image})`, backgroundPosition: '100% 50%' }}>
+                                <div class="l-inner g-gutter-top-8 g-gutter-bottom-10">
+                                    <div class="l-hero__head row row-align-bottom g-gutter-top-8">
+                                        <div class="l-hero__head__box">
+                                            <strong class="t-style-fpn-xl-r-u">CAREER</strong>
+                                            <h2 class="t-style-fpn-xxl-b g-spacing-top-1">
                                                 {position}
                                             </h2>
                                         </div>
                                     </div>
                                 </div>
-                            </BgImage>
+                            </div>
                             <section className="l-sec" id="career--lead-text">
                                 <div className="l-row">
                                     <div className="l-inner g-gutter-top-5 g-gutter-top-4@desktop-small g-gutter-bottom-1 g-gutter-bottom-1@desktop-small">
@@ -86,7 +80,7 @@ class AboutJob extends Component {
                                                                     <div className="c-info-box__head g-gutter-top-2">
                                                                         <h4 className="t-style-fpn-s-r-u u-paint-1">Responsibilities</h4>
                                                                     </div>
-                                                                    <div class="c-info-box__content t-wysiwyg g-gutter-top-2 u-paint-2">
+                                                                    <div className="c-info-box__content t-wysiwyg g-gutter-top-2 u-paint-2">
                                                                         <ul>
                                                                             {responsibilities.map((item, id) => <li key={id}>{item}</li>)}
                                                                         </ul>
@@ -100,7 +94,7 @@ class AboutJob extends Component {
                                                                     <div className="c-info-box__head g-gutter-top-2">
                                                                         <h4 className="t-style-fpn-s-r-u u-paint-1">REQUIREMENTS</h4>
                                                                     </div>
-                                                                    <div class="c-info-box__content t-wysiwyg g-gutter-top-2 u-paint-2">
+                                                                    <div className="c-info-box__content t-wysiwyg g-gutter-top-2 u-paint-2">
                                                                         <ul>
                                                                             {requirements.map((item, id) => <li key={id}>{item}</li>)}
                                                                         </ul>
@@ -114,7 +108,7 @@ class AboutJob extends Component {
                                                                     <div className="c-info-box__head g-gutter-top-2">
                                                                         <h4 className="t-style-fpn-s-r-u u-paint-1">NICE TO HAVE</h4>
                                                                     </div>
-                                                                    <div class="c-info-box__content t-wysiwyg g-gutter-top-2 u-paint-2">
+                                                                    <div className="c-info-box__content t-wysiwyg g-gutter-top-2 u-paint-2">
                                                                         <ul>
                                                                             {nice_to_have.map((item, id) => <li key={id}>{item}</li>)}
                                                                         </ul>
@@ -345,16 +339,5 @@ class AboutJob extends Component {
     }
 }
 
-export const aboutJobQuery = graphql`
-    query {
-        bgAgencies: file(relativePath: { eq: "bg_agencies.jpg" }) {
-            childImageSharp {
-              fluid(quality: 80, maxWidth: 4160) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-    `
 
 export default AboutJob;

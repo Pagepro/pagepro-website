@@ -19,7 +19,7 @@ const Instagram = () => (
             caption
             localFile {
               childImageSharp {
-                fixed(quality: 100, width: 228, height: 228) {
+                fixed(quality: 100, width: 240, height: 240) {
                   ...GatsbyImageSharpFixed_noBase64
                 }
               }

@@ -315,10 +315,10 @@ const ReactDevelopment = (props) => (
                     </section>
 
                     <ProjectsAndWorkshop
-                        header={<h2 class="t-style-fpn-l-r-u">
+                        header={<h2 className="t-style-fpn-l-r-u">
                             Spreading our <strong>knowledge</strong>
                         </h2>}
-                        description={<p class="g-gutter-top-1 g-gutter-top-1@desktop-small">
+                        description={<p className="g-gutter-top-1 g-gutter-top-1@desktop-small">
                             Teaching is a part of our company's DNA: we do internal lectures and workshops, speak at meetups and conferences, write blog posts.
                     </p>}
                     />

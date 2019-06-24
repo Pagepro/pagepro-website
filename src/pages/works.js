@@ -66,37 +66,37 @@ const Works = (props) => (
                         <img src={images['bg_case-dekra-thumb.jpg']}
                             alt="dekra thumbnail" />
                     </div>
-                    <div class="l-hero l-hero--alt l-hero--with-slider">
-                        <div class="l-hero__content row">
-                            <div class="l-hero__content__box">
-                                <div class="c-scroll-wrapper js-scroll">
-                                    <ul class="c-portfolio-teasers-list c-portfolio-teasers-list--rwd-alt js-swing-anim ps-child">
+                    <div className="l-hero l-hero--alt l-hero--with-slider">
+                        <div className="l-hero__content row">
+                            <div className="l-hero__content__box">
+                                <div className="c-scroll-wrapper js-scroll">
+                                    <ul className="c-portfolio-teasers-list c-portfolio-teasers-list--rwd-alt js-swing-anim ps-child">
 
 
 
-                                        <li class="c-portfolio-teasers-list__item ">
-                                            <div class="c-portfolio-teaser">
-                                                <Link class="c-portfolio-teaser__inner u-paint-4" to="works/gatedtalent" data-animate-in="true">
-                                                    <div class="c-portfolio-teaser__media">
+                                        <li className="c-portfolio-teasers-list__item ">
+                                            <div className="c-portfolio-teaser">
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="works/gatedtalent" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media">
                                                         <BgImage
                                                             title="bgCaseGatedtalentThumb"
                                                             fluid={props.data.bgCaseGatedtalentThumb.childImageSharp.fluid}
 
                                                         />
                                                     </div>
-                                                    <div class="c-portfolio-teaser__main">
-                                                        <h2 class="t-style-fpn-l-b-u u-text-centered@mobile">
+                                                    <div className="c-portfolio-teaser__main">
+                                                        <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             GatedTalent
                     </h2>
-                                                        <p class="g-gutter-top-1 u-paint-3">
+                                                        <p className="g-gutter-top-1 u-paint-3">
                                                             React<br />
                                                             JavaScript Single Page App<br />
                                                             Front-end Dedicated Team
                     </p>
                                                     </div>
-                                                    <div class="c-portfolio-teaser__add g-gutter-top-2 g-gutter-top-1@mobile">
-                                                        <span class="c-cta-btn s-btn-style-1-no-hover">
-                                                            <span class="c-label">Case study</span>
+                                                    <div className="c-portfolio-teaser__add g-gutter-top-2 g-gutter-top-1@mobile">
+                                                        <span className="c-cta-btn s-btn-style-1-no-hover">
+                                                            <span className="c-label">Case study</span>
                                                         </span>
 
 
@@ -105,27 +105,27 @@ const Works = (props) => (
                                             </div>
                                         </li>
 
-                                        <li class="c-portfolio-teasers-list__item ">
-                                            <div class="c-portfolio-teaser">
-                                                <Link class="c-portfolio-teaser__inner u-paint-4" to="/works/my-name-flow" data-animate-in="true">
-                                                    <div class="c-portfolio-teaser__media">
+                                        <li className="c-portfolio-teasers-list__item ">
+                                            <div className="c-portfolio-teaser">
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/my-name-flow" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media">
                                                         <BgImage
                                                             title="bgCaseMnfThumb"
                                                             fluid={props.data.bgCaseMnfThumb.childImageSharp.fluid}
                                                         />
                                                     </div>
-                                                    <div class="c-portfolio-teaser__main">
-                                                        <h2 class="t-style-fpn-l-b-u u-text-centered@mobile">
+                                                    <div className="c-portfolio-teaser__main">
+                                                        <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             My Name Flow
                     </h2>
-                                                        <p class="g-gutter-top-1 u-paint-3">
+                                                        <p className="g-gutter-top-1 u-paint-3">
                                                             React<br />
                                                             JavaScript Single Page App
                     </p>
                                                     </div>
-                                                    <div class="c-portfolio-teaser__add g-gutter-top-2 g-gutter-top-1@mobile">
-                                                        <span class="c-cta-btn s-btn-style-1-no-hover">
-                                                            <span class="c-label">Case study</span>
+                                                    <div className="c-portfolio-teaser__add g-gutter-top-2 g-gutter-top-1@mobile">
+                                                        <span className="c-cta-btn s-btn-style-1-no-hover">
+                                                            <span className="c-label">Case study</span>
                                                         </span>
 
 

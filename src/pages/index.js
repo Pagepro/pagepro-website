@@ -437,7 +437,7 @@ const IndexPage = (props) => (
                                     <BgImage
                                       title="bgCaseGatedtalent"
                                       fluid={props.data.bgCaseGatedtalent.childImageSharp.fluid}
-                                      height='400px'
+                                      height='100%'
                                     />
 
                                   </div>
@@ -464,7 +464,7 @@ const IndexPage = (props) => (
                                     <BgImage
                                       title="bgCaseMnfRect"
                                       fluid={props.data.bgCaseMnfRect.childImageSharp.fluid}
-                                      height='400px'
+                                      height='100%'
                                     />
                                   </div>
                                   <div className="c-portfolio-teaser__main">
@@ -490,7 +490,7 @@ const IndexPage = (props) => (
                                     <BgImage
                                       title="bgCaseBlockchainRect"
                                       fluid={props.data.bgCaseBlockchainRect.childImageSharp.fluid}
-                                      height='400px'
+                                      height='100%'
                                     />
                                   </div>
                                   <div className="c-portfolio-teaser__main">
@@ -516,7 +516,7 @@ const IndexPage = (props) => (
                                     <BgImage
                                       title="bgCaseAcrfRect"
                                       fluid={props.data.bgCaseAcrfRect.childImageSharp.fluid}
-                                      height='400px'
+                                      height='100%'
                                     />
                                   </div>
                                   <div className="c-portfolio-teaser__main">
@@ -542,7 +542,7 @@ const IndexPage = (props) => (
                                     <BgImage
                                       title="bgCaseGatedtalentwebsiteRect"
                                       fluid={props.data.bgCaseGatedtalentwebsiteRect.childImageSharp.fluid}
-                                      height='400px'
+                                      height='100%'
                                     />
                                   </div>
                                   <div className="c-portfolio-teaser__main">
@@ -568,7 +568,7 @@ const IndexPage = (props) => (
                                     <BgImage
                                       title="bgCaseOtl"
                                       fluid={props.data.bgCaseOtl.childImageSharp.fluid}
-                                      height='400px'
+                                      height='100%'
                                     /></div>
                                   <div className="c-portfolio-teaser__main">
                                     <h2 className="t-style-fpn-l-b-u">
