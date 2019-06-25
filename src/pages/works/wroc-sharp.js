@@ -24,7 +24,9 @@ const Wroc = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg_case-wroc.jpg']} />
+                    <WorksMainBg
+                        image={images['bg_case-wroc.jpg']}
+                        h2Text={'wroc#'} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">

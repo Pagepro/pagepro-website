@@ -24,7 +24,9 @@ const KarinaPapadopoulos = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg_case-karina-personal.jpg']} />
+                    <WorksMainBg
+                        image={images['bg_case-karina-personal.jpg']}
+                        h2Text={'karina papadopoulos'} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">

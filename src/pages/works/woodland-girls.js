@@ -22,7 +22,9 @@ const Woodland = (props) => (
                 <Header />
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg_case-woodland.jpg']} />
+                    <WorksMainBg
+                        image={images['bg_case-woodland.jpg']}
+                        h2Text={'woodland girls'} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">

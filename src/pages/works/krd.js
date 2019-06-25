@@ -24,7 +24,9 @@ const Krd = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg_case-krd.jpg']} />
+                    <WorksMainBg
+                        image={images['bg_case-krd.jpg']}
+                        h2Text={['krd economic', <br />, 'information', <br />, 'bureau']} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">

@@ -23,7 +23,9 @@ const Hawksman = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg_case-hawksman.jpg']} />
+                    <WorksMainBg
+                        image={images['bg_case-hawksman.jpg']}
+                        h2Text={'hawksman'} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">

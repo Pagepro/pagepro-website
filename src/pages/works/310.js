@@ -23,7 +23,9 @@ const Page310 = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg-case-310-website.jpg']} />
+                    <WorksMainBg
+                        image={images['bg-case-310-website.jpg']}
+                        h2Text={'310 vincent stret office building'} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">

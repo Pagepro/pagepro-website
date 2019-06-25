@@ -24,7 +24,9 @@ const FrontendApp = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg_case-fap.jpg']} />
+                    <WorksMainBg
+                        image={images['bg_case-fap.jpg']}
+                        h2Text={'frontendapp'} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">

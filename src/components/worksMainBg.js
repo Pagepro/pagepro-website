@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-const WorksMainBg = ({ image }) => {
+const WorksMainBg = ({ image, h2Text }) => {
     return (
         <>
             <div className="l-hero l-hero--alt l-hero--with-overlay u-bg-2 u-paint-4" style={{ backgroundImage: `url(${image})` }}>
@@ -9,8 +9,8 @@ const WorksMainBg = ({ image }) => {
                     <div className="l-hero__head row g-gutter-top-8 g-gutter-top-0@mobile">
                         <div className="l-hero__head__box">
                             <h2 className="t-style-fpn-xxl-b-u">
-                                Woodland Girls
-                        </h2>
+                                {h2Text}
+                            </h2>
                         </div>
                     </div>
                     <div className="l-hero__foot row">

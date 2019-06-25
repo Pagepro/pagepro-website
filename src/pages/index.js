@@ -568,7 +568,7 @@ const IndexPage = (props) => (
                                     <BgImage
                                       title="bgCaseOtl"
                                       fluid={props.data.bgCaseOtl.childImageSharp.fluid}
-                                      height='100%'
+                                      height='380px'
                                     /></div>
                                   <div className="c-portfolio-teaser__main">
                                     <h2 className="t-style-fpn-l-b-u">

@@ -22,7 +22,9 @@ const Acrf = (props) => (
                 <Header />
 
                 <main className="l-main">
-                    <WorksMainBg image={images['bg-case-acrf-website.jpg']} />
+                    <WorksMainBg
+                        image={images['bg-case-acrf-website.jpg']}
+                        h2Text={'australian cancer research foundation'} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">

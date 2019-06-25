@@ -23,7 +23,9 @@ const GatedtalentWebsite = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg-case-gatedtalent-website.jpg']} />
+                    <WorksMainBg
+                        image={images['bg-case-gatedtalent-website.jpg']}
+                        h2Text={'gatedtalent website'} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">

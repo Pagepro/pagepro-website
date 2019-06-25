@@ -24,8 +24,9 @@ const MyNameFlow = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg_case-mnf.jpg']} />
-
+                    <WorksMainBg
+                        image={images['bg_case-mnf.jpg']}
+                        h2Text={'mynameflow'} />
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">
                             <div className="l-inner">

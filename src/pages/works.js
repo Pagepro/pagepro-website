@@ -81,6 +81,7 @@ const Works = (props) => (
                                                         <BgImage
                                                             title="bgCaseGatedtalentThumb"
                                                             fluid={props.data.bgCaseGatedtalentThumb.childImageSharp.fluid}
+                                                            height='100vh'
 
                                                         />
                                                     </div>
@@ -112,6 +113,7 @@ const Works = (props) => (
                                                         <BgImage
                                                             title="bgCaseMnfThumb"
                                                             fluid={props.data.bgCaseMnfThumb.childImageSharp.fluid}
+                                                            height='100vh'
                                                         />
                                                     </div>
                                                     <div className="c-portfolio-teaser__main">
@@ -141,6 +143,7 @@ const Works = (props) => (
                                                         <BgImage
                                                             title="bgCaseBlockchainThumb"
                                                             fluid={props.data.bgCaseBlockchainThumb.childImageSharp.fluid}
+                                                            height='100vh'
                                                         />
                                                     </div>
                                                     <div className="c-portfolio-teaser__main">
@@ -170,6 +173,7 @@ const Works = (props) => (
                                                         <BgImage
                                                             title="bgCaseCryptoThumb"
                                                             fluid={props.data.bgCaseCryptoThumb.childImageSharp.fluid}
+                                                            height='100vh'
                                                         />
                                                     </div>
                                                     <div className="c-portfolio-teaser__main">
@@ -194,11 +198,12 @@ const Works = (props) => (
 
                                         <li className="c-portfolio-teasers-list__item ">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="310.html" data-animate-in="true">
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/310" data-animate-in="true">
                                                     <div className="c-portfolio-teaser__media">
                                                         <BgImage
                                                             title="bgCase310Thumb"
                                                             fluid={props.data.bgCase310Thumb.childImageSharp.fluid}
+                                                            height='100vh'
                                                         />
                                                     </div>
                                                     <div className="c-portfolio-teaser__main">
@@ -217,14 +222,20 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
-                                        <li className="c-portfolio-teasers-list__item ui-swing-anim">
+                                        <li className="c-portfolio-teasers-list__item ">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="isv-online.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg-case-isv-thumb.jpg)' }} ></div>
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/isv-online" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media" >
+                                                        <BgImage
+                                                            title="bgCaseIsvThumb"
+                                                            fluid={props.data.bgCaseIsvThumb.childImageSharp.fluid}
+                                                            height='100vh'
+                                                        />
+                                                    </div>
                                                     <div className="c-portfolio-teaser__main">
                                                         <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             ISV Online
@@ -241,14 +252,20 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ui-swing-anim">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="acrf.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg-case-acrf-thumb.jpg)' }}></div>
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/acrf" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media" >
+                                                        <BgImage
+                                                            title="bgCaseAcrfThumb"
+                                                            fluid={props.data.bgCaseAcrfThumb.childImageSharp.fluid}
+                                                            height='100vh'
+                                                        />
+                                                    </div>
                                                     <div className="c-portfolio-teaser__main">
                                                         <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             Australian Cancer Research Foundation
@@ -265,14 +282,20 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ui-swing-anim">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="outside-the-lines.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg_case-otl-thumb.jpg)' }}></div>
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/outside-the-lines" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media" >
+                                                        <BgImage
+                                                            title="bgCaseOtlThumb"
+                                                            fluid={props.data.bgCaseOtlThumb.childImageSharp.fluid}
+                                                            height='100vh'
+                                                        />
+                                                    </div>
                                                     <div className="c-portfolio-teaser__main">
                                                         <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             Outside The Lines
@@ -289,14 +312,20 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ui-swing-anim">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="hawksman.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg_case-hawksman-thumb.jpg)' }}></div>
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/hawksman" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media" >
+                                                        <BgImage
+                                                            title="bgCaseHawksmanThumb"
+                                                            fluid={props.data.bgCaseHawksmanThumb.childImageSharp.fluid}
+                                                            height='100vh'
+                                                        />
+                                                    </div>
                                                     <div className="c-portfolio-teaser__main">
                                                         <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             Hawksman
@@ -313,14 +342,20 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ui-swing-anim">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="hurt-koszulkowo.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg-case-koszulkowo-thumb.jpg)' }}></div>
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/hurt-koszulkowo" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media" >
+                                                        <BgImage
+                                                            title="bgCaseKoszulkowoThumb"
+                                                            fluid={props.data.bgCaseKoszulkowoThumb.childImageSharp.fluid}
+                                                            height='100vh'
+                                                        />
+                                                    </div>
                                                     <div className="c-portfolio-teaser__main">
                                                         <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             Hurt Koszulkowo
@@ -337,14 +372,20 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ui-swing-anim">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="gatedtalent-website.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg-case-gatedtalentwebsite-thumb.jpg)' }}></div>
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/gatedtalent-website" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media" >
+                                                        <BgImage
+                                                            title="bgCaseGatedtalentwebsiteThumb"
+                                                            fluid={props.data.bgCaseGatedtalentwebsiteThumb.childImageSharp.fluid}
+                                                            height='100vh'
+                                                        />
+                                                    </div>
                                                     <div className="c-portfolio-teaser__main">
                                                         <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             GatedTalent Website
@@ -373,14 +414,20 @@ const Works = (props) => (
                                                         </span>
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ui-swing-anim">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="karina-papadopoulos.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg_case-karina-personal-thumb.jpg)' }}></div>
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/karina-papadopoulos" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media" >
+                                                        <BgImage
+                                                            title="bgCaseKarinaPersonalThumb"
+                                                            fluid={props.data.bgCaseKarinaPersonalThumb.childImageSharp.fluid}
+                                                            height='100vh'
+                                                        />
+                                                    </div>
                                                     <div className="c-portfolio-teaser__main">
                                                         <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             Karina Papadopoulos
@@ -409,14 +456,20 @@ const Works = (props) => (
                                                         </span>
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ui-swing-anim">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="wroc-sharp.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg_case-wroc-thumb.jpg)' }}></div>
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/wroc-sharp" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media" >
+                                                        <BgImage
+                                                            title="bgCaseWrocThumb"
+                                                            fluid={props.data.bgCaseWrocThumb.childImageSharp.fluid}
+                                                            height='100vh'
+                                                        />
+                                                    </div>
                                                     <div className="c-portfolio-teaser__main">
                                                         <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             WROC#
@@ -433,14 +486,20 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ui-swing-anim">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="frontend-app.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg_case-fap-thumb.jpg)' }}></div>
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/frontend-app" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media" >
+                                                        <BgImage
+                                                            title="bgCaseFapThumb"
+                                                            fluid={props.data.bgCaseFapThumb.childImageSharp.fluid}
+                                                            height='100vh'
+                                                        />
+                                                    </div>
                                                     <div className="c-portfolio-teaser__main">
                                                         <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             FrontendApp
@@ -456,14 +515,20 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ui-swing-anim">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="krd.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg_case-krd-thumb.jpg)' }}></div>
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/krd" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media" >
+                                                        <BgImage
+                                                            title="bgCaseKrdThumb"
+                                                            fluid={props.data.bgCaseKrdThumb.childImageSharp.fluid}
+                                                            height='100vh'
+                                                        />
+                                                    </div>
                                                     <div className="c-portfolio-teaser__main">
                                                         <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             KRD Economic Information Bureau
@@ -479,14 +544,20 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ui-swing-anim">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="dekra.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg_case-dekra-thumb.jpg)' }}></div>
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/dekra" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media" >
+                                                        <BgImage
+                                                            title="bgCaseDekraThumb"
+                                                            fluid={props.data.bgCaseDekraThumb.childImageSharp.fluid}
+                                                            height='100vh'
+                                                        />
+                                                    </div>
                                                     <div className="c-portfolio-teaser__main">
                                                         <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             DEKRAnet
@@ -515,14 +586,20 @@ const Works = (props) => (
                                                         </span>
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
                                         <li className="c-portfolio-teasers-list__item ui-swing-anim">
                                             <div className="c-portfolio-teaser">
-                                                <a className="c-portfolio-teaser__inner u-paint-4" href="woodland-girls.html" data-animate-in="true">
-                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg_case-woodland-thumb.jpg)' }}></div>
+                                                <Link className="c-portfolio-teaser__inner u-paint-4" to="/works/woodland-girls" data-animate-in="true">
+                                                    <div className="c-portfolio-teaser__media" style={{ backgroundImage: 'url(static/img/bg_case-woodland-thumb.jpg)' }}>
+                                                        <BgImage
+                                                            title="bgCaseWoodlandThumb"
+                                                            fluid={props.data.bgCaseWoodlandThumb.childImageSharp.fluid}
+                                                            height='100vh'
+                                                        />
+                                                    </div>
                                                     <div className="c-portfolio-teaser__main">
                                                         <h2 className="t-style-fpn-l-b-u u-text-centered@mobile">
                                                             Woodland Girls
@@ -539,7 +616,7 @@ const Works = (props) => (
 
 
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
 
@@ -678,6 +755,42 @@ query {
                 ...fluidWorksBgImage
         }
             bgCase310Thumb: file(relativePath: {eq: "bg-case-310-thumb.jpg" }) {
+                ...fluidWorksBgImage
+        }
+            bgCaseIsvThumb: file(relativePath: {eq: "bg-case-isv-thumb.jpg" }) {
+                ...fluidWorksBgImage
+        }
+            bgCaseAcrfThumb: file(relativePath: {eq: "bg-case-acrf-thumb.jpg" }) {
+                ...fluidWorksBgImage
+        }
+            bgCaseOtlThumb: file(relativePath: {eq: "bg_case-otl-thumb.jpg" }) {
+                ...fluidWorksBgImage
+        }
+            bgCaseHawksmanThumb: file(relativePath: {eq: "bg_case-hawksman-thumb.jpg" }) {
+                ...fluidWorksBgImage
+        }
+            bgCaseKoszulkowoThumb: file(relativePath: {eq: "bg-case-koszulkowo-thumb.jpg" }) {
+                ...fluidWorksBgImage
+        }
+            bgCaseGatedtalentwebsiteThumb: file(relativePath: {eq: "bg-case-gatedtalentwebsite-thumb.jpg" }) {
+                ...fluidWorksBgImage
+        }
+            bgCaseKarinaPersonalThumb: file(relativePath: {eq: "bg_case-karina-personal-thumb.jpg" }) {
+                ...fluidWorksBgImage
+        }
+            bgCaseWrocThumb: file(relativePath: {eq: "bg_case-wroc-thumb.jpg" }) {
+                ...fluidWorksBgImage
+        }
+            bgCaseFapThumb: file(relativePath: {eq: "bg_case-fap-thumb.jpg" }) {
+                ...fluidWorksBgImage
+        }
+            bgCaseKrdThumb: file(relativePath: {eq: "bg_case-krd-thumb.jpg" }) {
+                ...fluidWorksBgImage
+        }
+            bgCaseDekraThumb: file(relativePath: {eq: "bg_case-dekra-thumb.jpg" }) {
+                ...fluidWorksBgImage
+        }
+            bgCaseWoodlandThumb: file(relativePath: {eq: "bg_case-woodland-thumb.jpg" }) {
                 ...fluidWorksBgImage
         }
         }

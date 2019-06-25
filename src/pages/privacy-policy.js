@@ -1,10 +1,11 @@
 import React from "react"
 import Header from '../components/header';
 import Footer from '../components/footer';
-import BgImage from '../components/bgImage';
+// import BgImage from '../components/bgImage';
 import { graphql, Link } from "gatsby";
+import bgAgencies from '../../static/img/bg_agencies.jpg'
 
-const PrivacyPolicy = (props) => (
+const PrivacyPolicy = () => (
     <>
         <div className="p-privacy">
 
@@ -14,7 +15,7 @@ const PrivacyPolicy = (props) => (
 
             <main className="l-main">
 
-                <BgImage
+                {/* <BgImage
                     title="bgAgencies"
                     fluid={props.data.bgAgencies.childImageSharp.fluid}
                     height='399px'
@@ -29,9 +30,18 @@ const PrivacyPolicy = (props) => (
                             </div>
                         </div>
                     </div>
-
-                </BgImage>
-
+                </BgImage> */}
+                <div class="l-hero l-hero--alt l-hero--small l-hero--with-overlay u-bg-2 u-paint-4" style={{ backgroundImage: `url(${bgAgencies})`, backgroundPosition: '100% 50%' }}>
+                    <div class="l-inner g-gutter-top-10 g-gutter-bottom-5">
+                        <div class="l-hero__head row row-align-bottom g-gutter-top-8">
+                            <div class="l-hero__head__box">
+                                <h2 class="t-style-fpn-xxl-b g-spacing-top-2">
+                                    Privacy Policy
+                        </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <section className="l-sec g-gutter-top-10 g-gutter-top-5@desktop-small g-gutter-bottom-10 g-gutter-bottom-5@desktop-small">
                     <div className="l-row">
                         <div className="l-inner">

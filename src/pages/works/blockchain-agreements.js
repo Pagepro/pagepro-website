@@ -25,7 +25,9 @@ const BlockchainAgreements = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg-case-blockchain.jpg']} />
+                    <WorksMainBg
+                        image={images['bg-case-blockchain.jpg']}
+                        h2Text={'ethereum blockchain doc signing app'} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">

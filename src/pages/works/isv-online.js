@@ -24,7 +24,9 @@ const IsvOnline = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg-case-isv-website.jpg']} />
+                    <WorksMainBg
+                        image={images['bg-case-isv-website.jpg']}
+                        h2Text={'isv online'} />
 
                     <section className="l-sec">
                         <div className="l-row c-decors-parent">

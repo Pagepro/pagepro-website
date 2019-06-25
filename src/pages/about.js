@@ -2,8 +2,9 @@ import React from "react"
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Instagram from '../components/instagram'
-import BgImage from '../components/bgImage'
+// import BgImage from '../components/bgImage'
 import { graphql, Link } from "gatsby";
+import bgServices from '../../static/img/bg_services.jpg'
 
 function importAll(r) {
     let images = {};
@@ -13,28 +14,21 @@ function importAll(r) {
 
 const images = importAll(require.context('../../static/img/', false, /\.(jpg|svg)$/));
 
-const About = (props) => (
+const About = () => (
     <>
         <div id="page-content">
 
             <div className="p-about">
 
                 <Header />
-
-
-
                 <main className="l-main">
-                    <BgImage
-                        title="bgAgencies"
-                        fluid={props.data.bgServices.childImageSharp.fluid}
-                        height='369px'
-                        className="l-hero l-hero--alt l-hero--small l-hero--with-overlay l-hero--with-overlay--top u-paint-4" >
-                        <div className="l-inner g-gutter-top-10 g-gutter-bottom-5 g-gutter-bottom-3@mobile">
-                            <div className="l-hero__head row row-align-bottom g-gutter-top-8 g-gutter-top-2@mobile">
-                                <div className="l-hero__head__box">
-                                    <div className="case-study-media-box">
-                                        <div className="case-study-media-box__info">
-                                            <h2 className="t-style-fpn-xxl-b-u">
+                    <div class="l-hero l-hero--alt l-hero--small l-hero--with-overlay l-hero--with-overlay--top u-bg-2 u-paint-4" style={{ backgroundImage: `url(${bgServices})`, backgroundPosition: '100% 50%' }}>
+                        <div class="l-inner g-gutter-top-10 g-gutter-bottom-5 g-gutter-bottom-3@mobile">
+                            <div class="l-hero__head row row-align-bottom g-gutter-top-8 g-gutter-top-2@mobile">
+                                <div class="l-hero__head__box">
+                                    <div class="case-study-media-box">
+                                        <div class="case-study-media-box__info">
+                                            <h2 class="t-style-fpn-xxl-b-u">
                                                 About
                                     </h2>
                                         </div>
@@ -42,7 +36,7 @@ const About = (props) => (
                                 </div>
                             </div>
                         </div>
-                    </BgImage>
+                    </div>
                     <div className="l-sec">
                         <div className="l-row u-decor-bottom u-paint-5">
                             <div className="l-inner u-paint-2">

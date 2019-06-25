@@ -38,22 +38,18 @@ const Career = (props) => (
                 <Header />
 
                 <main className="l-main">
-                    <BgImage
-                        title="bgAgencies"
-                        fluid={props.data.bgAgencies.childImageSharp.fluid}
-                        height='424px'
-                        className="l-hero l-hero--alt l-hero--small l-hero--with-overlay u-paint-4" >
-                        <div className="l-inner g-gutter-top-10 g-gutter-bottom-5 g-gutter-bottom-3@mobile">
-                            <div className="l-hero__head row row-align-bottom g-gutter-top-8 g-gutter-top-2@mobile">
-                                <div className="l-hero__head__box">
-                                    <strong className="t-style-fpn-xl-r-u">Career at Pagepro</strong>
-                                    <h2 className="t-style-fpn-xxl-b g-spacing-top-2">
+                    <div class="l-hero l-hero--alt l-hero--small l-hero--with-overlay u-bg-2 u-paint-4" style={{ backgroundImage: `url(${images['bg_agencies.jpg']})`, backgroundPosition: '100% 50%' }}>
+                        <div class="l-inner g-gutter-top-10 g-gutter-bottom-5 g-gutter-bottom-3@mobile">
+                            <div class="l-hero__head row row-align-bottom g-gutter-top-8 g-gutter-top-2@mobile">
+                                <div class="l-hero__head__box">
+                                    <strong class="t-style-fpn-xl-r-u">Career at Pagepro</strong>
+                                    <h2 class="t-style-fpn-xxl-b g-spacing-top-2">
                                         Learn something new every day.
-                                    </h2>
+                        </h2>
                                 </div>
                             </div>
                         </div>
-                    </BgImage>
+                    </div>
                     <section className="l-sec g-gutter-top-10 g-gutter-top-5@desktop-small g-gutter-bottom-10 g-gutter-bottom-5@desktop-small">
                         <div className="l-row">
                             <div className="l-inner">

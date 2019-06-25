@@ -3,6 +3,8 @@ import Header from '../../components/header';
 import Footer from '../../components/footer';
 import { graphql } from 'gatsby';
 import BgImage from '../../components/bgImage'
+import bgAgencies from '../../../static/img/bg_agencies.jpg'
+
 
 function importAll(r) {
     let images = {};
@@ -21,7 +23,7 @@ const WordPressDevelopment = (props) => (
                 <Header />
             
                 <main className="l-main">
-                    <BgImage
+                    {/* <BgImage
                         title="bgAgencies"
                         fluid={props.data.bgAgencies.childImageSharp.fluid}
                         className="l-hero l-hero--alt l-hero--small l-hero--with-overlay  u-paint-4"
@@ -36,7 +38,18 @@ const WordPressDevelopment = (props) => (
                                 </div>
                             </div>
                         </div>
-                    </BgImage>
+                    </BgImage> */}
+                    <div class="l-hero l-hero--alt l-hero--small l-hero--with-overlay u-bg-2 u-paint-4" style={{ backgroundImage: `url(${bgAgencies})`, backgroundPosition: '100% 50%' }}>
+                <div class="l-inner g-gutter-top-10 g-gutter-bottom-5 g-gutter-bottom-3@mobile">
+                    <div class="l-hero__head row row-align-bottom g-gutter-top-8 g-gutter-top-0@mobile">
+                        <div class="l-hero__head__box">
+                            <h2 class="t-style-fpn-xxl-b g-spacing-top-2">
+                                WordPress Development
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
                     <section className="l-sec"
                         id="offer--lead-text">
                         <div className="l-row">

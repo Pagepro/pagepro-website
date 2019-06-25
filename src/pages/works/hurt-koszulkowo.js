@@ -23,7 +23,9 @@ const HurtKoszulkowo = (props) => (
 
             <main className="l-main">
 
-                <WorksMainBg image={images['bg-case-koszulkowo-website.jpg']} />
+                <WorksMainBg
+                    image={images['bg-case-koszulkowo-website.jpg']}
+                    h2Text={'hurt koszulkowo'} />
 
                 <div className="l-sec" id="sec-1">
                     <div className="l-row">

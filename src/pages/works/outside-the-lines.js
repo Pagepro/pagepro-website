@@ -25,7 +25,9 @@ const OutsideTheLines = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg_case-otl.jpg']} />
+                    <WorksMainBg
+                        image={images['bg_case-otl.jpg']}
+                        h2Text={'outside the lines'} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">

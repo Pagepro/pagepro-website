@@ -23,7 +23,9 @@ const CryptocurrencyArbitrage = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg-case-crypto.jpg']} />
+                    <WorksMainBg
+                        image={images['bg-case-crypto.jpg']}
+                        h2Text={'cryptocurrency arbitrage monitor'} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">

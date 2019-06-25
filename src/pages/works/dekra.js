@@ -23,7 +23,9 @@ const Dekra = (props) => (
 
                 <main className="l-main">
 
-                    <WorksMainBg image={images['bg_case-dekra.jpg']} />
+                    <WorksMainBg
+                        image={images['bg_case-dekra.jpg']}
+                        h2Text={'dekranet'} />
 
                     <div className="l-sec" id="sec-1">
                         <div className="l-row">
